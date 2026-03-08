@@ -76,6 +76,7 @@
           v-else-if="currentData.question.type === 'dropdown'"
           :items="currentData.items"
           :body="currentData.question.body"
+          :code-block="currentData.question.code_block"
           :disabled="answered"
           :instruction="currentData.question.instruction"
           @update:answer="onAnswerUpdate"

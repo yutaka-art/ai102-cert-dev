@@ -1,6 +1,8 @@
 <template>
   <div class="dropdown-select">
     <div class="instruction">{{ instruction }}</div>
+    <!-- body に <select> がなく code_block 側にある場合、body を説明文として表示 -->
+    <div v-if="showBodyAsDescription" class="body-description" v-html="formattedBodyText"></div>
     <div class="code-container">
       <pre class="code-block"><template v-for="(segment, idx) in codeSegments" :key="idx"><template v-if="segment.type === 'text'">{{ segment.text }}</template><template v-else><select
               class="inline-select"
@@ -41,6 +43,10 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    codeBlock: {
+      type: String,
+      default: '',
+    },
     disabled: {
       type: Boolean,
       default: false,
@@ -66,9 +72,18 @@ export default defineComponent({
     // blank ごとの選択値
     const selections = reactive<Record<string, string>>({})
 
+    // body に <select> が含まれるかどうか
+    const bodyHasSelects = computed(() => /<select\d+>/.test(props.body))
+
+    // body に <select> がない場合は説明文として表示する
+    const showBodyAsDescription = computed(() => !bodyHasSelects.value && props.codeBlock)
+
+    const formattedBodyText = computed(() => props.body.replace(/\n/g, '<br>'))
+
     // body テキストを <selectXX> でセグメント分割
     const codeSegments = computed<CodeSegment[]>(() => {
-      const text = props.body
+      // body に <select> があればそれを使い、なければ codeBlock を使う
+      const text = bodyHasSelects.value ? props.body : (props.codeBlock || props.body)
       const regex = /<(select\d+)>/g
       const segments: CodeSegment[] = []
       let lastIndex = 0
@@ -132,6 +147,8 @@ export default defineComponent({
       selections,
       codeSegments,
       blanks,
+      showBodyAsDescription,
+      formattedBodyText,
       getOptionsForBlank,
       onSelect,
       isBlankCorrect,
@@ -148,6 +165,14 @@ export default defineComponent({
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 0.8rem;
+}
+.body-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: inherit;
+  opacity: 0.9;
+  text-align: left;
 }
 .code-container {
   overflow-x: auto;
