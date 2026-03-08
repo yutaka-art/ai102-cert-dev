@@ -301,3 +301,56 @@ q040_opt_2_3,q040,dropdown_option,opt2_3,select02,言語検出,言語検出,3,,,
 q040_opt_2_4,q040,dropdown_option,opt2_4,select02,固有表現抽出(NFR),固有表現抽出(NFR),4,,,
 q040_opt_2_5,q040,dropdown_option,opt2_5,select02,個人識別情報(PII)検出,個人識別情報(PII)検出,5,,,
 q040_opt_2_6,q040,dropdown_option,opt2_6,select02,感情分析,感情分析,6,,,
+q041_blank_1,q041,dropdown_blank,select01,,select01,,1,ChatRole.User,,
+q041_blank_2,q041,dropdown_blank,select02,,select02,,2,Temperature,,
+q041_opt_1_1,q041,dropdown_option,opt1_1,select01,ChatRole.Assistant,ChatRole.Assistant,1,,,
+q041_opt_1_2,q041,dropdown_option,opt1_2,select01,ChatRole.Function,ChatRole.Function,2,,,
+q041_opt_1_3,q041,dropdown_option,opt1_3,select01,ChatRole.System,ChatRole.System,3,,,
+q041_opt_1_4,q041,dropdown_option,opt1_4,select01,ChatRole.User,ChatRole.User,4,,,
+q041_opt_2_1,q041,dropdown_option,opt2_1,select02,ChatRole.User,ChatRole.User,1,,,
+q041_opt_2_2,q041,dropdown_option,opt2_2,select02,PresencePenalty,PresencePenalty,2,,,
+q041_opt_2_3,q041,dropdown_option,opt2_3,select02,Temperature,Temperature,3,,,
+q041_opt_2_4,q041,dropdown_option,opt2_4,select02,TokenSelectionBiasses,TokenSelectionBiasses,4,,,
+q042_a,q042,choice,A,,A. リストエンティティ,A,1,,,False
+q042_b,q042,choice,B,,B. 学習したエンティティ,B,2,,,False
+q042_c,q042,choice,C,,C. 発話,C,3,,,False
+q042_d,q042,choice,D,,D. 正規表現の構成要素,D,4,,,False
+q042_e,q042,choice,E,,E. 事前に構築されたエンティティコンポーネント,E,5,,,True
+q043_blank_1,q043,dropdown_blank,select01,,<select01>,,1,FormRecognizer,,
+q043_blank_2,q043,dropdown_blank,select02,,<select02>,,2,"""S0"", ""eastus"")","",
+q043_opt_1_1,q043,dropdown_option,opt1_1,select01,ComputerVision,ComputerVision,1,,,
+q043_opt_1_2,q043,dropdown_option,opt1_2,select01,CustomVision.Prediction,CustomVision.Prediction,2,,,
+q043_opt_1_3,q043,dropdown_option,opt1_3,select01,CustomVision.Training,CustomVision.Training,3,,,
+q043_opt_1_4,q043,dropdown_option,opt1_4,select01,FormRecognizer,FormRecognizer,4,,,
+q043_opt_2_1,q043,dropdown_option,opt2_1,select02,"""eastus"", ""S1"")","""eastus"", ""S1"")",1,,,
+q043_opt_2_2,q043,dropdown_option,opt2_2,select02,"""useast"", ""S1"")","""useast"", ""S1"")",2,,,
+q043_opt_2_3,q043,dropdown_option,opt2_3,select02,"""S0"", ""eastus"")","""S0"", ""eastus"")",3,,,
+q043_opt_2_4,q043,dropdown_option,opt2_4,select02,"""S0"", ""useast"")","""S0"", ""useast"")",4,,,
+q044_blank_1,q044,dropdown_blank,select01,,<select01>,,1,"(""api-nam.cognitive.microsofttranslator.com"")",,
+q044_blank_2,q044,dropdown_blank,select02,,<select02>,,2,"""/translate?to=en""",,
+q044_opt_1_1,q044,dropdown_option,opt1_1,select01,"(""api.cognitive.microsofttranslator.com"")","(""api.cognitive.microsofttranslator.com"")",1,,,
+q044_opt_1_2,q044,dropdown_option,opt1_2,select01,"(""api.apc.cognitive.microsofttranslator.com"")","(""api.apc.cognitive.microsofttranslator.com"")",2,,,
+q044_opt_1_3,q044,dropdown_option,opt1_3,select01,"(""api-nam.cognitive.microsofttranslator.com"")","(""api-nam.cognitive.microsofttranslator.com"")",3,,,
+q044_opt_2_1,q044,dropdown_option,opt2_1,select02,"""/translate?from=en""","""/translate?from=en""",1,,,
+q044_opt_2_2,q044,dropdown_option,opt2_2,select02,"""/translate?suggestedFrom=en""","""/translate?suggestedFrom=en""",2,,,
+q044_opt_2_3,q044,dropdown_option,opt2_3,select02,"""/translate?to=en""","""/translate?to=en""",3,,,
+q044_opt_2_4,q044,dropdown_option,opt2_4,select02,"""/detect?to=en""","""/detect?to=en""",4,,,
+q044_opt_2_5,q044,dropdown_option,opt2_5,select02,"""/detect?from=en""","""/detect?from=en""",5,,,
+q045_a,q045,choice,A,,A. vnet1 のネットワーク セキュリティ グループ (NSG),A,1,,,False
+q045_b,q045,choice,B,,B. vnet1 の Azure Firewall,B,2,,,False
+q045_c,q045,choice,C,,C. ta1の仮想ネットワーク設定,C,3,,,True
+q045_d,q045,choice,D,,D. ta1の言語サービスコンテナ,D,4,,,False
+q046_a,q046,choice,A,,A. FormRecognizerClienc クライアントと ScarcRecognizeConcencFromUri メソッド,A,1,,,False
+q046_b,q046,choice,B,,B. FormTrainingClienc クライアントと ScarcRecognizeContentFromUri メソッド,B,2,,,False
+q046_c,q046,choice,C,,C. FormRecognizerClienc クライアントと ScarcRecognizeReceipcsFromUri メソッド,C,3,,,True
+q046_d,q046,choice,D,,D. FormTrainingClient クライアントと ScarcRecognizeReceipcsFromUri メソッド,D,4,,,False
+q047_s1,q047,statement,S1,,解決策: FindContact インテント内のフレーズごとに新しい発話を作成します。,,1,,,True
+q048_s1,q048,statement,S1,,解決策: service1 とパブリック エンドポイントをデプロイし、IP ファイアウォール ルールを構成します。,,1,,,False
+q049_s1,q049,statement,S1,,このコードは、人物グループ内の人物オブジェクトに顔画像を追加します。,,1,,,True
+q049_s2,q049,statement,S2,,"このコードは10,000人のグループで動作します。",,2,,,True
+q049_s3,q049,statement,S3,,addface を複数回呼び出すことで、人物オブジェクトに複数の顔画像を追加できます。,,3,,,True
+q050_a,q050,choice,A,,A. コンピュータビジョンにおける物体検出,A,1,,,False
+q050_b,q050,choice,B,,B. コンピュータビジョンのコンテンツタグ,B,2,,,False
+q050_c,q050,choice,C,,C. コンピュータビジョンにおける画像の説明,C,3,,,True
+q050_d,q050,choice,D,,D. コンピュータビジョンにおける画像種別検出,D,4,,,True
+q050_e,q050,choice,E,,E. Custom Vision での画像分類,E,5,,,False

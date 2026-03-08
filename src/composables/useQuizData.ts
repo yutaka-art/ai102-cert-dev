@@ -31,8 +31,10 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
 
       // 2つの CSV を並列取得
       const [questionsRes, itemsRes] = await Promise.all([
-        fetch(import.meta.env.BASE_URL + 'questions_sample.csv'),
-        fetch(import.meta.env.BASE_URL + 'question_items_sample.csv'),
+       fetch(import.meta.env.BASE_URL + 'questions_sample.csv'),
+       fetch(import.meta.env.BASE_URL + 'question_items_sample.csv'),
+        // fetch(import.meta.env.BASE_URL + 'questions_sample_diff_041_050.csv'),
+        // fetch(import.meta.env.BASE_URL + 'question_items_sample_diff_041_050.csv'),
       ])
 
       const questionsCsv = await questionsRes.text()
@@ -66,6 +68,8 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
             item.correct_order !== undefined && item.correct_order !== null && String(item.correct_order) !== ''
               ? Number(item.correct_order)
               : null,
+          // CSV によって True/False と true/false が混在するため小文字に正規化
+          is_correct: item.is_correct ? String(item.is_correct).toLowerCase() : item.is_correct,
         })
         itemsByQuestionId.set(item.question_id, list)
       }
@@ -77,7 +81,7 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
         )
 
         // shuffle_items が "true" の場合、選択肢をシャッフル
-        if (q.shuffle_items === 'true') {
+        if (String(q.shuffle_items).toLowerCase() === 'true') {
           qItems = shuffleArray(qItems)
         }
 
