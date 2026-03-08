@@ -183,3 +183,121 @@ q018_3,q018,drag_item,3,,Server1 に Docker エンジンをインストールし
 q018_4,q018,drag_item,4,,Server1 から docker pull コマンドを実行します。,4,4,,2,
 q018_5,q018,drag_item,5,,Server1 から docker run コマンドを実行します。,5,5,,3,
 q018_6,q018,drag_item,6,,Server1 の予測エンドポイントをクエリします。,6,6,,4,
+q021_a,q021,choice,A,,A. 言語オーサリング REST エンドポイントから、モデル評価の概要を取得します。,A,1,,,true
+q021_b,q021,choice,B,,B. Language Studio から、アクティブ ラーニングを有効にし、レビュー用に記録された発話を検証します。,B,2,,,false
+q021_c,q021,choice,C,,C. Language Studio から、モデルのパフォーマンスを選択します。,C,3,,,true
+q021_d,q021,choice,D,,D. Azure ポータルから、Log Analytics でログ収集を有効にし、ログを分析します。,D,4,,,false
+q023_1,q023,drag_item,1,,Azure Bot Service にボットを登録します。,1,1,,,
+q023_2,q023,drag_item,2,,Bot Framework Composer を開きます。,2,2,,,
+q023_3,q023,drag_item,3,,ボットをビルドして実行します。,3,3,,1,
+q023_4,q023,drag_item,4,,Bot Framework Emulator を開きます。,4,4,,2,
+q023_5,q023,drag_item,5,,ボットのエンドポイントに接続します。,5,5,,3,
+q024_a,q024,choice,A,,A. キオスク システムを説明する声優の 5 分間の wav または mp3 ファイル,A,1,,,false
+q024_b,q024,choice,B,,B. 5 分間の .flac オーディオ ファイルと関連するトランスクリプトを aw ファイルとして,B,2,,,false
+q024_c,q024,choice,C,,C. 声の合成バージョンの作成に同意した声優の .wav または mp3 ファイル,C,3,,,true
+q024_d,q024,choice,D,,D. 10 秒の .wav ファイルと関連するトランスクリプトを .txt ファイルとして含む .zip ファイル,D,4,,,false
+q025_blank_1,q025,dropdown_blank,select01,,Benefitsフィールドの型:<select01>,,1,table,,
+q025_opt_1_1,q025,dropdown_option,opt1_1,select01,fixed table,fixed table,1,,,
+q025_opt_1_2,q025,dropdown_option,opt1_2,select01,string,string,2,,,
+q025_opt_1_3,q025,dropdown_option,opt1_3,select01,table,table,3,,,
+q025_blank_2,q025,dropdown_blank,select02,,スキーマのフィールド数:<select02>,,2,5,,
+q025_opt_2_1,q025,dropdown_option,opt2_1,select02,2,2,1,,,
+q025_opt_2_2,q025,dropdown_option,opt2_2,select02,5,5,2,,,
+q025_opt_2_3,q025,dropdown_option,opt2_3,select02,10,10,3,,,
+q026_a,q026,choice,A,,A. Azure Al 言語,A,1,,,true
+q026_b,q026,choice,B,,B. Azure 機械学習,B,2,,,false
+q026_c,q026,choice,C,,C. Azure OpenAI,C,3,,,false
+q026_d,q026,choice,D,,D. Azure AI ドキュメント インテリジェンス,D,4,,,false
+q027_1,q027,drag_item,1,,あらかじめ構築されたドメインのToDoを追加します。,1,1,,2,
+q027_2,q027,drag_item,2,,新しいアプリケーションを追加します。,2,2,,1,
+q027_3,q027,drag_item,3,,発話例を追加します。,3,3,,,
+q027_4,q027,drag_item,4,,アプリケーションをトレーニングします。,4,4,,3,
+q027_5,q027,drag_item,5,,アプリケーションを公開します。,5,5,,4,
+q028_blank_1,q028,dropdown_blank,select01,,着信ボイスメールをフランス語で受信します:<select01>,,1,AudioConfig,,
+q028_opt_1_1,q028,dropdown_option,opt1_1,select01,AudioConfig,AudioConfig,1,,,
+q028_opt_1_2,q028,dropdown_option,opt1_2,select01,SpeechConfig,SpeechConfig,2,,,
+q028_opt_1_3,q028,dropdown_option,opt1_3,select01,SpeechTransaltionConfig,SpeechTransaltionConfig,3,,,
+q028_opt_1_4,q028,dropdown_option,opt1_4,select01,TextTranslationClient,TextTranslationClient,4,,,
+q028_blank_2,q028,dropdown_blank,select02,,ボイスメールをフランス語から英語に変換します:<select02>,,2,TranslationRecognizer,,
+q028_opt_2_1,q028,dropdown_option,opt2_1,select02,SpeechSynthesizer,SpeechSynthesizer,1,,,
+q028_opt_2_2,q028,dropdown_option,opt2_2,select02,TextTransactionClient,TextTransactionClient,2,,,
+q028_opt_2_3,q028,dropdown_option,opt2_3,select02,TranslationRecognitionResult,TranslationRecognitionResult,3,,,
+q028_opt_2_4,q028,dropdown_option,opt2_4,select02,TranslationRecognizer,TranslationRecognizer,4,,,
+q029_blank_1,q029,dropdown_blank,select01,,授業計画を分析します:<select01>,,1,Azure AI Document Intelligence,,
+q029_opt_1_1,q029,dropdown_option,opt1_1,select01,Azure AI Search,Azure AI Search,1,,,
+q029_opt_1_2,q029,dropdown_option,opt1_2,select01,Azure Custom Vision,Azure Custom Vision,2,,,
+q029_opt_1_3,q029,dropdown_option,opt1_3,select01,Azure AI Document Intelligence,Azure AI Document Intelligence,3,,,
+q029_opt_1_4,q029,dropdown_option,opt1_4,select01,Immersive Reader,Immersive Reader,4,,,
+q029_blank_2,q029,dropdown_blank,select02,,学習内容を分析します:<select02>,,2,Immersive Reader,,
+q029_opt_2_1,q029,dropdown_option,opt2_1,select02,Azure AI Search,Azure AI Search,1,,,
+q029_opt_2_2,q029,dropdown_option,opt2_2,select02,Azure Custom Vision,Azure Custom Vision,2,,,
+q029_opt_2_3,q029,dropdown_option,opt2_3,select02,Azure AI Document Intelligence,Azure AI Document Intelligence,3,,,
+q029_opt_2_4,q029,dropdown_option,opt2_4,select02,Immersive Reader,Immersive Reader,4,,,
+q030_blank_1,q030,dropdown_blank,select01,,URL 前半のリソース パス:<select01>,,1,subscriptions/8d3591aa-96b8-4737-ad09-OOf9b1ed35ad,,
+q030_opt_1_1,q030,dropdown_option,opt1_1,select01,subscriptions/3dsad21256dsadasdsasdsasdas,subscriptions/3dsad21256dsadasdsasdsasdas,1,,,
+q030_opt_1_2,q030,dropdown_option,opt1_2,select01,subscriptions/8d3591aa-96b8-4737-ad09-OOf9b1ed35ad,subscriptions/8d3591aa-96b8-4737-ad09-OOf9b1ed35ad,2,,,
+q030_opt_1_3,q030,dropdown_option,opt1_3,select01,tenant/3edfe572-cbS4-3ced-ae12-c5c177f39a12,tenant/3edfe572-cbS4-3ced-ae12-c5c177f39a12,3,,,
+q030_opt_1_4,q030,dropdown_option,opt1_4,select01,tenant/sad2162876qsadhahd2182,tenant/sad2162876qsadhahd2182,4,,,
+q030_blank_2,q030,dropdown_blank,select02,,プロバイダー名:<select02>,,2,Microsoft.CognitiveServices,,
+q030_opt_2_1,q030,dropdown_option,opt2_1,select02,Microsoft.ApiManagement,Microsoft.ApiManagement,1,,,
+q030_opt_2_2,q030,dropdown_option,opt2_2,select02,Microsoft.CognitiveServices,Microsoft.CognitiveServices,2,,,
+q030_opt_2_3,q030,dropdown_option,opt2_3,select02,Microsoft.ContainerService,Microsoft.ContainerService,3,,,
+q030_opt_2_4,q030,dropdown_option,opt2_4,select02,Microsoft.KeyValut,Microsoft.KeyValut,4,,,
+q031_s1,q031,statement,S1,,File.wav という名前のファイルが既に存在する場合、この関数は失敗します。,,1,,,false
+q031_s2,q031,statement,S2,,この関数は File.wav をサンプリングし、合成音声として使用します。,,2,,,false
+q031_s3,q031,statement,S3,,この関数は入力テキストに基づいて音声ファイルを生成します。,,3,,,true
+q032_a,q032,choice,A,,A. https://uksouth.customvoice.apispeech.microsoft.eom/api/texttospeech/v3.0/longaudiosynthesis/voices,A,1,,,false
+q032_b,q032,choice,B,,B. https://uksouth.tts.speech.microsoft.conT/cognitiveservices/voices/list,B,2,,,true
+q032_c,q032,choice,C,,C. https://uksouth.voice.speech.microsoft.com/cognitiveservices/v1?deploymentld = {deployment>,C,3,,,false
+q032_d,q032,choice,D,,D. https://uksouth.api.cognitive.microsoft.eom/speechtotext/v3.0/models/base,D,4,,,false
+q033_a,q033,choice,A,,A. /vision/v3.2/read/analyzeResults,A,1,,,true
+q033_b,q033,choice,B,,B. /formrecognizer/v2.0/prebuilt/receipt/analyze,B,2,,,false
+q033_c,q033,choice,C,,C. /vision/v3.2/read/analyze,C,3,,,true
+q033_d,q033,choice,D,,D. /vision/v3.2/describe,D,4,,,false
+q033_e,q033,choice,E,,E. /formercognizer/v2.0/custom/models{modelId}/analyze,E,5,,,false
+q035_s1,q035,statement,S1,,解決策: カスタマー管理キー (CMK) 暗号化を有効にします。,,1,,,false
+q036_blank_1,q036,dropdown_blank,select01,,<select01>,,1,PUT,,
+q036_opt_1_1,q036,dropdown_option,opt1_1,select01,GET,GET,1,,,
+q036_opt_1_2,q036,dropdown_option,opt1_2,select01,PATCH,PATCH,2,,,
+q036_opt_1_3,q036,dropdown_option,opt1_3,select01,POST,POST,3,,,
+q036_opt_1_4,q036,dropdown_option,opt1_4,select01,PUT,PUT,4,,,
+q036_blank_2,q036,dropdown_blank,select02,,<select02>,,2,contentunderstanding,,
+q036_opt_2_1,q036,dropdown_option,opt2_1,select02,contentsafyty,contentsafyty,1,,,
+q036_opt_2_2,q036,dropdown_option,opt2_2,select02,contentunderstanding,contentunderstanding,2,,,
+q036_opt_2_3,q036,dropdown_option,opt2_3,select02,documentintelligence,documentintelligence,3,,,
+q036_opt_2_4,q036,dropdown_option,opt2_4,select02,languageunderstanding,languageunderstanding,4,,,
+q037_blank_1,q037,dropdown_blank,select01,,Custom neural voice:<select01>,,1,The Speech Studio portal,,
+q037_opt_1_1,q037,dropdown_option,opt1_1,select01,Microsoft Bot Freamework Composer,Microsoft Bot Freamework Composer,1,,,
+q037_opt_1_2,q037,dropdown_option,opt1_2,select01,The Azure Portal,The Azure Portal,2,,,
+q037_opt_1_3,q037,dropdown_option,opt1_3,select01,The Language Understanding portal,The Language Understanding portal,3,,,
+q037_opt_1_4,q037,dropdown_option,opt1_4,select01,The Speech Studio portal,The Speech Studio portal,4,,,
+q037_blank_2,q037,dropdown_blank,select02,,Narration:<select02>,,2,Text-to-speech,,
+q037_opt_2_1,q037,dropdown_option,opt2_1,select02,The Language Understanding,The Language Understanding,1,,,
+q037_opt_2_2,q037,dropdown_option,opt2_2,select02,Speaker Recognition,Speaker Recognition,2,,,
+q037_opt_2_3,q037,dropdown_option,opt2_3,select02,Speech-to-text,Speech-to-text,3,,,
+q037_opt_2_4,q037,dropdown_option,opt2_4,select02,Text-to-speech,Text-to-speech,4,,,
+q038_a,q038,choice,A,,A. 検索要求とともに Azure AD アクセス トークンを送信します。,A,1,,,false
+q038_b,q038,choice,B,,B. すべてのグループを取得します。,B,2,,,false
+q038_c,q038,choice,C,,C. ユーザーのグループ メンバーシップを取得します。,C,3,,,true
+q038_d,q038,choice,D,,D. 許可されたグループを各インデックス エントリに追加します。,D,4,,,true
+q038_e,q038,choice,E,,E. グループごとに 1 つのインデックスを作成します。,E,5,,,false
+q038_f,q038,choice,F,,F. 検索リクエストのフィルターとしてグループを指定します。,F,6,,,true
+q039_a,q039,choice,A,,A. クラウド アプリ向け Microsoft Defender,A,1,,,false
+q039_b,q039,choice,B,,B. Azure AI カスタムビジョン,B,2,,,false
+q039_c,q039,choice,C,,C. アズール・アル・ビジョン,C,3,,,true
+q039_d,q039,choice,D,,D. Azure AI コンテンツの安全性,D,4,,,true
+q039_e,q039,choice,E,,E. Azure AI ドキュメント インテリジェンス,E,5,,,false
+q040_blank_1,q040,dropdown_blank,select01,,社内製品開発用のコードネームを特定します。<select01>,,1,カスタム固有表現抽出(NFR),,
+q040_opt_1_1,q040,dropdown_option,opt1_1,select01,カスタム固有表現抽出(NFR),カスタム固有表現抽出(NFR),1,,,
+q040_opt_1_2,q040,dropdown_option,opt1_2,select01,キーフレーズ抽出,キーフレーズ抽出,2,,,
+q040_opt_1_3,q040,dropdown_option,opt1_3,select01,言語検出,言語検出,3,,,
+q040_opt_1_4,q040,dropdown_option,opt1_4,select01,固有表現抽出(NFR),固有表現抽出(NFR),4,,,
+q040_opt_1_5,q040,dropdown_option,opt1_5,select01,個人識別情報(PII)検出,個人識別情報(PII)検出,5,,,
+q040_opt_1_6,q040,dropdown_option,opt1_6,select01,感情分析,感情分析,6,,,
+q040_blank_2,q040,dropdown_blank,select02,,クレジットカード番号を含むメッセージを識別します。<select02>,,2,個人識別情報(PII)検出,,
+q040_opt_2_1,q040,dropdown_option,opt2_1,select02,カスタム固有表現抽出(NFR),カスタム固有表現抽出(NFR),1,,,
+q040_opt_2_2,q040,dropdown_option,opt2_2,select02,キーフレーズ抽出,キーフレーズ抽出,2,,,
+q040_opt_2_3,q040,dropdown_option,opt2_3,select02,言語検出,言語検出,3,,,
+q040_opt_2_4,q040,dropdown_option,opt2_4,select02,固有表現抽出(NFR),固有表現抽出(NFR),4,,,
+q040_opt_2_5,q040,dropdown_option,opt2_5,select02,個人識別情報(PII)検出,個人識別情報(PII)検出,5,,,
+q040_opt_2_6,q040,dropdown_option,opt2_6,select02,感情分析,感情分析,6,,,
