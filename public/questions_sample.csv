@@ -1,0 +1,68 @@
+﻿id,question_no,type,title,body,code_block,instruction,answer_count,explanation,shuffle_items,metadata_json
+q009,#009,single_choice,キーワード抽出,"テキスト処理ソリューションを開発しています。
+関数を呼び出して、次の文字列を 2 番目の引数として使用します。
+「ロンドンのツアーにはバッキンガム宮殿への訪問も含まれていました。」
+関数の出力は何でしょうか?","static void GetKeyWords(TextAnalyticsClient textAnalyticsClient, string text)
+{
+  var response = textAnalyticsClient.RecognizeEntities(text);
+  Console.WriteLine(""key words:"");
+
+  foreach(CategorizedEntity entity in response.Value)
+  {
+    Console.WriteLine($""{entity.Text}"");
+  }
+}",1つ選択してください,1,RecognizeEntities により地名や施設名などのエンティティが抽出されます。,true,{}
+q001,#001,multi_choice,Autocomplete の実装,"スマート電子商取引プロジェクトを開発しています。
+Cognitive Search ソリューションの一部としてオートコンプリートを実装する必要があります。
+実行すべき 3 つのアクションはどれですか？ それぞれの正解は解決策の一部を示しています。",,3つ選択してください,3,Autocomplete では suggester と analyzer の設定、およびオートコンプリート エンドポイントの利用がポイントです。,true,{}
+q002,#002,drag_drop,ビデオ分析プロセス,"あなたは製品作成プロジェクトを計画しています。
+ビデオを分析するためのプロセスを推奨する必要があります。
+どの 4 つのアクションを順番に実行する必要がありますか。",,4つ選択し、正しい順に並べてください,4,Video Indexer を中心に、Blob Storage へのアップロード、インデックス作成、トランスクリプト抽出、翻訳の流れで考えます。,true,"{""minSelections"": 4, ""maxSelections"": 4}"
+q004,#004,dropdown,アクセシビリティ要件を満たすコード補完,"製品作成プロジェクトのために画像をアップロードするためのコードを開発する必要があります。ソリューションはアクセシビリティ要件を満たす必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+
+Public static async Task<string> SuggestAltText(ComputerVisionClient client, <select01> image)
+{
+  List<VisualFeatureTypes?> features = new List<VisualFeatureTypes?>()
+  {
+    <select02>
+  };
+  ImageAnalysis results = await client.AnalyzeImageAsync(image, features);
+  <select03>
+
+  if(c.Confidence > 0.5) return(c.Text);
+}",,各ドロップダウンを選択してください,3,代替テキスト生成では Description と Captions の利用が中心です。,false,{}
+q034,#034,single_yesno,検索要求の調整対策,"注: この問題は、同じシナリオを提示する一連の問題の一部です。
+Azure Cognitive Search サービスがあります。
+過去 12 か月間、クエリ量は着実に増加しました。
+Cognitive Search サービスへの一部の検索クエリ要求が調整されていることがわかりました。
+検索クエリ要求が調整される可能性を減らす必要があります。
+
+解決策: インデックスを追加します。
+これは目標を満たしていますか?",,はい / いいえ を選択してください,1,スループット問題の対策は通常レプリカやパーティションであり、インデックス追加ではありません。,false,{}
+q022,#022,multi_yesno,Text-to-Speech の音声確認,"Resource1 という名前の Azure AI Language リソースを含む Azure サブスクリプションがあります。
+次の cURL コマンドを実行し、output.mp3 ファイルを再生します。
+
+curl --location --request POST ""https://eastus.tts.speech.microsoft.com/cognitiveservices/v1""
+--header ""Ocp-Apim-Subscription-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx""
+--header ""Content-Type: application/ssml+xml""
+--header ""X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3""
+--header ""User-Agent: curl""
+--data-raw ""
+<speak version='1.0' xml:lang='en-US'>
+  <voice xml:gender='Female' name='en-US-JennyNeural'>
+    Welcome to the Azure Text-to-Speech demonstration.
+  </voice>
+  <voice xml:gender='Male' name='en-GB-RyanNeural'>
+    This service allows you to convert text into natural-sounding speech.
+  </voice>
+  <voice xml:gender='Male' name='en-US-ChristopherNeural'>
+    <mstts:express-as style='advertisement_upbeat' styledegree='2'>
+      It's easy to integrate, customizable, and supports multiple languages and voices.
+    </mstts:express-as>
+  </voice>
+</speak>
+""
+--output output.mp3
+
+以下の各文について、正しい場合は「はい」を選択してください。そうでない場合は「いいえ」を選択してください。",,各文について はい / いいえ を選択してください,3,音声やスタイルの指定内容を読み取る問題です。,false,{}
