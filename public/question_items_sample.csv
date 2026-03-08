@@ -772,3 +772,54 @@ q130_a,q130,choice,A,,A. テキスト分析,A,1,,,True
 q130_b,q130,choice,B,,B. コンテンツモデレーター,B,2,,,False
 q130_c,q130,choice,C,,C. コンピュータービジョン,C,3,,,False
 q130_d,q130,choice,D,,D. フォーム認識機能,D,4,,,False
+q131_select01,q131,dropdown_blank,select01,,<select01>,,1,prebuilt-layout,,
+q131_select01_opt1,q131,dropdown_option,opt1,select01,prebuilt-contract,prebuilt-contract,1,,,
+q131_select01_opt2,q131,dropdown_option,opt2,select01,prebuilt-document,prebuilt-document,2,,,
+q131_select01_opt3,q131,dropdown_option,opt3,select01,prebuilt-layout,prebuilt-layout,3,,,
+q131_select01_opt4,q131,dropdown_option,opt4,select01,prebuilt-read,prebuilt-read,4,,,
+q131_select02,q131,dropdown_blank,select02,,<select02>,,2,Ocp-Apim-Subscription-Key,,
+q131_select02_opt1,q131,dropdown_option,opt1,select02,Key1,Key1,1,,,
+q131_select02_opt2,q131,dropdown_option,opt2,select02,Ocp-Apim-Subscription-Key,Ocp-Apim-Subscription-Key,2,,,
+q131_select02_opt3,q131,dropdown_option,opt3,select02,Secret,Secret,3,,,
+q131_select02_opt4,q131,dropdown_option,opt4,select02,Subscription-Key,Subscription-Key,4,,,
+q132_a,q132,choice,A,,A. テキスト埋め込み-ada-002,A,1,,,true
+q132_b,q132,choice,B,,B. GPT-4,B,2,,,false
+q132_c,q132,choice,C,,C. GPT-35ターボ,C,3,,,false
+q132_d,q132,choice,D,,D. GPT-4-32k,D,4,,,false
+q133_a,q133,choice,A,,A. az resource link,A,1,,,false
+q133_b,q133,choice,B,,B. az account list,B,2,,,false
+q133_c,q133,choice,C,,C. az cognitivesservices account network-rule,C,3,,,false
+q133_d,q133,choice,D,,D. az congnitiveservices account show,D,4,,,true
+q134_a,q134,choice,A,,A. コンテンツモデレーター,A,1,,,false
+q134_b,q134,choice,B,,B. フォーム認識機能,B,2,,,false
+q134_c,q134,choice,C,,C. コンピュータービジョン,C,3,,,false
+q134_d,q134,choice,D,,D. 言語サービス,D,4,,,true
+q135_a,q135,choice,A,,A. 機械学習,A,1,,,true
+q135_b,q135,choice,B,,B. 正式なパフォーマンス,B,2,,,false
+q135_c,q135,choice,C,,C. リスト,C,3,,,false
+q135_d,q135,choice,D,,D. パターン.任意,D,4,,,false
+q136_select01,q136,dropdown_blank,select01,,<select01>,,1,/contentsafety,,
+q136_select01_opt1,q136,dropdown_option,opt1,select01,/contentmoderator,/contentmoderator,1,,,
+q136_select01_opt2,q136,dropdown_option,opt2,select01,/contentsafety,/contentsafety,2,,,
+q136_select01_opt3,q136,dropdown_option,opt3,select01,/vision,/vision,3,,,
+q136_select02,q136,dropdown_blank,select02,,<select02>,,2,/image:analyze,,
+q136_select02_opt1,q136,dropdown_option,opt1,select02,/detect,/detect,1,,,
+q136_select02_opt2,q136,dropdown_option,opt2,select02,/image:analyze,/image:analyze,2,,,
+q136_select02_opt3,q136,dropdown_option,opt3,select02,/ProcessImage,/ProcessImage,3,,,
+q137_a,q137,choice,A,,A. 新しいコンピュータビジョンリソース,A,1,,,false
+q137_b,q137,choice,B,,B. 無料の（限定的なエンリッチメント）Cognitive Services リソース,B,2,,,true
+q137_c,q137,choice,C,,C. Azure Machine Learning パイプライン,C,3,,,false
+q137_d,q137,choice,D,,D. S0価格帯を使用する新しいCognitive Servicesリソース,D,4,,,false
+q138_a,q138,choice,A,,A. Orchestrator モデルを作成します。,A,1,,,true
+q138_b,q138,choice,B,,B. 認識装置/ディスパッチの種類を変更します。,B,2,,,true
+q138_c,q138,choice,C,,C. コンポーザー拡張機能を作成します。,C,3,,,false
+q138_d,q138,choice,D,,D. WebSocket を有効にします。,D,4,,,false
+q138_e,q138,choice,E,,E. カスタム認識機能の JSON ファイルを作成します。,E,5,,,false
+q138_f,q138,choice,F,,F. Orchestrator パッケージをインストールします。,F,6,,,true
+q139_s1,q139,statement,S1,,このコードは顔認識を実行します。,,1,,,false
+q139_s2,q139,statement,S2,,このコードはタグとそれに関連付けられた信頼度を一覧表示します。,,2,,,true
+q139_s3,q139,statement,S3,,このコードはローカルファイルシステムからファイルを読み取ります。,,3,,,true
+q140_a,q140,choice,A,,A. 予測エンドポイント クエリに show-all-intents=true を追加します。,A,1,,,false
+q140_b,q140,choice,B,,B. 音声プライミングを有効にします。,B,2,,,false
+q140_c,q140,choice,C,,C. 予測エンドポイント クエリに log=true を追加します。,C,3,,,true
+q140_d,q140,choice,D,,D. 感情分析を有効にします。,D,4,,,false
