@@ -85,3 +85,44 @@ q034_s1,q034,statement,S1,,解決策: インデックスを追加します。,,1
 q022_s1,q022,statement,S1,,3つの文を異なる声で聞きます。,,1,,,true
 q022_s2,q022,statement,S2,,3つの文を異なるアクセントで聞きます。,,2,,,false
 q022_s3,q022,statement,S3,,3つの文をニュートラルなトーンで表現して聞きます。,,3,,,false
+q011_a,q011,choice,A,,A. 機械学習,A,1,,,true
+q011_b,q011,choice,B,,B. 正規表現,B,2,,,false
+q011_c,q011,choice,C,,C. 地理V2,C,3,,,false
+q011_d,q011,choice,D,,D. パターン.任意,D,4,,,false
+q011_e,q011,choice,E,,E. リスト,E,5,,,false
+q013_blank_1,q013,dropdown_blank,select01,,<select01>,,1,role,,
+q013_blank_2,q013,dropdown_blank,select02,,<select02>,,2,style,,
+q013_opt_1,q013,dropdown_option,opt1,select01,role,role,1,,,
+q013_opt_2,q013,dropdown_option,opt2,select01,style,style,2,,,
+q013_opt_3,q013,dropdown_option,opt3,select01,styledegree,styledegree,3,,,
+q013_opt_4,q013,dropdown_option,opt4,select01,type,type,4,,,
+q013_opt_5,q013,dropdown_option,opt5,select01,voice,voice,5,,,
+q013_opt_6,q013,dropdown_option,opt6,select02,role,role,1,,,
+q013_opt_7,q013,dropdown_option,opt7,select02,style,style,2,,,
+q013_opt_8,q013,dropdown_option,opt8,select02,styledegree,styledegree,3,,,
+q013_opt_9,q013,dropdown_option,opt9,select02,type,type,4,,,
+q013_opt_10,q013,dropdown_option,opt10,select02,voice,voice,5,,,
+q014_s1,q014,statement,S1,,user.name はエンティティです。,,1,,,false
+q014_s2,q014,statement,S2,,ダイアログはユーザー名と年齢を尋ね、user.name プロパティと user.age プロパティに適切な値を割り当てます。,,2,,,true
+q014_s3,q014,statement,S3,,チャットボットは、userName または personName の最初の null 以外のエンティティ値を取得し、その値を user.name に割り当てます。,,3,,,true
+q015_a,q015,choice,A,,A. Application Insights リソースをプロビジョニングします。,A,1,,,false
+q015_b,q015,choice,B,,B. Microsoft Foundry プロジェクトを作成します。,B,2,,,true
+q015_c,q015,choice,C,,C. Agent1 を Microsoft Foundry プロジェクトに追加します。,C,3,,,false
+q015_d,q015,choice,D,,D. Agent1 を Microsoft Foundry プレイグラウンドに追加します。,D,4,,,false
+q016_1,q016,drag_item,1,,新しいクエリキーを追加します。,1,1,,1,
+q016_2,q016,drag_item,2,,セカンダリ管理者キーを再生成します。,2,2,,,
+q016_3,q016,drag_item,3,,セカンダリ管理者キーを使用するようにアプリを変更します。,3,3,,,
+q016_4,q016,drag_item,4,,新しいキーを使用するようにアプリを変更します。,4,4,,2,
+q016_5,q016,drag_item,5,,プライマリ管理者キーを再生成します。,5,5,,,
+q016_6,q016,drag_item,6,,侵害されたキーを削除します。,6,6,,3,
+q019_a,q019,choice,A,,A. toScript=Cyrl,A,1,,,false
+q019_b,q019,choice,B,,B. from=el,B,2,,,false
+q019_c,q019,choice,C,,C. textType=html,C,3,,,true
+q019_d,q019,choice,D,,D. to=el,D,4,,,true
+q019_e,q019,choice,E,,E. textType=plain,E,5,,,false
+q019_f,q019,choice,F,,F. toScript=Latn,F,6,,,true
+q020_1,q020,drag_item,1,,アプリケーションをトレーニングします。,1,1,,3,
+q020_2,q020,drag_item,2,,アプリケーションを公開します。,2,2,,4,
+q020_3,q020,drag_item,3,,新しいアプリケーションを追加します。,3,3,,1,
+q020_4,q020,drag_item,4,,発話例を追加します。,4,4,,,
+q020_5,q020,drag_item,5,,事前に構築されたドメインのToDoを追加します。,5,5,,2,
