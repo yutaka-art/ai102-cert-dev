@@ -354,3 +354,56 @@ q050_b,q050,choice,B,,B. コンピュータビジョンのコンテンツタグ,
 q050_c,q050,choice,C,,C. コンピュータビジョンにおける画像の説明,C,3,,,True
 q050_d,q050,choice,D,,D. コンピュータビジョンにおける画像種別検出,D,4,,,True
 q050_e,q050,choice,E,,E. Custom Vision での画像分類,E,5,,,False
+q051_blank_1,q051,dropdown_blank,select01,,代替テキストを生成:<select01>,,1,"https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description",,
+q051_blank_2,q051,dropdown_blank,select02,,不適切なコンテンツを検出:<select02>,,2,"https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description",,
+q051_opt_1_1,q051,dropdown_option,opt1_1,select01,https://westus.api.cognitive.microsoft.com/cuntentmoderator/moderate/v1.0/ProcessImage/Evaluate,https://westus.api.cognitive.microsoft.com/cuntentmoderator/moderate/v1.0/ProcessImage/Evaluate,1,,,
+q051_opt_1_2,q051,dropdown_option,opt1_2,select01,https://westus.api.cognitive.microsoft.com/customvision/v3.1/prediction/projectId/classify/iterations/publishedName/image,https://westus.api.cognitive.microsoft.com/customvision/v3.1/prediction/projectId/classify/iterations/publishedName/image,2,,,
+q051_opt_1_3,q051,dropdown_option,opt1_3,select01,"https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description","https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description",3,,,
+q051_opt_2_1,q051,dropdown_option,opt2_1,select02,https://westus.api.cognitive.microsoft.com/cuntentmoderator/moderate/v1.0/ProcessImage/Evaluate,https://westus.api.cognitive.microsoft.com/cuntentmoderator/moderate/v1.0/ProcessImage/Evaluate,1,,,
+q051_opt_2_2,q051,dropdown_option,opt2_2,select02,https://westus.api.cognitive.microsoft.com/customvision/v3.1/prediction/projectId/classify/iterations/publishedName/image,https://westus.api.cognitive.microsoft.com/customvision/v3.1/prediction/projectId/classify/iterations/publishedName/image,2,,,
+q051_opt_2_3,q051,dropdown_option,opt2_3,select02,"https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description","https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description",3,,,
+q051_opt_2_4,q051,dropdown_option,opt2_4,select02,https://westus.api.cognitive.microsoft.com/vision/v3.2/descrive?maxCandidates=1,https://westus.api.cognitive.microsoft.com/vision/v3.2/descrive?maxCandidates=1,4,,,
+q052_1,q052,drag_item,1,,新しい質問と回答（QnA）のペアを追加します。,1,1,,,
+q052_2,q052,drag_item,2,,モデルを再トレーニングします。,2,2,,2,
+q052_3,q052,drag_item,3,,ドキュメントに質問を追加します。,3,3,,,
+q052_4,q052,drag_item,4,,モデルを再公開します。,4,4,,3,
+q052_5,q052,drag_item,5,,質問と回答（QnA）のペアに代替の言い回しを追加します。,5,5,,1,
+q053_a,q053,choice,A,,A. Azure AI ビデオ インデクサー,A,1,,,False
+q053_b,q053,choice,B,,B. Azure AI カスタムビジョン,B,2,,,True
+q053_c,q053,choice,C,,C. Azure 機械学習,C,3,,,False
+q053_d,q053,choice,D,,D. Foundry ツールの Azure Vision,D,4,,,False
+q054_blank_1,q054,dropdown_blank,select01,,リレーショナルデータは <select01> に保存されます。,,1,行と列からなる表形式。,,
+q054_opt_1_1,q054,dropdown_option,opt1_1,select01,非構造化データとしてのファイルシステム。,非構造化データとしてのファイルシステム。,1,,,
+q054_opt_1_2,q054,dropdown_option,opt1_2,select01,階層的なフォルダ構造。,階層的なフォルダ構造。,2,,,
+q054_opt_1_3,q054,dropdown_option,opt1_3,select01,行と列からなる表形式。,行と列からなる表形式。,3,,,
+q054_opt_1_4,q054,dropdown_option,opt1_4,select01,カンマ区切り値(CSV)ファイル。,カンマ区切り値(CSV)ファイル。,4,,,
+q055_blank_1,q055,dropdown_blank,select01,,着信言語を検出します:<select01>。,,1,Speech to Text,,
+q055_blank_2,q055,dropdown_blank,select02,,発信者の母国語で応答します:<select02>。,,2,Text to Speech,,
+q055_opt_1_1,q055,dropdown_option,opt1_1,select01,Spealer Recognition,Spealer Recognition,1,,,
+q055_opt_1_2,q055,dropdown_option,opt1_2,select01,Speech to Text,Speech to Text,2,,,
+q055_opt_1_3,q055,dropdown_option,opt1_3,select01,Text Analytics,Text Analytics,3,,,
+q055_opt_1_4,q055,dropdown_option,opt1_4,select01,Text to Speech,Text to Speech,4,,,
+q055_opt_1_5,q055,dropdown_option,opt1_5,select01,Translator,Translator,5,,,
+q055_opt_2_1,q055,dropdown_option,opt2_1,select02,Spealer Recognition,Spealer Recognition,1,,,
+q055_opt_2_2,q055,dropdown_option,opt2_2,select02,Speech to Text,Speech to Text,2,,,
+q055_opt_2_3,q055,dropdown_option,opt2_3,select02,Text Analytics,Text Analytics,3,,,
+q055_opt_2_4,q055,dropdown_option,opt2_4,select02,Text to Speech,Text to Speech,4,,,
+q055_opt_2_5,q055,dropdown_option,opt2_5,select02,Translator,Translator,5,,,
+q056_a,q056,choice,A,,A. コンピュータービジョン画像解析,A,1,,,False
+q056_b,q056,choice,B,,B. コンピュータビジョンの読み取りAPI,B,2,,,True
+q056_c,q056,choice,C,,C. フォーム認識機能,C,3,,,False
+q056_d,q056,choice,D,,D. 言語向け Azure Cognitive Service,D,4,,,False
+q057_s1,q057,statement,S1,,解決策: service1 とプライベート エンドポイントを vnet1 にデプロイします。,,1,,,True
+q058_1,q058,drag_item,1,,text-embedding-ada-002 モデルを使用するデプロイメントを作成します。,1,1,,,
+q058_2,q058,drag_item,2,,デフォルトのシステムメッセージテンプレートを適用します。,2,2,,,
+q058_3,q058,drag_item,3,,GPT-35 Turbo モデルを使用するデプロイメントを作成します。,3,3,,1,
+q058_4,q058,drag_item,4,,Marketing Writing Assistant システムメッセージテンプレートを適用します。,4,4,,2,
+q058_5,q058,drag_item,5,,ソリューションを新しい Web アプリにデプロイします。,5,5,,3,
+q059_blank_1,q059,dropdown_blank,select01,,Azure 上の Microsoft SQL Server の Infrastructure as a Service (IaaS) インスタンスでは、SQL Server をホストする <select01> を管理します。,,1,virtual machine,,
+q059_opt_1_1,q059,dropdown_option,opt1_1,select01,elastic pool,elastic pool,1,,,
+q059_opt_1_2,q059,dropdown_option,opt1_2,select01,MySQL server,MySQL server,2,,,
+q059_opt_1_3,q059,dropdown_option,opt1_3,select01,PostgreSQL server,PostgreSQL server,3,,,
+q059_opt_1_4,q059,dropdown_option,opt1_4,select01,virtual machine,virtual machine,4,,,
+q060_s1,q060,statement,S1,,http://localhost:5000/status にアクセスすると、Azure エンドポイントにクエリが実行され、コンテナーの起動に使用された API キーが有効かどうかが確認されます。,,1,,,False
+q060_s2,q060,statement,S2,,コンテナー ログ プロバイダーがログ データを書き込みます。,,2,,,True
+q060_s3,q060,statement,S3,,http://localhost:5000/swagger にアクセスすると、利用可能なエンドポイントのドキュメントにアクセスするための詳細情報が表示されます。,,3,,,True
