@@ -715,3 +715,60 @@ q120_b,q120,choice,B,,B. TSV,B,2,,,True
 q120_c,q120,choice,C,,C. JSON,C,3,,,False
 q120_d,q120,choice,D,,D. 読み取り,D,4,,,False
 q120_e,q120,choice,E,,E. CSV,E,5,,,False
+q121_drag_1,q121,drag_item,1,,ドキュメントクラッキング,1,1,,1,
+q121_drag_2,q121,drag_item,2,,スキルセット実行,2,2,,3,
+q121_drag_3,q121,drag_item,3,,インデックスへのプッシュ,3,3,,5,
+q121_drag_4,q121,drag_item,4,,出力フィールドマッピング,4,4,,4,
+q121_drag_5,q121,drag_item,5,,フィールドマッピング,5,5,,2,
+q122_a,q122,choice,A,,A. ファイル1とファイル2のみ,A,1,,,True
+q122_b,q122,choice,B,,B. ファイル2、ファイル4、ファイル5のみ,B,2,,,False
+q122_c,q122,choice,C,,C. ファイル1、ファイル2、ファイル4のみ,C,3,,,False
+q122_d,q122,choice,D,,D. ファイル1とファイル5のみ,D,4,,,False
+q122_e,q122,choice,E,,E. ファイル1、ファイル2、ファイル3、ファイル4、ファイル5,E,5,,,False
+q123_a,q123,choice,A,,A. ファイル1.pdf とファイル3.docx のみ,A,1,,,False
+q123_b,q123,choice,B,,B. File1.pdf、File2jpg、File5.png のみ,B,2,,,False
+q123_c,q123,choice,C,,C. File1.pdf、File2.jpg、File3.docxのみ,C,3,,,False
+q123_d,q123,choice,D,,D. File1.pdf、File2.jpg、File3.docx、File5.pngのみ,D,4,,,True
+q123_e,q123,choice,E,,E. ファイル1.pdf、ファイル2.jpg、ファイル3.docx、ファイル4.webp、ファイル5.png,E,5,,,False
+q124_a,q124,choice,A,,A. キーフレーズ抽出,A,1,,,False
+q124_b,q124,choice,B,,B. 光学文字認識（OCR）,B,2,,,True
+q124_c,q124,choice,C,,C. ドキュメント抽出,C,3,,,False
+q124_d,q124,choice,D,,D. 画像解析,D,4,,,False
+q125_a,q125,choice,A,,A. コンポーネント,A,1,,,False
+q125_b,q125,choice,B,,B. ウォーターフォール,B,2,,,True
+q125_c,q125,choice,C,,C. 適応型,C,3,,,False
+q125_d,q125,choice,D,,D. アクション,D,4,,,False
+q126_a,q126,choice,A,,A. 単変量異常検出,A,1,,,False
+q126_b,q126,choice,B,,B. Azure ストリーム分析,B,2,,,False
+q126_c,q126,choice,C,,C. Azure Monitor のメトリック アラート,C,3,,,True
+q126_d,q126,choice,D,,D. 多変量異常検出,D,4,,,False
+q127_blank_1,q127,dropdown_blank,select01,,メッセージをキャプチャするには:<select01>,,1,Speech-to-text,,
+q127_blank_2,q127,dropdown_blank,select02,,メッセージを再生するには:<select02>,,2,Text-to-speech and Translator,,
+q127_opt_1_1,q127,dropdown_option,opt1_1,select01,Speaker Recognition,Speaker Recognition,1,,,
+q127_opt_1_2,q127,dropdown_option,opt1_2,select01,Speech-to-text,Speech-to-text,2,,,
+q127_opt_1_3,q127,dropdown_option,opt1_3,select01,Text-to-speech,Text-to-speech,3,,,
+q127_opt_1_4,q127,dropdown_option,opt1_4,select01,Translator,Translator,4,,,
+q127_opt_2_1,q127,dropdown_option,opt2_1,select02,Speech-to-text only,Speech-to-text only,1,,,
+q127_opt_2_2,q127,dropdown_option,opt2_2,select02,Speech-to-text and Language,Speech-to-text and Language,2,,,
+q127_opt_2_3,q127,dropdown_option,opt2_3,select02,Speaker Recognition and Language,Speaker Recognition and Language,3,,,
+q127_opt_2_4,q127,dropdown_option,opt2_4,select02,Text-to-speech and Language,Text-to-speech and Language,4,,,
+q127_opt_2_5,q127,dropdown_option,opt2_5,select02,Text-to-speech and Translator,Text-to-speech and Translator,5,,,
+q128_blank_1,q128,dropdown_blank,select01,,Project type:<select01>,,1,Object detection,,
+q128_blank_2,q128,dropdown_blank,select02,,Domain:<select02>,,2,General(compact),,
+q128_opt_1_1,q128,dropdown_option,opt1_1,select01,Food,Food,1,,,
+q128_opt_1_2,q128,dropdown_option,opt1_2,select01,General,General,2,,,
+q128_opt_1_3,q128,dropdown_option,opt1_3,select01,General(compact),General(compact),3,,,
+q128_opt_1_4,q128,dropdown_option,opt1_4,select01,Image classification,Image classification,4,,,
+q128_opt_1_5,q128,dropdown_option,opt1_5,select01,Logo,Logo,5,,,
+q128_opt_1_6,q128,dropdown_option,opt1_6,select01,Object detection,Object detection,6,,,
+q128_opt_2_1,q128,dropdown_option,opt2_1,select02,Food,Food,1,,,
+q128_opt_2_2,q128,dropdown_option,opt2_2,select02,General,General,2,,,
+q128_opt_2_3,q128,dropdown_option,opt2_3,select02,General(compact),General(compact),3,,,
+q128_opt_2_4,q128,dropdown_option,opt2_4,select02,Image classification,Image classification,4,,,
+q128_opt_2_5,q128,dropdown_option,opt2_5,select02,Logo,Logo,5,,,
+q128_opt_2_6,q128,dropdown_option,opt2_6,select02,Object detection,Object detection,6,,,
+q129_s1,q129,statement,S1,,解決策: service1 とパブリック エンドポイントを新しい仮想ネットワークにデプロイし、Azure Private Link を構成します。,,1,,,True
+q130_a,q130,choice,A,,A. テキスト分析,A,1,,,True
+q130_b,q130,choice,B,,B. コンテンツモデレーター,B,2,,,False
+q130_c,q130,choice,C,,C. コンピュータービジョン,C,3,,,False
+q130_d,q130,choice,D,,D. フォーム認識機能,D,4,,,False
