@@ -450,3 +450,82 @@ q069,#069,single_choice,性的に露骨な画像の防止,"Azure AI を使用し
 q070,#070,single_choice,Wiki コンテンツ処理の構成,"Azure Cognitive Search を使用してナレッジベースを開発しています。
 技術要件を満たすには、Wiki コンテンツを処理する必要があります。
 ソリューションには何を含めるべきですか?",,1つ選択してください,1,Wiki コンテンツを Cosmos DB から取り込み、ドキュメント抽出と翻訳を含むスキルセットを構成します。,True,{}
+q071,#071,single_choice,Speech Studio への音声サンプルのアップロード,音声サンプルを Speech Studio プロジェクトにアップロードする必要があります。サンプルをどのようにアップロードする必要がありますか？,,1つ選択してください,1,Speech Studio では、.wav 音声と対応する文字起こしを含む .zip を使う構成が適しています。,True,{}
+q072,#072,multi_choice,QnA Maker で URL からナレッジ ベースを作成,"URL の配列からナレッジ ベースを作成する Azure WebJob を構築しています。
+関連する API キーを持つ QnAMakerClient オブジェクトをインスタンス化し、そのオブジェクトを client という名前の変数に割り当てます。
+知識ベースを作成するための方法を開発する必要があります。
+メソッドに含めるべき 2 つのアクションはどれですか。それぞれの正解は解決策の一部を示しています。
+注意: 正しい選択ごとに 1 ポイントが付与されます。",,2つ選択してください,2,CreateKbDTO を組み立てて、Knowledgebase.CreateAsync を呼び出します。,True,{}
+q073,#073,single_choice,AI エンリッチメントの高速なインデックス構築,Azure Cognitive Search の AI エンリッチメント パイプラインを含む Azure サブスクリプションと、スキャンされたドキュメントと画像が 10 GB 保存されている Azure ストレージ アカウントがあります。ストレージ アカウント内のドキュメントと画像にインデックスを作成する必要があります。ソリューションは、インデックス構築にかかる時間を最小限に抑える必要があります。どうすればよいでしょうか？,,1つ選択してください,1,並列インデックスを構成してインデックス作成時間を短縮します。,True,{}
+q074,#074,single_choice,ExtractKeyPhrases の出力,"次の C# 関数があります。
+
+次のコードを使用して関数を呼び出します。
+MyFunction(textAnalyticsClient, ""the quick brown fox jumps over the lazy doc"");
+
+「キーフレーズ」に続いて、どのような出力が得られますか?","static void HyFunction(TextAnalyticsClient textAnalyticsClient, string text)
+{
+  var response = textAnalyticsClient.ExtractKeyPhrases(text);
+  Console.WriteLine(""Key phreses"");
+
+  foreach(string keyphrase in response.Value)
+  {
+    Console.writeLine($""{keyphrase}"")
+  }
+}",1つ選択してください,1,ExtractKeyPhrases は意味のある語句を抽出します。,True,{}
+q075,#075,single_choice,請求書画像からのデータ抽出,"スキャンされた請求書の画像 5,000 枚を含むファイル共有があります。
+画像を分析する必要があります。ソリューションでは以下のデータを抽出する必要があります。
+* 請求書項目
+* 売上金額
+* 顧客の詳細
+何を使うべきでしょうか?",,1つ選択してください,1,請求書のような構造化文書からのフィールド抽出にはフォーム認識機能が適しています。,True,{}
+q076,#076,dropdown,Azure AI Agent Service で Bing グラウンディングを使う,"Azure AI Agent サービスを使用してエージェントを構築しています。
+エージェントが過去 90 日間にリリースされた公開データにアクセスできることを確認する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","var connectionId = ""bingConnectionId"";
+AgentsClient agentCkient = projectClient.GetAgentsClient();
+var connectionList = new ToolConnectionList
+{
+  connectionList = {new ToolConnection(connectionId)}
+};
+
+var grounding = new <select01>(connectionList);
+Response<Agent> agentResponse = await agentClient.CreateAgentAsync(
+  model: ""gpt-4o"",
+  name: ""my-assistant"",
+  instructions: ""You are a helpful assistant.""
+  <select02> new List<ToolDefinition> { grounding});
+  Agent agent = agentResponse.Value;
+)",各ドロップダウンを選択してください,2,BingGroundingToolDefinition を作成し、tools: に渡します。,False,{}
+q077,#077,drag_drop,Anomaly Detector コンテナーを安全に配布,"テスト用ローカル デバイスとオンプレミス データセンターで、コンテナー化されたバージョンの Anomaly Detector API を使用する予定です。
+コンテナ化されたデプロイメントが次の要件を満たしていることを確認する必要があります。
+コンテナを実行するデバイスのコマンドライン履歴に課金情報や API 情報が保存されないようにします。
+Azure ロールベースのアクセス制御 (Azure RBAC) を使用して、コンテナー イメージへのアクセスを制御します。
+どの4つのアクションを順番に実行すべきでしょうか？ 解答するには、アクションリストから適切なアクションを解答エリアに移動し、正しい順序に並べてください。（4つ選択してください。）注：正解の選択肢は複数あります。正解の順序を選択した場合でも、得点は加算されます。",,正しい順に並べてください,4,カスタム Dockerfile とビルド済みイメージを ACR に置き、docker run スクリプトを配布します。,True,"{""mode"": ""sequence"", ""required_items"": 4}"
+q078,#078,multi_choice,CLU モデルに追加する要素,"会話型言語理解モデルを構築しています。
+モデルが次のサンプル発話をサポートすることを確認する必要があります。
+* すべてのライトをオンに設定します。
+* リビングルームの照明を消してください。
+* 現在のサーモスタットの温度は?
+* サーモスタットの温度を 5 度下げます。
+モデルに追加する必要がある 3 つの要素はどれですか?
+各正解は、ソリューションの一部を示しています。注: それぞれの正しい選択は 1 ポイントの価値があります。",,3つ選択してください,3,設定変更と設定問い合わせのインテント、および対象デバイスのエンティティが必要です。,True,{}
+q079,#079,dropdown,Content Safety で憎悪カテゴリを確認,"resource1 という名前の Azure AI Foundry Content Safety リソースを含む Azure サブスクリプションがあります。
+resource1 を使用してテキストを分析するアプリを構築しています。
+憎悪的な内容を含むテキストを識別する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","client = ContentSafetyClient(endpoint, AzureKeyCredential(key))
+request = AnalyzeTextOptions(text=""Some animals are more equal than others"")
+# Analyze text
+try:
+  reposonse = client.analyze_text(request)
+except Htt[ResponseError as e:
+  print(""Analyze text failed."")
+  raise
+hate_result = next(ite, for item in response.<select01> if item.category == TextCategory.HATE)
+if hate_result:
+  print(f""Hate severity: <select02>"")",各ドロップダウンを選択してください,2,categories_analysis から HATE カテゴリを取り出し、severity を表示します。,False,{}
+q080,#080,single_choice,休暇申請アプリに適したダイアログ,"休暇申請を行うためのアプリの会話型インターフェースを設計しています。このインターフェースでは、以下のデータを収集する必要があります。
+* 休暇の開始日
+* 休暇の終了日
+* 必要な有給休暇の量
+ソリューションではダイアログの複雑さを最小限に抑える必要があります。どのような種類のダイアログを使用すべきでしょうか？",,1つ選択してください,1,順番に必要項目を聞いていく単純な入力収集には Waterfall ダイアログが適しています。,True,{}
