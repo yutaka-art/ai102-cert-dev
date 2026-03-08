@@ -16,9 +16,10 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 /**
- * CSV から問題データを読み込み、全問をシャッフルして返す composable
+ * CSV から問題データを読み込む composable
+ * @param mode 'sequential' で question_no 順、'shuffle' でランダム順
  */
-export function useQuizData() {
+export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
   const quizQuestions = ref<QuestionWithItems[]>([])
   const loading = ref(true)
   const error = ref<string | null>(null)
@@ -100,8 +101,15 @@ export function useQuizData() {
         }
       })
 
-      // 全問をシャッフルして出題
-      quizQuestions.value = shuffleArray(allQuestions)
+      // モードに応じて順序を決定
+      if (mode === 'shuffle') {
+        quizQuestions.value = shuffleArray(allQuestions)
+      } else {
+        // question_no でソート（例: #001, #002, ...）
+        quizQuestions.value = allQuestions.sort((a, b) =>
+          a.question.question_no.localeCompare(b.question.question_no)
+        )
+      }
     } catch (e) {
       error.value = e instanceof Error ? e.message : 'データ読み込みに失敗しました'
     } finally {

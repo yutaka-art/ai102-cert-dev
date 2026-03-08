@@ -22,6 +22,16 @@
         <div class="progress-text">{{ currentIndex + 1 }} / {{ totalQuestions }}</div>
       </div>
 
+      <!-- 問題ナビゲーション -->
+      <div class="question-nav">
+        <button class="nav-btn" :disabled="currentIndex === 0" @click="goToPrev">
+          ← 前へ
+        </button>
+        <button class="nav-btn" :disabled="currentIndex >= totalQuestions - 1" @click="goToNext">
+          次へ →
+        </button>
+      </div>
+
       <!-- 問題ヘッダー -->
       <div class="question-header">
         <span class="question-no">{{ currentData.question.question_no }}</span>
@@ -105,15 +115,24 @@
             <div class="explanation-label">解説:</div>
             <div class="explanation-text" v-html="formattedExplanation"></div>
           </div>
-          <button class="next-btn" @click="nextQuestion">
-            {{ isLastQuestion ? '結果を見る' : '次の問題へ →' }}
+        </div>
+        <!-- ナビゲーション + 結果ボタン -->
+        <div class="bottom-nav">
+          <button class="nav-btn" :disabled="currentIndex === 0" @click="goToPrev">
+            ← 前へ
+          </button>
+          <button class="view-results-btn" @click="viewResults">
+            結果を見る
+          </button>
+          <button class="nav-btn" :disabled="currentIndex >= totalQuestions - 1" @click="goToNext">
+            次へ →
           </button>
         </div>
       </div>
     </div>
 
     <!-- 結果画面 -->
-    <div v-else class="result-screen">
+    <div v-else-if="showResults" class="result-screen">
       <h2 class="result-title">クイズ結果</h2>
       <div class="result-score">
         <div class="score-circle" :class="scoreClass">
@@ -122,6 +141,7 @@
           <span class="score-total">{{ totalQuestions }}</span>
         </div>
         <div class="score-rate">正答率: {{ correctRate }}%</div>
+        <div class="score-detail">回答済み: {{ answeredCount }} / {{ totalQuestions }} 問（未回答は不正解扱い）</div>
       </div>
       <div class="result-details">
         <div
@@ -143,7 +163,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useQuizData } from '@/composables/useQuizData'
 import { useAnswerChecker } from '@/composables/useAnswerChecker'
 import { questionTypeLabels } from '@/types/quiz'
@@ -162,6 +183,13 @@ interface QuestionResult {
   correct: boolean
 }
 
+/** 各問題の回答状態 */
+interface AnswerState {
+  answered: boolean
+  isCorrect: boolean
+  userAnswer: UserAnswer
+}
+
 export default defineComponent({
   name: 'QuestionQuiz',
   components: {
@@ -173,19 +201,47 @@ export default defineComponent({
     MultiYesNo,
   },
   setup() {
-    const { quizQuestions, loading, error, reload } = useQuizData()
+    const route = useRoute()
+    const quizMode = (route.query.mode as string) === 'sequential' ? 'sequential' : 'shuffle'
+    const { quizQuestions, loading, error, reload } = useQuizData(quizMode)
     const { checkAnswer, getCorrectAnswerText } = useAnswerChecker()
 
     const currentIndex = ref(0)
-    const answered = ref(false)
-    const isCorrect = ref(false)
-    const correctCount = ref(0)
+    const showResults = ref(false)
     const currentAnswer = ref<UserAnswer>({})
-    const questionResults = ref<QuestionResult[]>([])
+
+    // 全問の回答状態を保持する配列
+    const answerStates = ref<AnswerState[]>([])
+
+    // quizQuestions がロードされたら answerStates を初期化
+    watch(
+      () => quizQuestions.value.length,
+      (len) => {
+        if (len > 0 && answerStates.value.length === 0) {
+          answerStates.value = Array.from({ length: len }, () => ({
+            answered: false,
+            isCorrect: false,
+            userAnswer: {},
+          }))
+        }
+      },
+      { immediate: true }
+    )
+
+    // 現在の問題の回答状態
+    const currentState = computed<AnswerState | null>(() => {
+      if (currentIndex.value < answerStates.value.length) {
+        return answerStates.value[currentIndex.value]
+      }
+      return null
+    })
+
+    const answered = computed(() => currentState.value?.answered ?? false)
+    const isCorrect = computed(() => currentState.value?.isCorrect ?? false)
 
     // 現在の問題データ
     const currentData = computed<QuestionWithItems | null>(() => {
-      if (currentIndex.value < quizQuestions.value.length) {
+      if (!showResults.value && currentIndex.value < quizQuestions.value.length) {
         return quizQuestions.value[currentIndex.value]
       }
       return null
@@ -193,11 +249,6 @@ export default defineComponent({
 
     // 総問題数
     const totalQuestions = computed(() => quizQuestions.value.length)
-
-    // 最後の問題かどうか
-    const isLastQuestion = computed(
-      () => currentIndex.value === totalQuestions.value - 1
-    )
 
     // プログレスバーの割合
     const progressPercent = computed(() => {
@@ -217,12 +268,11 @@ export default defineComponent({
       return currentData.value.items.filter((i) => i.item_type === 'choice')
     })
 
-    // 問題本文のフォーマット（改行→<br>、ただしdropdownは子コンポーネント側で行う）
+    // 問題本文のフォーマット
     const formattedBody = computed(() => {
       if (!currentData.value) return ''
       const body = currentData.value.question.body
       if (currentData.value.question.type === 'dropdown') {
-        // dropdown は body をそのまま子コンポーネントに渡すので、ここでは簡略表示
         return '<p style="color: #aaa;">以下のコードの空欄に適切な選択肢を選んでください。</p>'
       }
       return body.replace(/\n/g, '<br>')
@@ -251,6 +301,12 @@ export default defineComponent({
       return false
     })
 
+    // 回答済み数
+    const answeredCount = computed(() => answerStates.value.filter((s) => s.answered).length)
+
+    // 正答数（結果画面用 - 未回答は不正解）
+    const correctCount = computed(() => answerStates.value.filter((s) => s.isCorrect).length)
+
     // 正答率
     const correctRate = computed(() => {
       if (totalQuestions.value === 0) return 0
@@ -265,6 +321,16 @@ export default defineComponent({
       return 'score-needs-work'
     })
 
+    // 結果一覧（未回答は不正解扱い）
+    const questionResults = computed<QuestionResult[]>(() => {
+      return quizQuestions.value.map((qd, idx) => ({
+        questionNo: qd.question.question_no,
+        typeLabel: questionTypeLabels[qd.question.type] || qd.question.type,
+        title: qd.question.title,
+        correct: answerStates.value[idx]?.isCorrect ?? false,
+      }))
+    })
+
     // 子コンポーネントからの回答更新
     const onAnswerUpdate = (answer: UserAnswer) => {
       currentAnswer.value = answer
@@ -273,37 +339,41 @@ export default defineComponent({
     // 回答確定
     const submitAnswer = () => {
       if (!currentData.value) return
-      answered.value = true
-      isCorrect.value = checkAnswer(currentData.value, currentAnswer.value)
-      if (isCorrect.value) correctCount.value++
-
-      // 結果記録
-      questionResults.value.push({
-        questionNo: currentData.value.question.question_no,
-        typeLabel:
-          questionTypeLabels[currentData.value.question.type] ||
-          currentData.value.question.type,
-        title: currentData.value.question.title,
-        correct: isCorrect.value,
-      })
+      const result = checkAnswer(currentData.value, currentAnswer.value)
+      answerStates.value[currentIndex.value] = {
+        answered: true,
+        isCorrect: result,
+        userAnswer: { ...currentAnswer.value },
+      }
     }
 
-    // 次の問題
-    const nextQuestion = () => {
-      currentIndex.value++
-      answered.value = false
-      isCorrect.value = false
-      currentAnswer.value = {}
+    // 問題間を移動する共通処理
+    const navigateTo = (idx: number) => {
+      if (idx < 0 || idx >= totalQuestions.value) return
+      currentIndex.value = idx
+      // 移動先の保存済み回答を復元
+      const state = answerStates.value[idx]
+      if (state && state.answered) {
+        currentAnswer.value = { ...state.userAnswer }
+      } else {
+        currentAnswer.value = {}
+      }
+    }
+
+    const goToPrev = () => navigateTo(currentIndex.value - 1)
+    const goToNext = () => navigateTo(currentIndex.value + 1)
+
+    // 結果画面へ
+    const viewResults = () => {
+      showResults.value = true
     }
 
     // やり直す
     const restartQuiz = () => {
       currentIndex.value = 0
-      answered.value = false
-      isCorrect.value = false
-      correctCount.value = 0
+      showResults.value = false
       currentAnswer.value = {}
-      questionResults.value = []
+      answerStates.value = []
       reload()
     }
 
@@ -312,14 +382,15 @@ export default defineComponent({
       loading,
       error,
       currentIndex,
+      showResults,
       answered,
       isCorrect,
       correctCount,
       questionResults,
+      answeredCount,
       // computed
       currentData,
       totalQuestions,
-      isLastQuestion,
       progressPercent,
       questionTypeLabel,
       choiceItems,
@@ -333,7 +404,9 @@ export default defineComponent({
       reload,
       onAnswerUpdate,
       submitAnswer,
-      nextQuestion,
+      goToPrev,
+      goToNext,
+      viewResults,
       restartQuiz,
     }
   },
@@ -557,6 +630,55 @@ export default defineComponent({
   background: #38a876;
 }
 
+/* 問題ナビゲーション */
+.question-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.nav-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(65, 209, 255, 0.1);
+  color: #41d1ff;
+  border: 1px solid rgba(65, 209, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.nav-btn:hover:not(:disabled) {
+  background: rgba(65, 209, 255, 0.2);
+}
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* 下部ナビゲーション */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+.view-results-btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.view-results-btn:hover {
+  background: rgba(255, 193, 7, 0.25);
+}
+
 /* 結果画面 */
 .result-screen {
   text-align: center;
@@ -607,6 +729,11 @@ export default defineComponent({
 .score-rate {
   font-size: 1.1rem;
   color: #888;
+}
+.score-detail {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.3rem;
 }
 
 /* 結果詳細 */

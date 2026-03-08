@@ -4,7 +4,10 @@
     <h1 class="opening-title">AI-102 試験対策</h1>
     <h2 class="opening-sub">―</h2>
     <div class="opening-date">2026/3/8</div>
-    <router-link to="/quiz" class="start-btn">クイズを始める</router-link>
+    <div class="mode-selection">
+      <router-link to="/quiz?mode=sequential" class="start-btn mode-btn">順番通りに出題</router-link>
+      <router-link to="/quiz?mode=shuffle" class="start-btn mode-btn shuffle-btn">シャッフルで出題</router-link>
+    </div>
   </div>
 </template>
 
@@ -53,6 +56,13 @@ import viteLogo from '/vite.svg'
   letter-spacing: 0.08em;
   margin-bottom: 1.5rem;
 }
+.mode-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 320px;
+}
 .start-btn {
   display: inline-block;
   background: #41d1ff;
@@ -64,9 +74,18 @@ import viteLogo from '/vite.svg'
   text-decoration: none;
   box-shadow: 0 2px 8px #41d1ff33;
   transition: background 0.2s, color 0.2s;
+  text-align: center;
 }
 .start-btn:hover {
   background: #232526;
   color: #41d1ff;
+}
+.shuffle-btn {
+  background: #42b883;
+  box-shadow: 0 2px 8px #42b88333;
+}
+.shuffle-btn:hover {
+  background: #232526;
+  color: #42b883;
 }
 </style>
