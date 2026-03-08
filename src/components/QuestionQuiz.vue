@@ -48,7 +48,7 @@
       </div>
 
       <!-- タイプ別コンポーネント -->
-      <div class="answer-section">
+      <div class="answer-section" :key="currentData.question.id">
         <SingleChoice
           v-if="currentData.question.type === 'single_choice'"
           :items="choiceItems"
