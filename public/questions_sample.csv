@@ -719,3 +719,70 @@ q110,#110,dropdown,Translator SDK のテキスト翻訳コード,"Azure Al Trans
   string sourceLanguage = translation?.DetectedLanguage?.Language;
   Console.WriteLine($""'{input}' translated from {sourceLanguage} to {translation?.Translations[0].To} as <select02>"")
 }",各ドロップダウンを選択してください,2,"TranslateAsync(targetLanguage, input) を呼び、翻訳結果の Text を出力します。",False,{}
+q111,#111,multi_yesno,医療データ分析レスポンスの評価,"Azure AI Document Intelligence を使用して患者の医療データを分析する App1 というアプリがあります。App1 にリクエストを送信すると、次のレスポンスが返されます。
+
+選択されたモデルは、意図したユースケースに適しています。
+テキストコンテンツは70%以上の信頼度で認識されました。
+フォーム要素は70%以上の信頼度で認識されました。","{
+  ""status"": ""succeeded"",
+  ""createdDateTime"": ""2023-09-14T21:01:02Z"",
+  ""lastUpdatedDateTime"": ""2023-09-14T21:01:03Z"",
+  ""analyzeResult"": {
+    ""apiVersion"": ""2023-07-31"",
+    ""modelId"": ""prebuilt-healthInsuranceCard.us"",
+    ""stringIndexType"": ""utf16CodeUnit"",
+    ""content"": ""Blood Pressure 118/72"",
+    ""pages"": [
+      {
+      ...
+      ""words"": [
+      
+      ]
+      }
+    ]
+    """": """",
+    """": """",
+
+  }
+  """": """",
+}",各文について Yes / No を選択してください,3,レスポンスは healthInsuranceCard モデルですが、内容は血圧のテキストで、フォーム要素の信頼度も示されていません。,False,{}
+q112,#112,dropdown,ワークロード種類とシナリオの対応付け,"ワークロードの種類を適切なシナリオに一致させます。
+回答するには、左側の列から適切なワークロードタイプを右側のシナリオにドラッグしてください。各ワークロードタイプは、1回、複数回、またはまったく使用されない場合があります。
+注意: 正解ごとに 1 ポイントが加算されます。
+
+<select01>:製品カタログのデータは12時間ごとにデータウェアハウスにロードされます。
+<select02>:オンライン購入に関するデータセットは毎秒数千個がリアルタイムでデータウェアハウスにロードされます。
+<select03>:在庫データの更新は100万件のトランザクションごとにデータウェアハウスにロードされます。",,各シナリオに対応するワークロードタイプを選択してください,3,12時間ごとのロードは Batch、リアルタイム投入は Streaming、100万件単位の更新は Batch です。,False,"{""placeholders"": [""select01"", ""select02"", ""select03""]}"
+q113,#113,multi_yesno,Azure AI Vision 画像分析コードの評価,"Azure Al Vision クライアントライブラリを使用するアプリケーションを開発しています。アプリケーションのコードは次のとおりです。
+
+以下の各文について、正しい場合は「はい」を選択してください。そうでない場合は「いいえ」を選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","def analyze_image(local_image):
+  with open(local_image, ""rb"") as image_stream:
+  image_analysis = Client.Analyze_image_in_stream(
+    image=image_stream,
+    visual_features=[
+      VisualFeatureTypes.tags,
+      VisualFeatureTypes.description
+    ]
+  )
+  for caption in image_analysis.description.captions:
+    print(f""
+{caption.text} with confidence {caption.confidence}"")
+  for tag in image_analysis.tags:
+    print(f""
+{tag.name} with confidence {tag.confidence}"")",各文について Yes / No を選択してください,3,指定されているのは tags と description なので、顔認識は行わず、ローカルファイルを読み込んでタグと信頼度を出力します。,False,{}
+q114,#114,single_choice,Agent Service にアップロードできる最大ファイルサイズ,"ユーザーがアップロードした複数のファイルを結合して処理するエージェントを構築する予定です。
+エージェントを開発するために Azure Al Agent サービスを使用するかどうかを評価しています。
+サービスにアップロードできるファイルの最大サイズはどれくらいですか?",,1つ選択してください,1,ユーザー指定の回答をそのまま反映しています。,True,{}
+q115,#115,single_choice,データベーストランザクションの保持に関するプロパティ,予期しないオペレーティングシステムの再起動時にデータベースへのトランザクションの変更が保持されることを保証するデータベーストランザクションプロパティはどれですか？,,1つ選択してください,1,ユーザー指定の正解をそのまま反映しています。,True,{}
+q116,#116,single_choice,非リレーショナルなファイル格納向けデータストア,テキストファイル、ビデオ、オーディオストリーム、および仮想ディスクイメージの保存と取得に最適化された非リレーショナルデータストアを推奨する必要があります。データストアには、データ、一部のメタデータ、および各ファイルの一意のIDを保存する必要があります。どのタイプのデータストアをお勧めしますか？,,1つ選択してください,1,大きなバイナリやファイル指向データにはオブジェクト ストアが適しています。,True,{}
+q117,#117,drag_drop,質問応答プロジェクトのリージョン移行手順,"Azure Cognitive Service for Language に質問回答プロジェクトがあります。
+プロジェクトを別の Azure リージョンの言語サービス インスタンスに移動する必要があります。
+順番に実行する必要がある 3 つのアクションはどれですか。回答するには、適切なアクションをアクション リストから回答領域に移動し、正しい順序に並べます。",,正しい順に並べてください,3,元環境でエクスポートし、新環境でインポートした後にトレーニングして公開します。,True,"{""mode"": ""sequence"", ""required_items"": 3}"
+q118,#118,single_choice,Azure OpenAI にカスタムデータソースを追加できる最小権限ロール,"AI1 という名前の Azure OpenAI リソースと User1 という名前のユーザーを含む Azure サブスクリプションがあります。
+User1 が AI1 にカスタムデータソースを追加できるようにする必要があります。このソリューションは、最小権限の原則に従う必要があります。
+User1 に割り当てるべきロールはどれですか?",,1つ選択してください,1,ユーザー指定の正解をそのまま反映しています。,True,{}
+q119,#119,single_choice,DML の例,データ操作言語（DML）の例はどれですか？,,1つ選択してください,1,UPDATE は DML に分類されます。,True,{}
+q120,#120,multi_choice,Custom Question Answering にインポートできるファイル形式,"QA1 という名前の Azure Al Language カスタム質問応答プロジェクトが含まれる Azure サブスクリプションがあります。
+質問と回答のペアを QA1 にインポートする必要があります。
+どの 2 つのファイル形式を使用できますか? それぞれの正解は完全なソリューションを示します。注: 正解の選択ごとに 1 ポイントが与えられます。",,2つ選択してください,2,ユーザー指定の正解をそのまま反映しています。,True,{}

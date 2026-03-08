@@ -669,3 +669,49 @@ q110_opt_2_1,q110,dropdown_option,opt2_1,select02,translations.Value'.,translati
 q110_opt_2_2,q110,dropdown_option,opt2_2,select02,translations[0].text.,translations[0].text.,2,,,
 q110_opt_2_3,q110,dropdown_option,opt2_3,select02,{Translations.Text}.,{Translations.Text}.,3,,,
 q110_opt_2_4,q110,dropdown_option,opt2_4,select02,"{translation?.Translations?[0]?.Text}.""","{translation?.Translations?[0]?.Text}.""",4,,,
+q111_s1,q111,statement,S1,,選択されたモデルは、意図したユースケースに適しています。,,1,,,False
+q111_s2,q111,statement,S2,,テキストコンテンツは70%以上の信頼度で認識されました。,,2,,,True
+q111_s3,q111,statement,S3,,フォーム要素は70%以上の信頼度で認識されました。,,3,,,False
+q112_b1,q112,dropdown_blank,select01,,<select01>,,1,Batch,,
+q112_b2,q112,dropdown_blank,select02,,<select02>,,2,Streaming,,
+q112_b3,q112,dropdown_blank,select03,,<select03>,,3,Batch,,
+q112_o1,q112,dropdown_option,opt1,select01,Batch,Batch,1,,,
+q112_o2,q112,dropdown_option,opt2,select01,Streaming,Streaming,2,,,
+q112_o3,q112,dropdown_option,opt3,select02,Batch,Batch,1,,,
+q112_o4,q112,dropdown_option,opt4,select02,Streaming,Streaming,2,,,
+q112_o5,q112,dropdown_option,opt5,select03,Batch,Batch,1,,,
+q112_o6,q112,dropdown_option,opt6,select03,Streaming,Streaming,2,,,
+q113_s1,q113,statement,S1,,このコードは顔認識を実行します。,,1,,,False
+q113_s2,q113,statement,S2,,このコードはタグとそれに関連付けられた信頼度をリストします。,,2,,,True
+q113_s3,q113,statement,S3,,このコードはローカルファイルシステムから画像ファイルを読み取ります。,,3,,,True
+q114_a,q114,choice,A,,A. 1 GB,A,1,,,False
+q114_b,q114,choice,B,,B. 10GB,B,2,,,False
+q114_c,q114,choice,C,,C. 100GB,C,3,,,True
+q114_d,q114,choice,D,,D. 1TB,D,4,,,False
+q115_a,q115,choice,A,,A.耐久性,A,1,,,False
+q115_b,q115,choice,B,,B.原子論,B,2,,,False
+q115_c,q115,choice,C,,C.一貫性,C,3,,,False
+q115_d,q115,choice,D,,D.分離,D,4,,,True
+q116_a,q116,choice,A,,A.円柱状,A,1,,,False
+q116_b,q116,choice,B,,B. キー/値,B,2,,,False
+q116_c,q116,choice,C,,C. ドキュメント,C,3,,,False
+q116_d,q116,choice,D,,D. オブジェクト,D,4,,,True
+q117_drag_1,q117,drag_item,1,,新しい言語サービスインスタンスから、プロジェクトファイルをインポートします。,1,1,,2,
+q117_drag_2,q117,drag_item,2,,新しい言語サービスインスタンスから、カスタムテキスト分類を有効にします。,2,2,,,
+q117_drag_3,q117,drag_item,3,,新しい言語サービスインスタンスから、プロジェクトをトレーニングして公開します。,3,3,,3,
+q117_drag_4,q117,drag_item,4,,元の言語サービスインスタンスから、既存のプロジェクトをエクスポートします。,4,4,,1,
+q117_drag_5,q117,drag_item,5,,新しい言語サービスインスタンスから、キーを再生成します。,5,5,,,
+q117_drag_6,q117,drag_item,6,,元の言語サービスインスタンスから、モデルをトレーニングして公開します。,6,6,,,
+q118_a,q118,choice,A,,A. 検索サービス貢献者,A,1,,,False
+q118_b,q118,choice,B,,B. Cognitive Services OpenAI 貢献者,B,2,,,True
+q118_c,q118,choice,C,,C. Cognitive Services コントリビューター,C,3,,,False
+q118_d,q118,choice,D,,D. 検索インデックス データ コントリビューター,D,4,,,False
+q119_a,q119,choice,A,,A. 取り消す,A,1,,,False
+q119_b,q119,choice,B,,B.更新,B,2,,,True
+q119_c,q119,choice,C,,C. ドロップ,C,3,,,False
+q119_d,q119,choice,D,,D. 作成,D,4,,,False
+q120_a,q120,choice,A,,A. エクセル,A,1,,,True
+q120_b,q120,choice,B,,B. TSV,B,2,,,True
+q120_c,q120,choice,C,,C. JSON,C,3,,,False
+q120_d,q120,choice,D,,D. 読み取り,D,4,,,False
+q120_e,q120,choice,E,,E. CSV,E,5,,,False
