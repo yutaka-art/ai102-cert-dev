@@ -5,7 +5,6 @@ import type {
   QuestionItem,
   QuestionWithItems,
   QuestionMetadata,
-  QuestionType,
 } from '@/types/quiz'
 
 /** 配列をシャッフルして新しい配列を返す */
@@ -16,18 +15,8 @@ function shuffleArray<T>(array: T[]): T[] {
     .map(({ value }) => value)
 }
 
-/** 6種別すべて */
-const ALL_TYPES: QuestionType[] = [
-  'single_choice',
-  'multi_choice',
-  'drag_drop',
-  'dropdown',
-  'single_yesno',
-  'multi_yesno',
-]
-
 /**
- * CSV から問題データを読み込み、各種別1問ずつランダム抽出して返す composable
+ * CSV から問題データを読み込み、全問をシャッフルして返す composable
  */
 export function useQuizData() {
   const quizQuestions = ref<QuestionWithItems[]>([])
@@ -111,17 +100,8 @@ export function useQuizData() {
         }
       })
 
-      // 各種別から1問ずつランダム抽出
-      const selected: QuestionWithItems[] = []
-      for (const type of ALL_TYPES) {
-        const candidates = allQuestions.filter((q) => q.question.type === type)
-        if (candidates.length > 0) {
-          const shuffled = shuffleArray(candidates)
-          selected.push(shuffled[0])
-        }
-      }
-
-      quizQuestions.value = selected
+      // 全問をシャッフルして出題
+      quizQuestions.value = shuffleArray(allQuestions)
     } catch (e) {
       error.value = e instanceof Error ? e.message : 'データ読み込みに失敗しました'
     } finally {

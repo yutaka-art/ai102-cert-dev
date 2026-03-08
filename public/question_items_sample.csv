@@ -1,4 +1,8 @@
 ﻿id,question_id,item_type,item_key,parent_key,label,value,sort_order,correct_value,correct_order,is_correct
+q009_a,q009,choice,A,,A. 私たちのロンドンツアーにはバッキンガム宮殿の訪問も含まれていました,A,1,,,false
+q009_b,q009,choice,B,,B. ロンドンとツアーのみ,B,2,,,false
+q009_c,q009,choice,C,,C. ツアーと訪問のみ,C,3,,,false
+q009_d,q009,choice,D,,D. ロンドンとバッキンガム宮殿のみ,D,4,,,true
 q001_a,q001,choice,A,,A. オートコンプリート エンドポイントに API クエリを実行し、本文に suggesterName を含めます。,A,1,,,true
 q001_b,q001,choice,B,,B. 3 つの製品名フィールドをソース フィールドとして持つサジェスターを追加します。,B,2,,,true
 q001_c,q001,choice,C,,C. 検索エンドポイントに API クエリを実行し、searchFields クエリ パラメータに製品名フィールドを含めます。,C,3,,,false
@@ -13,25 +17,71 @@ q002_5,q002,drag_item,5,,トランスクリプトを発話として Language Und
 q002_6,q002,drag_item,6,,Video Indexer API からトランスクリプトを抽出します。,6,6,,3,
 q002_7,q002,drag_item,7,,Translator API を使用してトランスクリプトを翻訳します。,7,7,,4,
 q002_8,q002,drag_item,8,,ビデオをファイル ストレージにアップロードします。,8,8,,,
-q004_b1,q004,dropdown_blank,select01,,<select01>,,1,stream,,
-q004_b2,q004,dropdown_blank,select02,,<select02>,,2,VisualFeatureTypes.Description,,
-q004_b3,q004,dropdown_blank,select03,,<select03>,,3,var c = results.Description.Captions[0],,
-q004_o1,q004,dropdown_option,opt1,select01,Dictonary,Dictonary,1,,,
-q004_o2,q004,dropdown_option,opt2,select01,stream,stream,2,,,
-q004_o3,q004,dropdown_option,opt3,select01,string,string,3,,,
-q004_o4,q004,dropdown_option,opt4,select02,VisualFeatureTypes.Description,VisualFeatureTypes.Description,1,,,
-q004_o5,q004,dropdown_option,opt5,select02,VisualFeatureTypes.ImageType,VisualFeatureTypes.ImageType,2,,,
-q004_o6,q004,dropdown_option,opt6,select02,VisualFeatureTypes.Objects,VisualFeatureTypes.Objects,3,,,
-q004_o7,q004,dropdown_option,opt7,select02,VisualFeatureTypes.Tags,VisualFeatureTypes.Tags,4,,,
-q004_o8,q004,dropdown_option,opt8,select03,var c = results.Brands.DetectedBrands[0],var c = results.Brands.DetectedBrands[0],1,,,
-q004_o9,q004,dropdown_option,opt9,select03,var c = results.Description.Captions[0],var c = results.Description.Captions[0],2,,,
-q004_o10,q004,dropdown_option,opt10,select03,var c = results.Metadata[0],var c = results.Metadata[0],3,,,
-q004_o11,q004,dropdown_option,opt11,select03,var c = results.Objects[0],var c = results.Objects[0],4,,,
-q009_a,q009,choice,A,,A. 私たちのロンドンツアーにはバッキンガム宮殿の訪問も含まれていました,A,1,,,false
-q009_b,q009,choice,B,,B. ロンドンとツアーのみ,B,2,,,false
-q009_c,q009,choice,C,,C. ツアーと訪問のみ,C,3,,,false
-q009_d,q009,choice,D,,D. ロンドンとバッキンガム宮殿のみ,D,4,,,true
-q022_s1,q022,statement,S1,,3つの文を異なる声で聞きます。,S1,1,,,true
-q022_s2,q022,statement,S2,,3つの文を異なるアクセントで聞きます。,S2,2,,,false
-q022_s3,q022,statement,S3,,3つの文をニュートラルなトーンで表現して聞きます。,S3,3,,,false
-q034_s1,q034,statement,S1,,インデックスを追加します。これは目標を満たしていますか?,S1,1,,,false
+q004_blank_1,q004,dropdown_blank,select01,,<select01>,,1,stream,,
+q004_blank_2,q004,dropdown_blank,select02,,<select02>,,2,VisualFeatureTypes.Description,,
+q004_blank_3,q004,dropdown_blank,select03,,<select03>,,3,var c = results.Description.Captions[0],,
+q004_opt_1,q004,dropdown_option,opt1,select01,Dictonary,Dictonary,1,,,
+q004_opt_2,q004,dropdown_option,opt2,select01,stream,stream,2,,,
+q004_opt_3,q004,dropdown_option,opt3,select01,string,string,3,,,
+q004_opt_4,q004,dropdown_option,opt4,select02,VisualFeatureTypes.Description,VisualFeatureTypes.Description,1,,,
+q004_opt_5,q004,dropdown_option,opt5,select02,VisualFeatureTypes.ImageType,VisualFeatureTypes.ImageType,2,,,
+q004_opt_6,q004,dropdown_option,opt6,select02,VisualFeatureTypes.Objects,VisualFeatureTypes.Objects,3,,,
+q004_opt_7,q004,dropdown_option,opt7,select02,VisualFeatureTypes.Tags,VisualFeatureTypes.Tags,4,,,
+q004_opt_8,q004,dropdown_option,opt8,select03,var c = results.Brands.DetectedBrands[0],var c = results.Brands.DetectedBrands[0],1,,,
+q004_opt_9,q004,dropdown_option,opt9,select03,var c = results.Description.Captions[0],var c = results.Description.Captions[0],2,,,
+q004_opt_10,q004,dropdown_option,opt10,select03,var c = results.Metadata[0],var c = results.Metadata[0],3,,,
+q004_opt_11,q004,dropdown_option,opt11,select03,var c = results.Objects[0],var c = results.Objects[0],4,,,
+q005_blank_1,q005,dropdown_blank,select01,,<select01>,,1,name[language],,
+q005_blank_2,q005,dropdown_blank,select02,,<select02>,,2,"""$when"": ""${stockLevel != 'OK'}""",,
+q005_blank_3,q005,dropdown_blank,select03,,<select03>,,3,image.altText[language],,
+q005_opt_1,q005,dropdown_option,opt1,select01,"if(language == 'en', 'en', name)","if(language == 'en', 'en', name)",1,,,
+q005_opt_2,q005,dropdown_option,opt2,select01,name,name,2,,,
+q005_opt_3,q005,dropdown_option,opt3,select01,name.en,name.en,3,,,
+q005_opt_4,q005,dropdown_option,opt4,select01,name[language],name[language],4,,,
+q005_opt_5,q005,dropdown_option,opt5,select02,"""$when"": ""${stockLevel != 'OK'}""","""$when"": ""${stockLevel != 'OK'}""",1,,,
+q005_opt_6,q005,dropdown_option,opt6,select02,"""$when"": ""${stockLevel == 'OK'}""","""$when"": ""${stockLevel == 'OK'}""",2,,,
+q005_opt_7,q005,dropdown_option,opt7,select02,"""$when"": ""$stockLevel.OK""","""$when"": ""$stockLevel.OK""",3,,,
+q005_opt_8,q005,dropdown_option,opt8,select03,image.altText.en,image.altText.en,1,,,
+q005_opt_9,q005,dropdown_option,opt9,select03,image.altText.language,image.altText.language,2,,,
+q005_opt_10,q005,dropdown_option,opt10,select03,"image.altText[""language""]","image.altText[""language""]",3,,,
+q005_opt_11,q005,dropdown_option,opt11,select03,image.altText[language],image.altText[language],4,,,
+q006_blank_1,q006,dropdown_blank,select01,,<select01>,,1,api-nam.cognitive.microsfttranslator.com,,
+q006_blank_2,q006,dropdown_blank,select02,,<select02>,,2,/translate,,
+q006_opt_1,q006,dropdown_option,opt1,select01,api.cognitive.microsofttranslator.com,api.cognitive.microsofttranslator.com,1,,,
+q006_opt_2,q006,dropdown_option,opt2,select01,api-nam.cognitive.microsfttranslator.com,api-nam.cognitive.microsfttranslator.com,2,,,
+q006_opt_3,q006,dropdown_option,opt3,select01,westus.tts.speech.microsoft.com,westus.tts.speech.microsoft.com,3,,,
+q006_opt_4,q006,dropdown_option,opt4,select01,wwixs.cognitiveservices.azure.com/translator,wwixs.cognitiveservices.azure.com/translator,4,,,
+q006_opt_5,q006,dropdown_option,opt5,select02,/detect,/detect,1,,,
+q006_opt_6,q006,dropdown_option,opt6,select02,/languages,/languages,2,,,
+q006_opt_7,q006,dropdown_option,opt7,select02,/text-to-speech,/text-to-speech,3,,,
+q006_opt_8,q006,dropdown_option,opt8,select02,/translate,/translate,4,,,
+q007_blank_1,q007,dropdown_blank,select01,,<select01>,,1,QnA Maker Editor,,
+q007_blank_2,q007,dropdown_blank,select02,,<select02>,,2,Contributor,,
+q007_opt_1,q007,dropdown_option,opt1,select01,Cognitive Service User,Cognitive Service User,1,,,
+q007_opt_2,q007,dropdown_option,opt2,select01,Contributor,Contributor,2,,,
+q007_opt_3,q007,dropdown_option,opt3,select01,Owner,Owner,3,,,
+q007_opt_4,q007,dropdown_option,opt4,select01,QnA Maker Editor,QnA Maker Editor,4,,,
+q007_opt_5,q007,dropdown_option,opt5,select01,QnA Maker Read,QnA Maker Read,5,,,
+q007_opt_6,q007,dropdown_option,opt6,select02,Cognitive Service User,Cognitive Service User,1,,,
+q007_opt_7,q007,dropdown_option,opt7,select02,Contributor,Contributor,2,,,
+q007_opt_8,q007,dropdown_option,opt8,select02,Owner,Owner,3,,,
+q007_opt_9,q007,dropdown_option,opt9,select02,QnA Maker Editor,QnA Maker Editor,4,,,
+q007_opt_10,q007,dropdown_option,opt10,select02,QnA Maker Read,QnA Maker Read,5,,,
+q008_blank_1,q008,dropdown_blank,select01,,<select01>,,1,Computer Vision,,
+q008_blank_2,q008,dropdown_blank,select02,,<select02>,,2,Language,,
+q008_opt_1,q008,dropdown_option,opt1,select01,Azure Cognitive Search,Azure Cognitive Search,1,,,
+q008_opt_2,q008,dropdown_option,opt2,select01,Computer Vision,Computer Vision,2,,,
+q008_opt_3,q008,dropdown_option,opt3,select01,From Recognizar,From Recognizar,3,,,
+q008_opt_4,q008,dropdown_option,opt4,select02,Azure Cognitive Search,Azure Cognitive Search,1,,,
+q008_opt_5,q008,dropdown_option,opt5,select02,Computer Vision,Computer Vision,2,,,
+q008_opt_6,q008,dropdown_option,opt6,select02,From Recognizar,From Recognizar,3,,,
+q008_opt_7,q008,dropdown_option,opt7,select02,Language,Language,4,,,
+q010_blank_1,q010,dropdown_blank,select01,,<select01>,,1,トランザクション書き込み。,,
+q010_opt_1,q010,dropdown_option,opt1,select01,エンティティ間の関係性の変更。,エンティティ間の関係性の変更。,1,,,
+q010_opt_2,q010,dropdown_option,opt2,select01,地理的に分散した書き込み。,地理的に分散した書き込み。,2,,,
+q010_opt_3,q010,dropdown_option,opt3,select01,トランザクション書き込み。,トランザクション書き込み。,3,,,
+q010_opt_4,q010,dropdown_option,opt4,select01,さまざまなデータ構造を持つ書き込み。,さまざまなデータ構造を持つ書き込み。,4,,,
+q034_s1,q034,statement,S1,,解決策: インデックスを追加します。,,1,,,false
+q022_s1,q022,statement,S1,,3つの文を異なる声で聞きます。,,1,,,true
+q022_s2,q022,statement,S2,,3つの文を異なるアクセントで聞きます。,,2,,,false
+q022_s3,q022,statement,S3,,3つの文をニュートラルなトーンで表現して聞きます。,,3,,,false

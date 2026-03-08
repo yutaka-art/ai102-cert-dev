@@ -12,14 +12,16 @@ q009,#009,single_choice,キーワード抽出,"テキスト処理ソリューシ
     Console.WriteLine($""{entity.Text}"");
   }
 }",1つ選択してください,1,RecognizeEntities により地名や施設名などのエンティティが抽出されます。,true,{}
-q001,#001,multi_choice,Autocomplete の実装,"スマート電子商取引プロジェクトを開発しています。
+q001,#001,multi_choice,Autocomplete,"スマート電子商取引プロジェクトを開発しています。
 Cognitive Search ソリューションの一部としてオートコンプリートを実装する必要があります。
-実行すべき 3 つのアクションはどれですか？ それぞれの正解は解決策の一部を示しています。",,3つ選択してください,3,Autocomplete では suggester と analyzer の設定、およびオートコンプリート エンドポイントの利用がポイントです。,true,{}
-q002,#002,drag_drop,ビデオ分析プロセス,"あなたは製品作成プロジェクトを計画しています。
+実行すべき3つのアクションはどれですか？ それぞれの正解は解決策の一部を示しています。(3つ選択してください。)
+注：正解の選択ごとに1ポイント獲得できます。",,3つ選択してください,3,suggester の構成、オートコンプリート エンドポイントの利用、適切な analyzer 設定がポイントです。,true,{}
+q002,#002,drag_drop,Video Indexer の処理順,"あなたは製品作成プロジェクトを計画しています。
 ビデオを分析するためのプロセスを推奨する必要があります。
-どの 4 つのアクションを順番に実行する必要がありますか。",,4つ選択し、正しい順に並べてください,4,Video Indexer を中心に、Blob Storage へのアップロード、インデックス作成、トランスクリプト抽出、翻訳の流れで考えます。,true,"{""minSelections"": 4, ""maxSelections"": 4}"
-q004,#004,dropdown,アクセシビリティ要件を満たすコード補完,"製品作成プロジェクトのために画像をアップロードするためのコードを開発する必要があります。ソリューションはアクセシビリティ要件を満たす必要があります。
+どの 4 つのアクションを順番に実行する必要がありますか。回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順序に並べます。(4 つ選択してください。)",,正しい順に並べてください,4,BLOB にアップロードし、Video Indexer でインデックス化し、トランスクリプトを抽出して翻訳します。,true,"{""mode"": ""sequence"", ""required_items"": 4}"
+q004,#004,dropdown,SuggestAltText,"製品作成プロジェクトのために画像をアップロードするためのコードを開発する必要があります。ソリューションはアクセシビリティ要件を満たす必要があります。
 コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
 
 Public static async Task<string> SuggestAltText(ComputerVisionClient client, <select01> image)
 {
@@ -31,20 +33,72 @@ Public static async Task<string> SuggestAltText(ComputerVisionClient client, <se
   <select03>
 
   if(c.Confidence > 0.5) return(c.Text);
-}",,各ドロップダウンを選択してください,3,代替テキスト生成では Description と Captions の利用が中心です。,false,{}
-q034,#034,single_yesno,検索要求の調整対策,"注: この問題は、同じシナリオを提示する一連の問題の一部です。
+}",,各ドロップダウンを選択してください,3,Description と Captions を利用して代替テキストを生成します。,false,{}
+q005,#005,dropdown,Adaptive Card,"外出先でのショッピング プロジェクトを開発しています。
+チャットボット用のアダプティブ カードを構築する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+{
+  ""version"": ""1.3"",
+  ""body"": [
+    {
+      ""type"": ""textBlock"",
+      ""size"": ""medium"",
+      ""weight"": ""bolder"",
+      ""text"": ""${<select01>}""
+    },
+    {
+      ""type"": ""textBlock"",
+      <select02>
+      ""color"": ""Attention""
+    },
+    {
+      ""type"": ""Image"",
+      ""url"": ""${image.url}"",
+      ""size"": ""Medium"",
+      ""altText"": ""${<select03>}""
+    }
+  ]
+}",,各ドロップダウンを選択してください,3,言語別 name の参照、在庫状態に応じた条件表示、画像 alt text の言語別参照がポイントです。,false,{}
+q006,#006,dropdown,Translator REST URI,"あなたは製品作成プロジェクトを計画しています。
+多言語の製品説明を作成するには、REST エンドポイントを構築する必要があります。
+URI をどのように完了すればよいですか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+<select01><select02>?api-version=3.0&to=es&to=pt",,各ドロップダウンを選択してください,2,Translator Text API のエンドポイントと translate パスを選択します。,false,{}
+q007,#007,dropdown,QnA Maker のロール割り当て,"外出先でのショッピング プロジェクトを開発しています。
+QnA Maker リソースへのアクセスを構成しています。
+AllUsers と LeadershipTeam にはどのロールを割り当てる必要がありますか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+AllUsers:<select01>
+LeadershipTeam:<select02>",,各ドロップダウンを選択してください,2,一般利用者と管理寄り権限で必要なロールを割り当てます。,false,{}
+q008,#008,dropdown,PDF からのテキスト抽出と感情分析,"PDF ファイルとして保存されたプレス リリースのコレクションがあります。
+ファイルからテキストを抽出し、感情分析を実行する必要があります。
+各タスクにはどのサービスを使用する必要がありますか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+テキスト抽出:<select01>
+感情分析を実行:<select02>",,各ドロップダウンを選択してください,2,OCR/テキスト抽出は Computer Vision、感情分析は Language サービスです。,false,{}
+q010,#010,dropdown,Relational Database,"文を正しく完成させる答えを選択してください。
+
+EN:
+A relational database is appropriate for scenarios that involve a high volume of <select01>.
+JP:
+リレーショナル データベースは、大量の <select01> が関係するシナリオに適しています。",,ドロップダウンを選択してください,1,リレーショナル データベースはトランザクション整合性が重要な大量トランザクション書き込みに向いています。,false,{}
+q034,#034,single_yesno,Search throttling,"注: この問題は、同じシナリオを提示する一連の問題の一部です。一連の問題にはそれぞれ、定められた目標を満たす可能性のある独自の解答が含まれています。
 Azure Cognitive Search サービスがあります。
 過去 12 か月間、クエリ量は着実に増加しました。
 Cognitive Search サービスへの一部の検索クエリ要求が調整されていることがわかりました。
 検索クエリ要求が調整される可能性を減らす必要があります。
-
 解決策: インデックスを追加します。
-これは目標を満たしていますか?",,はい / いいえ を選択してください,1,スループット問題の対策は通常レプリカやパーティションであり、インデックス追加ではありません。,false,{}
-q022,#022,multi_yesno,Text-to-Speech の音声確認,"Resource1 という名前の Azure AI Language リソースを含む Azure サブスクリプションがあります。
-次の cURL コマンドを実行し、output.mp3 ファイルを再生します。
-
-curl --location --request POST ""https://eastus.tts.speech.microsoft.com/cognitiveservices/v1""
---header ""Ocp-Apim-Subscription-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx""
+これは目標を満たしていますか?",,はい / いいえ を選択してください,1,検索要求のスロットリング対策としては、一般にレプリカやパーティションの調整が中心であり、単にインデックスを追加しても直接的な対策にはなりません。,false,{}
+q022,#022,multi_yesno,Speech SSML,"Resource1 という名前の Azure AI Language リソースを含む Azure サブスクリプションがあります。
+次の cURL コマンドを実行し、Output.mp3 ファイルを再生します。
+以下の各文について、正しい場合は「はい」を選択してください。そうでない場合は「いいえ」を選択してください。
+注意: 正しい選択ごとにポイントが加算されます。","curl --location --request POST ""https://eastus.tts.speech.microsoft.com/cognitiveservices/v1""
+--header ""Ocp-Apim-Subscription-Key: 3795c4011f714f5aa66469e573109e4f""
 --header ""Content-Type: application/ssml+xml""
 --header ""X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3""
 --header ""User-Agent: curl""
@@ -63,6 +117,4 @@ curl --location --request POST ""https://eastus.tts.speech.microsoft.com/cogniti
   </voice>
 </speak>
 ""
---output output.mp3
-
-以下の各文について、正しい場合は「はい」を選択してください。そうでない場合は「いいえ」を選択してください。",,各文について はい / いいえ を選択してください,3,音声やスタイルの指定内容を読み取る問題です。,false,{}
+--output output.mp3",各文について Yes / No を選択してください,3,異なる音声名は使われていますが、設問の正解は入力どおり保持しています。,false,{}
