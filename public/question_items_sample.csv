@@ -407,3 +407,47 @@ q059_opt_1_4,q059,dropdown_option,opt1_4,select01,virtual machine,virtual machin
 q060_s1,q060,statement,S1,,http://localhost:5000/status にアクセスすると、Azure エンドポイントにクエリが実行され、コンテナーの起動に使用された API キーが有効かどうかが確認されます。,,1,,,False
 q060_s2,q060,statement,S2,,コンテナー ログ プロバイダーがログ データを書き込みます。,,2,,,True
 q060_s3,q060,statement,S3,,http://localhost:5000/swagger にアクセスすると、利用可能なエンドポイントのドキュメントにアクセスするための詳細情報が表示されます。,,3,,,True
+q061_a,q061,choice,A,,A. ダイアログ,A,1,,,True
+q061_b,q061,choice,B,,B. ユーザー,B,2,,,False
+q061_c,q061,choice,C,,C. なぜ,C,3,,,False
+q061_d,q061,choice,D,,D. 会話,D,4,,,False
+q062_1,q062,drag_item,1,,分類器モデルをトレーニングします。,1,1,,3,
+q062_2,q062,drag_item,2,,画像をアップロードしてタグ付けします。,2,2,,2,
+q062_3,q062,drag_item,3,,トレーニングデータセットを初期化します。,3,3,,,
+q062_4,q062,drag_item,4,,物体検出モデルをトレーニングします。,4,4,,,
+q062_5,q062,drag_item,5,,プロジェクトを作成します。,5,5,,1,
+q063_1,q063,drag_item,1,,az ad app credential,1,1,,,
+q063_2,q063,drag_item,2,,az ad app create,2,2,,1,
+q063_3,q063,drag_item,3,,az deployment group create,3,3,,2,
+q063_4,q063,drag_item,4,,az webapp deployment source config-zip,4,4,,3,
+q063_5,q063,drag_item,5,,az ad app update,5,5,,,
+q064_blank_1,q064,dropdown_blank,select01,,<select01>,,1,https://contoso1.cognitiveservices.azure.com,,
+q064_blank_2,q064,dropdown_blank,select02,,<select02>,,2,generateThumbnail,,
+q064_opt_1_1,q064,dropdown_option,opt1_1,select01,https://api.projectoxford.ai,https://api.projectoxford.ai,1,,,
+q064_opt_1_2,q064,dropdown_option,opt1_2,select01,https://contoso1.cognitiveservices.azure.com,https://contoso1.cognitiveservices.azure.com,2,,,
+q064_opt_1_3,q064,dropdown_option,opt1_3,select01,https://westus.api.cognitive.microsoft.com,https://westus.api.cognitive.microsoft.com,3,,,
+q064_opt_2_1,q064,dropdown_option,opt2_1,select02,are◯flnterest,are◯flnterest,1,,,
+q064_opt_2_2,q064,dropdown_option,opt2_2,select02,detect,detect,2,,,
+q064_opt_2_3,q064,dropdown_option,opt2_3,select02,generateThumbnail,generateThumbnail,3,,,
+q065_a,q065,choice,A,,A. 接続文字列,A,1,,,False
+q065_b,q065,choice,B,,B. プロジェクトスコープキー,B,2,,,False
+q065_c,q065,choice,C,,C. AIProjectClient オブジェクト,C,3,,,True
+q065_d,q065,choice,D,,D. SASCredentialsオブジェクト,D,4,,,False
+q066_1,q066,drag_item,1,,Azure で言語サービス リソースをプロビジョニングします。,1,1,,1,
+q066_2,q066,drag_item,2,,Azure コンテナー インスタンスに Docker コンテナーをデプロイします。,2,2,,,
+q066_3,q066,drag_item,3,,オンプレミス サーバーに Docker コンテナーをデプロイします。,3,3,,2,
+q066_4,q066,drag_item,4,,言語サービス エンドポイント URL を特定し、予測エンドポイントに対してクエリを実行します。,4,4,,,
+q066_5,q066,drag_item,5,,コンテナーを実行し、予測エンドポイントに対してクエリを実行します。,5,5,,3,
+q067_s1,q067,statement,S1,,解決策: Content Safety Studio から、Safety メタプロンプト機能を使用してテストを実行します。,,1,,,False
+q068_a,q068,choice,A,,A. XML,A,1,,,False
+q068_b,q068,choice,B,,B. JSONL,B,2,,,True
+q068_c,q068,choice,C,,C. CSV,C,3,,,False
+q068_d,q068,choice,D,,D. TSV,D,4,,,False
+q069_a,q069,choice,A,,A. ビジュアルスタジオ,A,1,,,False
+q069_b,q069,choice,B,,B. Azure AI Vision の Vision Studio,B,2,,,False
+q069_c,q069,choice,C,,C. Azure AI コンテンツ セーフティ スタジオ,C,3,,,True
+q069_d,q069,choice,D,,D. Azure AI スタジオ,D,4,,,False
+q070_a,q070,choice,A,,A. 言語検出スキルとテキスト翻訳スキルを含むスキルセットに接続された Azure Blob Storage のインデクサー,A,1,,,False
+q070_b,q070,choice,B,,B. 言語検出スキルを含むスキルセットにアタッチされた Azure Blob ストレージのインデクサー,B,2,,,False
+q070_c,q070,choice,C,,C. ドキュメント抽出スキルとテキスト翻訳スキルを含むスキルセットに接続された Azure Cosmos DB のインデクサー,C,3,,,True
+q070_d,q070,choice,D,,D. 言語検出スキルとテキスト翻訳スキルを含むスキルセットに接続された Azure Cosmos DB のインデクサー,D,4,,,False
