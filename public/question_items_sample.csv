@@ -560,3 +560,62 @@ q090_a,q090,choice,A,,A. Azure AI Foundry コンテンツの安全性,A,1,,,Fals
 q090_b,q090,choice,B,,B. Azure AI 音声,B,2,,,False
 q090_c,q090,choice,C,,C. Azure AI言語,C,3,,,True
 q090_d,q090,choice,D,,D. Azure AI翻訳,D,4,,,False
+q091_blank_1,q091,dropdown_blank,select01,,道路標識を識別し、それぞれの道路標識の簡単な説明を生成します:<select01>。,,1,Azure AI Vision,,
+q091_blank_2,q091,dropdown_blank,select02,,説明を分析して、さまざまな種類の道路標識と、それぞれの種類の出現頻度に関するレポートを生成します:<select02>。,,2,Azure AI Phi-3-mini,,
+q091_opt_1_1,q091,dropdown_option,opt1_1,select01,Azure AI Document Intelligence,Azure AI Document Intelligence,1,,,
+q091_opt_1_2,q091,dropdown_option,opt1_2,select01,Azure AI Phi-3-mini,Azure AI Phi-3-mini,2,,,
+q091_opt_1_3,q091,dropdown_option,opt1_3,select01,Azure AI Vision,Azure AI Vision,3,,,
+q091_opt_1_4,q091,dropdown_option,opt1_4,select01,Azure OpenAI GPT-4-Turbo,Azure OpenAI GPT-4-Turbo,4,,,
+q091_opt_2_1,q091,dropdown_option,opt2_1,select02,Azure AI Document Intelligence,Azure AI Document Intelligence,1,,,
+q091_opt_2_2,q091,dropdown_option,opt2_2,select02,Azure AI Phi-3-mini,Azure AI Phi-3-mini,2,,,
+q091_opt_2_3,q091,dropdown_option,opt2_3,select02,Azure AI Vision,Azure AI Vision,3,,,
+q091_opt_2_4,q091,dropdown_option,opt2_4,select02,Azure OpenAI GPT-4-Turbo,Azure OpenAI GPT-4-Turbo,4,,,
+q092_blank_1,q092,dropdown_blank,select01,,<select01>,,1,ChatCompletionsOptions(),,
+q092_blank_2,q092,dropdown_blank,select02,,<select02>,,2,AzureCognitiveSearchChatExtensionConfiguration,,
+q092_opt_1_1,q092,dropdown_option,opt1_1,select01,ChatCompletionsOptions(),ChatCompletionsOptions(),1,,,
+q092_opt_1_2,q092,dropdown_option,opt1_2,select01,CompletionsOptions(),CompletionsOptions(),2,,,
+q092_opt_1_3,q092,dropdown_option,opt1_3,select01,StreamingChatCompletions(),StreamingChatCompletions(),3,,,
+q092_opt_2_1,q092,dropdown_option,opt2_1,select02,AzureChatExtensionConfiguration,AzureChatExtensionConfiguration,1,,,
+q092_opt_2_2,q092,dropdown_option,opt2_2,select02,AzureChatExtensionsOptions,AzureChatExtensionsOptions,2,,,
+q092_opt_2_3,q092,dropdown_option,opt2_3,select02,AzureCognitiveSearchChatExtensionConfiguration,AzureCognitiveSearchChatExtensionConfiguration,3,,,
+q093_a,q093,choice,A,,A. オンライントランザクション処理（OLTP）,A,1,,,False
+q093_b,q093,choice,B,,B. オンライン分析処理（OLAP）,B,2,,,True
+q093_c,q093,choice,C,,C. バッチ処理,C,3,,,False
+q093_d,q093,choice,D,,D. ストリーム処理,D,4,,,False
+q094_s1,q094,statement,S1,,解決策: Language Studio から、chitchat ソースを qna_chitchit_friindly.tsv に変更し、モデルを再トレーニングして再公開します。,,1,,,False
+q095_1,q095,drag_item,1,,Custom Vision ポータルからプロジェクトを開きます。,1,1,,1.0,
+q095_2,q095,drag_item,2,,Azure Machine Learning Studio からワークスペースを開きます。,2,2,,,
+q095_3,q095,drag_item,3,,Vison Studio からプロジェクトを開きます。,3,3,,,
+q095_4,q095,drag_item,4,,新製品のサンプル画像をアップロードします。,4,4,,2.0,
+q095_5,q095,drag_item,5,,サンプル画像にラベルを付けます。,5,5,,3.0,
+q095_6,q095,drag_item,6,,モデルを再トレーニングします。,6,6,,4.0,
+q095_7,q095,drag_item,7,,モデルを公開します。,7,7,,5.0,
+q096_s1,q096,statement,S1,,このコードは、基盤となるストレージ層に UserProfile オブジェクトを作成し、管理します。,,1,,,True
+q096_s2,q096,statement,S2,,このコードは、基盤となるストレージ層に ConversationData オブジェクトを作成し、管理します。,,2,,,True
+q096_s3,q096,statement,S3,,UserProfile オブジェクトと ConversationData オブジェクトは、Bot Framework ランタイムが終了しても保持されます。,,3,,,False
+q097_blank_1,q097,dropdown_blank,select01,,<select01>,,1,AnalyzeTextOptions(text);,,
+q097_blank_2,q097,dropdown_blank,select02,,<select02>,,2,client.AnalyzeText(request),,
+q097_opt_1_1,q097,dropdown_option,opt1_1,select01,AnalyzeText(text);,AnalyzeText(text);,1,,,
+q097_opt_1_2,q097,dropdown_option,opt1_2,select01,AnalyzeTextOptions(text);,AnalyzeTextOptions(text);,2,,,
+q097_opt_1_3,q097,dropdown_option,opt1_3,select01,AnalyzeImanage(text);,AnalyzeImanage(text);,3,,,
+q097_opt_1_4,q097,dropdown_option,opt1_4,select01,client.AnalizeText(text);,client.AnalizeText(text);,4,,,
+q097_opt_2_1,q097,dropdown_option,opt2_1,select02,AnalyzeImage(request),AnalyzeImage(request),1,,,
+q097_opt_2_2,q097,dropdown_option,opt2_2,select02,client.AnalyzeImage(request),client.AnalyzeImage(request),2,,,
+q097_opt_2_3,q097,dropdown_option,opt2_3,select02,client.AnalyzeText(request),client.AnalyzeText(request),3,,,
+q097_opt_2_4,q097,dropdown_option,opt2_4,select02,request.Analyzeimage(Client),request.Analyzeimage(Client),4,,,
+q098_a,q098,choice,A,,A. 顔,A,1,,,False
+q098_b,q098,choice,B,,B. コンピュータービジョン,B,2,,,True
+q098_c,q098,choice,C,,C. Azure Video Analyzer for Media (旧称 Video indexer),C,3,,,False
+q099_a,q099,choice,A,,A. SOL言語のバリアントを使用して、データが照会および操作されます,A,1,,,True
+q099_b,q099,choice,B,,B. テーブル間の依存関係の欠如,B,2,,,False
+q099_c,q099,choice,C,,C. 柔軟なデータ構造,C,3,,,False
+q099_d,q099,choice,D,,D. 大量の重複データ,D,4,,,False
+q100_blank_1,q100,dropdown_blank,select01,,<select01> を使用して Al1 へのアクセスを提供します。,,1,A bearer token,,
+q100_blank_2,q100,dropdown_blank,select02,,<select02> を使用してデプロイメントに接続します。,,2,A deployment name,,
+q100_opt_1_1,q100,dropdown_option,opt1_1,select01,An API Key,An API Key,1,,,
+q100_opt_1_2,q100,dropdown_option,opt1_2,select01,A bearer token,A bearer token,2,,,
+q100_opt_1_3,q100,dropdown_option,opt1_3,select01,A shared access signature(SAS) token.,A shared access signature(SAS) token.,3,,,
+q100_opt_2_1,q100,dropdown_option,opt2_1,select02,An API Key,An API Key,1,,,
+q100_opt_2_2,q100,dropdown_option,opt2_2,select02,A depoloyment endpoint,A depoloyment endpoint,2,,,
+q100_opt_2_3,q100,dropdown_option,opt2_3,select02,A deployment name,A deployment name,3,,,
+q100_opt_2_4,q100,dropdown_option,opt2_4,select02,A deployment type,A deployment type,4,,,
