@@ -529,3 +529,61 @@ q080,#080,single_choice,休暇申請アプリに適したダイアログ,"休暇
 * 休暇の終了日
 * 必要な有給休暇の量
 ソリューションではダイアログの複雑さを最小限に抑える必要があります。どのような種類のダイアログを使用すべきでしょうか？",,1つ選択してください,1,順番に必要項目を聞いていく単純な入力収集には Waterfall ダイアログが適しています。,True,{}
+q081,#081,drag_drop,ドキュメント翻訳の非同期実行手順,"ドイツ語の Microsoft Word 文書と PowerPoint プレゼンテーションのコレクションがあります。
+ファイルをフランス語に翻訳するためのソリューションを作成する必要があります。ソリューションは以下の要件を満たす必要があります。
+* ファイルの元のフォーマットを保持します。
+* カスタム用語集の使用をサポートします。
+ドイツ語ファイル用とフランス語ファイル用の BLOB コンテナを作成します。元のファイルはドイツ語ファイル用のコンテナにアップロードします。
+アクションのリストから、回答エリアに順番にアクションを実行し、正しい順序に並べるには、どの 3 つのアクションを実行する必要がありますか。",,正しい順に並べてください,3,翻訳先コンテナに用語集を置き、ドキュメント翻訳仕様を定義して非同期翻訳を実行します。,True,"{""mode"": ""sequence"", ""required_items"": 3}"
+q082,#082,dropdown,Translator SDK で英語へ翻訳,"Foundry Tools サービスで Azure Translator を使用するメッセージ処理システムを構築しています。
+受信メッセージが英語に翻訳されていることを確認する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが加算されます。","using Azure;
+using Azure.AI.Translation.Text;
+
+AzureKeyCredential credential = new(translatorKey);
+<select01> client = new(credential, translatorRegion);
+
+var translationResponse = await <select02>
+  targetLanguage, InputText).ConfigureAwait(false);
+
+var translation = translationResponse.Value[0];
+
+Console.WriteLine(translation.Translations[0].Text);",各ドロップダウンを選択してください,2,TextTranslationClient を生成し、client.TranslateAsync(...) を呼び出します。,False,{}
+q083,#083,single_choice,質問応答のマルチターン設定,"Azure AI Language でカスタム質問応答プロジェクトを開発します。このプロジェクトはチャットボットで使用されます。
+マルチターンの会話を行うようにプロジェクトを設定する必要があります。どうすればよいでしょうか？",,1つ選択してください,1,マルチターンはフォローアッププロンプトで構成します。,True,{}
+q084,#084,single_choice,regenerateKey 要求の結果,"次の HTTP リクエストを正常に実行しました。
+POST https://management.azure.com/subscriptions/18c51a87-3a69-47a8-aedc-a54745f708a1/resourceGroups/RG1/providers/Microsoft.CognitiveServices/accounts/contosol/regenerateKey?api-version=2017-04-18 Body{""keyName"": ""Key2""}
+要求の結果は何ですか?",,1つ選択してください,1,keyName が Key2 なので、セカンダリ サブスクリプション キーが再生成されます。,True,{}
+q085,#085,single_choice,Bot Framework SDK と QnA Maker の統合設定,"チャットボットを開発しています。
+次のコンポーネントを作成します。
+* QnA Maker リソース
+* Azure Bot Framework SDK を使用したチャットボット。
+チャットボットの要件を満たすには、コンポーネントを統合する必要があります。
+どのプロパティを使用する必要がありますか?",,1つ選択してください,1,応答ランキング方式を制御するのは QnAMakerOptions.RankerType です。,True,{}
+q086,#086,single_choice,AI Agent Service のプロジェクト作成先,"Azure OpenAI リソースを含む Azure サブスクリプションがあります。
+Azure AI Agent Service を使用してエージェントを構築する予定です。エージェントは以下のアクションを実行します。
+* ユーザーからの書面および口頭での質問を解釈します。
+* 質問に対する回答を生成します。
+* 回答を音声で出力します。
+エージェント用のプロジェクトを作成する必要があります。
+何を使うべきでしょうか?",,1つ選択してください,1,Agent Service のプロジェクトは Azure AI Foundry で作成します。,True,{}
+q087,#087,dropdown,注文状況案内で使う音声 API オブジェクト,"注文状況に関する顧客からの電話に応答するアプリを構築しています。このアプリは、データベースに注文の詳細を照会し、顧客に音声で回答します。
+使用する Azure AI サービス API を特定する必要があります。ソリューションは開発労力を最小限に抑える必要があります。
+各要件にはどのオブジェクトを使用する必要がありますか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+顧客からの電話をテキストクエリに変換します:<select01>。
+顧客に注文の詳細を提供します:<select02>。",,各ドロップダウンを選択してください,2,音声入力は SpeechRecognizer、音声出力は SpeechSynthesizer を使います。,False,{}
+q088,#088,single_yesno,価格質問応答の失敗をエンティティ作成で解決できるか,"Azure Cognitive Service for Language の質問回答を使用するチャットボットを構築しています。
+製品カタログと価格表が含まれる Docl.pdf という名前の PDF があります。Docl.pdf をアップロードしてモデルをトレーニングします。
+テスト中に、チャットボットが「<製品>の価格はいくらですか?」という質問に正しく応答するとユーザーから報告されています。
+チャットボットは、次の質問「<製品* の価格はいくらですか?」に応答できません。
+チャットボットが両方の質問に正しく応答することを確認する必要があります。
+解決策: Language Studio からコストのエンティティを作成し、モデルを再トレーニングして再公開します。
+これは目標を満たしていますか?",,はい / いいえ を選択してください,1,質問応答ではエンティティ作成ではなく、別表現やソース改善が必要です。,False,{}
+q089,#089,dropdown,受信メールの言語判定 API URL,"受信メールを処理し、メール メッセージをフランス語または英語のサポート チームに直接送信するアプリを構築しています。
+どの Azure Cognitive Services API を使用すればよいですか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。",https://<select01><select02>,各ドロップダウンを選択してください,2,言語判定は Language API の /languages エンドポイントを使います。,False,{}
+q090,#090,single_choice,メッセージ言語のリアルタイム識別,"ソーシャル メディア メッセージング アプリを構築しています。
+メッセージで使用されている言語をリアルタイムで識別する必要があります。",,1つ選択してください,1,言語識別は Azure AI 言語の機能です。,True,{}

@@ -504,3 +504,59 @@ q080_a,q080,choice,A,,A. スキル,A,1,,,False
 q080_b,q080,choice,B,,B. Waterfall,B,2,,,True
 q080_c,q080,choice,C,,C. 適応型,C,3,,,False
 q080_d,q080,choice,D,,D. コンポーネント,D,4,,,False
+q081_1,q081,drag_item,1,,翻訳対象ファイルのリストを使用して、非同期翻訳を実行します。,1,1,,,
+q081_2,q081,drag_item,2,,ドイツ語ファイル用のコンテナに用語集ファイルをアップロードします。,2,2,,,
+q081_3,q081,drag_item,3,,フランス語ファイル用のコンテナに用語集ファイルをアップロードします。,3,3,,1,
+q081_4,q081,drag_item,4,,翻訳対象ファイルのリストを生成します。,4,4,,,
+q081_5,q081,drag_item,5,,フランス語をターゲットとするドキュメント翻訳仕様を定義します。,5,5,,2,
+q081_6,q081,drag_item,6,,ドキュメント翻訳仕様を使用して、非同期翻訳を実行します。,6,6,,3,
+q082_blank_1,q082,dropdown_blank,select01,,<select01>,,1,TextTranslationClient,,
+q082_opt_1_1,q082,dropdown_option,opt1_1,select01,TextTranslationClient,TextTranslationClient,1,,,
+q082_opt_1_2,q082,dropdown_option,opt1_2,select01,TranslateAsync,TranslateAsync,2,,,
+q082_opt_1_3,q082,dropdown_option,opt1_3,select01,TranslationRecohnizer,TranslationRecohnizer,3,,,
+q082_opt_1_4,q082,dropdown_option,opt1_4,select01,Transliterrate,Transliterrate,4,,,
+q082_blank_2,q082,dropdown_blank,select02,,<select02>,,2,client.TranslateAsync(,,
+q082_opt_2_1,q082,dropdown_option,opt2_1,select02,client.Translate(,client.Translate(,1,,,
+q082_opt_2_2,q082,dropdown_option,opt2_2,select02,client.TranslateAsync(,client.TranslateAsync(,2,,,
+q082_opt_2_3,q082,dropdown_option,opt2_3,select02,client.Transliterrate(,client.Transliterrate(,3,,,
+q082_opt_2_4,q082,dropdown_option,opt2_4,select02,translator.RecognizeOnceAsync(,translator.RecognizeOnceAsync(,4,,,
+q083_a,q083,choice,A,,A. 代替の質問を追加します。,A,1,,,False
+q083_b,q083,choice,B,,B. 雑談を有効にします。,B,2,,,False
+q083_c,q083,choice,C,,C. フォローアッププロンプトを追加します。,C,3,,,True
+q083_d,q083,choice,D,,D. アクティブラーニングを有効にします。,D,4,,,False
+q084_a,q084,choice,A,,A. Azure Key Vault に Azure Cognitive Services のキーが生成されました。,A,1,,,False
+q084_b,q084,choice,B,,B. 新しいクエリ キーが生成されました。,B,2,,,False
+q084_c,q084,choice,C,,C. プライマリ サブスクリプション キーとセカンダリ サブスクリプション キーがローテーションされました。,C,3,,,False
+q084_d,q084,choice,D,,D. セカンダリサブスクリプションキーがリセットされました。,D,4,,,True
+q085_a,q085,choice,A,,A. QnADialogResponseOptions.CardNoMatchText,A,1,,,False
+q085_b,q085,choice,B,,B. Qna MakerOptions-ScoreThreshold,B,2,,,False
+q085_c,q085,choice,C,,C. Qna Maker オプション ストリックフィルター,C,3,,,False
+q085_d,q085,choice,D,,D. QnaMakerOptions.RankerType,D,4,,,True
+q086_a,q086,choice,A,,A. 言語スタジオ,A,1,,,False
+q086_b,q086,choice,B,,B. Azure AI Foundry,B,2,,,True
+q086_c,q086,choice,C,,C. スピーチスタジオ,C,3,,,False
+q086_d,q086,choice,D,,D. Azureポータル,D,4,,,False
+q087_blank_1,q087,dropdown_blank,select01,,顧客からの電話をテキストクエリに変換します:<select01>。,,1,SpeechRecognizer,,
+q087_opt_1_1,q087,dropdown_option,opt1_1,select01,SpeechRecognizer,SpeechRecognizer,1,,,
+q087_opt_1_2,q087,dropdown_option,opt1_2,select01,SpeechSynthesizer,SpeechSynthesizer,2,,,
+q087_opt_1_3,q087,dropdown_option,opt1_3,select01,TranslationRecognizer,TranslationRecognizer,3,,,
+q087_opt_1_4,q087,dropdown_option,opt1_4,select01,VoiceProfileClient,VoiceProfileClient,4,,,
+q087_blank_2,q087,dropdown_blank,select02,,顧客に注文の詳細を提供します:<select02>。,,2,SpeechSynthesizer,,
+q087_opt_2_1,q087,dropdown_option,opt2_1,select02,SpeechRecognizer,SpeechRecognizer,1,,,
+q087_opt_2_2,q087,dropdown_option,opt2_2,select02,SpeechSynthesizer,SpeechSynthesizer,2,,,
+q087_opt_2_3,q087,dropdown_option,opt2_3,select02,TranslationRecognizer,TranslationRecognizer,3,,,
+q087_opt_2_4,q087,dropdown_option,opt2_4,select02,VoiceProfileClient,VoiceProfileClient,4,,,
+q088_s1,q088,statement,S1,,解決策: Language Studio からコストのエンティティを作成し、モデルを再トレーニングして再公開します。,,1,,,False
+q089_blank_1,q089,dropdown_blank,select01,,<select01>,,1,eastus.api.cognitive.microsoft.com,,
+q089_opt_1_1,q089,dropdown_option,opt1_1,select01,api.cognitive.microsofttranslator.com,api.cognitive.microsofttranslator.com,1,,,
+q089_opt_1_2,q089,dropdown_option,opt1_2,select01,eastus.api.cognitive.microsoft.com,eastus.api.cognitive.microsoft.com,2,,,
+q089_opt_1_3,q089,dropdown_option,opt1_3,select01,portal.azure.com,portal.azure.com,3,,,
+q089_blank_2,q089,dropdown_blank,select02,,<select02>,,2,/text/analytics/v3.1/languages,,
+q089_opt_2_1,q089,dropdown_option,opt2_1,select02,/text/analytics/v3.1/entites/recognition/general,/text/analytics/v3.1/entites/recognition/general,1,,,
+q089_opt_2_2,q089,dropdown_option,opt2_2,select02,/text/analytics/v3.1/languages,/text/analytics/v3.1/languages,2,,,
+q089_opt_2_3,q089,dropdown_option,opt2_3,select02,/translator/text/v3.0/translate?to=en,/translator/text/v3.0/translate?to=en,3,,,
+q089_opt_2_4,q089,dropdown_option,opt2_4,select02,/translator/text/v3.0/translate?to=fr,/translator/text/v3.0/translate?to=fr,4,,,
+q090_a,q090,choice,A,,A. Azure AI Foundry コンテンツの安全性,A,1,,,False
+q090_b,q090,choice,B,,B. Azure AI 音声,B,2,,,False
+q090_c,q090,choice,C,,C. Azure AI言語,C,3,,,True
+q090_d,q090,choice,D,,D. Azure AI翻訳,D,4,,,False
