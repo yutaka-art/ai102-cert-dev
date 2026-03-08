@@ -619,3 +619,53 @@ q100_opt_2_1,q100,dropdown_option,opt2_1,select02,An API Key,An API Key,1,,,
 q100_opt_2_2,q100,dropdown_option,opt2_2,select02,A depoloyment endpoint,A depoloyment endpoint,2,,,
 q100_opt_2_3,q100,dropdown_option,opt2_3,select02,A deployment name,A deployment name,3,,,
 q100_opt_2_4,q100,dropdown_option,opt2_4,select02,A deployment type,A deployment type,4,,,
+q101_a,q101,choice,A,,A. アイデンティティ,A,1,,,False
+q101_b,q101,choice,B,,B. キーとエンドポイント,B,2,,,True
+q101_c,q101,choice,C,,C. プロパティ,C,3,,,False
+q101_d,q101,choice,D,,D. ネットワーキング,D,4,,,False
+q102_s1,q102,statement,S1,,解決策: Content Safety Studio から、テキスト コンテンツのモデレート機能を使用してテストを実行します。,,1,,,True
+q103_a,q103,choice,A,,A. 言語,A,1,,,False
+q103_b,q103,choice,B,,B. スピーチ,B,2,,,False
+q103_c,q103,choice,C,,C. Azure コグニティブ サービス,C,3,,,True
+q103_d,q103,choice,D,,D. コンテンツモデレーター,D,4,,,False
+q104_drag_1,q104,drag_item,1,,カテゴリー別に画像をアップロードします。,1,1,,,
+q104_drag_2,q104,drag_item,2,,タグの提案を取得します。,2,2,,2,
+q104_drag_3,q104,drag_item,3,,すべての画像をアップロードします。,3,3,,1,
+q104_drag_4,q104,drag_item,4,,画像をローカルのカテゴリーフォルダにグループ化します。,4,4,,,
+q104_drag_5,q104,drag_item,5,,提案を確認し、タグを確定します。,5,5,,3,
+q104_drag_6,q104,drag_item,6,,画像に手動でタグを付けます。,6,6,,,
+q105_s1,q105,statement,S1,,このコードは、検出された各ブランドの名前を75%以上の信頼度で返します。,,1,,,True
+q105_s2,q105,statement,S2,,このコードは、表示されているブランドのブランドロゴを含む四角形の左下隅の座標を返します。,,2,,,False
+q105_s3,q105,statement,S3,,このコードは、表示されているブランドのブランドロゴを含む四角形の右下隅の座標を返します。,,3,,,False
+q106_a,q106,choice,A,,A. サブスクリプションキーとクライアントトレースID,A,1,,,False
+q106_b,q106,choice,B,,B. サブスクリプションキー、サブスクリプションリージョン、コンテンツタイプ,B,2,,,True
+q106_c,q106,choice,C,,C. リソースIDとコンテンツ言語,C,3,,,False
+q106_d,q106,choice,D,,D. アクセス制御要求、コンテンツタイプ、コンテンツの長さ,D,4,,,False
+q107_s1,q107,statement,S1,,解決策: Content Safety Studio から、オンライン アクティビティの監視機能を使用してテストを実行します。,,1,,,False
+q108_blank_1,q108,dropdown_blank,select01,,<select01>,,1,CreateFunctionFromPrompt,,
+q108_blank_2,q108,dropdown_blank,select02,,<select02>,,2,FunctionChoiceBehaviour.Required,,
+q108_opt_1_1,q108,dropdown_option,opt1_1,select01,CreateFunctionFromMethod,CreateFunctionFromMethod,1,,,
+q108_opt_1_2,q108,dropdown_option,opt1_2,select01,CreateFunctionFromPrompt,CreateFunctionFromPrompt,2,,,
+q108_opt_1_3,q108,dropdown_option,opt1_3,select01,CreatePluginFromFunctions,CreatePluginFromFunctions,3,,,
+q108_opt_2_1,q108,dropdown_option,opt2_1,select02,FunctionChoiceBehaviour.Auto,FunctionChoiceBehaviour.Auto,1,,,
+q108_opt_2_2,q108,dropdown_option,opt2_2,select02,FunctionChoiceBehaviour.None,FunctionChoiceBehaviour.None,2,,,
+q108_opt_2_3,q108,dropdown_option,opt2_3,select02,FunctionChoiceBehaviour.Required,FunctionChoiceBehaviour.Required,3,,,
+q109_blank_1,q109,dropdown_blank,select01,,<select01>,,1,ContentSafetyClient,,
+q109_blank_2,q109,dropdown_blank,select02,,<select02>,,2,AnalyzeTextOptions,,
+q109_opt_1_1,q109,dropdown_option,opt1_1,select01,AnalyzeTextOptions,AnalyzeTextOptions,1,,,
+q109_opt_1_2,q109,dropdown_option,opt1_2,select01,BlocklistClient,BlocklistClient,2,,,
+q109_opt_1_3,q109,dropdown_option,opt1_3,select01,ContentSafetyClient,ContentSafetyClient,3,,,
+q109_opt_1_4,q109,dropdown_option,opt1_4,select01,TextCategoriesAnalysis,TextCategoriesAnalysis,4,,,
+q109_opt_2_1,q109,dropdown_option,opt2_1,select02,AddorUpdateTextBlocklistItemsOptions,AddorUpdateTextBlocklistItemsOptions,1,,,
+q109_opt_2_2,q109,dropdown_option,opt2_2,select02,AnalyzeTextOptions,AnalyzeTextOptions,2,,,
+q109_opt_2_3,q109,dropdown_option,opt2_3,select02,TextBlockListMatch,TextBlockListMatch,3,,,
+q109_opt_2_4,q109,dropdown_option,opt2_4,select02,TextCategoriesAnalysis,TextCategoriesAnalysis,4,,,
+q110_blank_1,q110,dropdown_blank,select01,,<select01>,,1,"TranslateAsync(targetLanguage, input)",,
+q110_blank_2,q110,dropdown_blank,select02,,<select02>,,2,"{translation?.Translations?[0]?.Text}.""",,
+q110_opt_1_1,q110,dropdown_option,opt1_1,select01,"Translate(targetLanguage, input)","Translate(targetLanguage, input)",1,,,
+q110_opt_1_2,q110,dropdown_option,opt1_2,select01,"TranslateAsync(targetLanguage, input)","TranslateAsync(targetLanguage, input)",2,,,
+q110_opt_1_3,q110,dropdown_option,opt1_3,select01,TranslationRecognizer,TranslationRecognizer,3,,,
+q110_opt_2_1,q110,dropdown_option,opt2_1,select02,translations.Value'.,translations.Value'.,1,,,
+q110_opt_2_2,q110,dropdown_option,opt2_2,select02,translations[0].text.,translations[0].text.,2,,,
+q110_opt_2_3,q110,dropdown_option,opt2_3,select02,{Translations.Text}.,{Translations.Text}.,3,,,
+q110_opt_2_4,q110,dropdown_option,opt2_4,select02,"{translation?.Translations?[0]?.Text}.""","{translation?.Translations?[0]?.Text}.""",4,,,
