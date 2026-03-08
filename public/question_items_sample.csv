@@ -823,3 +823,59 @@ q140_a,q140,choice,A,,A. 予測エンドポイント クエリに show-all-inten
 q140_b,q140,choice,B,,B. 音声プライミングを有効にします。,B,2,,,false
 q140_c,q140,choice,C,,C. 予測エンドポイント クエリに log=true を追加します。,C,3,,,true
 q140_d,q140,choice,D,,D. 感情分析を有効にします。,D,4,,,false
+q141_s1,q141,statement,S1,,ストリーム処理は、受信した最新のデータ、または一定期間内のデータにアクセスします。,,1,,,true
+q141_s2,q141,statement,S2,,バッチ処理は即時に実行する必要があり、レイテンシは数秒または数ミリ秒単位です。,,2,,,false
+q141_s3,q141,statement,S3,,ストリーム処理は、単純な応答関数、集計、またはローリング平均などの計算に使用されます。,,3,,,true
+q142_select01,q142,dropdown_blank,select01,,<select01>,,1,Gremlin API,,
+q142_select02,q142,dropdown_blank,select02,,<select02>,,2,MongoDB API,,
+q142_select03,q142,dropdown_blank,select03,,<select03>,,3,Table API,,
+q142_opt1_1,q142,dropdown_option,opt1_1,select01,Cassandra API,Cassandra API,1,,,
+q142_opt1_2,q142,dropdown_option,opt1_2,select01,Gremlin API,Gremlin API,2,,,
+q142_opt1_3,q142,dropdown_option,opt1_3,select01,MongoDB API,MongoDB API,3,,,
+q142_opt1_4,q142,dropdown_option,opt1_4,select01,Table API,Table API,4,,,
+q142_opt2_1,q142,dropdown_option,opt2_1,select02,Cassandra API,Cassandra API,1,,,
+q142_opt2_2,q142,dropdown_option,opt2_2,select02,Gremlin API,Gremlin API,2,,,
+q142_opt2_3,q142,dropdown_option,opt2_3,select02,MongoDB API,MongoDB API,3,,,
+q142_opt2_4,q142,dropdown_option,opt2_4,select02,Table API,Table API,4,,,
+q142_opt3_1,q142,dropdown_option,opt3_1,select03,Cassandra API,Cassandra API,1,,,
+q142_opt3_2,q142,dropdown_option,opt3_2,select03,Gremlin API,Gremlin API,2,,,
+q142_opt3_3,q142,dropdown_option,opt3_3,select03,MongoDB API,MongoDB API,3,,,
+q142_opt3_4,q142,dropdown_option,opt3_4,select03,Table API,Table API,4,,,
+q143_1,q143,drag_item,1,,声優の同意書をWAVファイルでアップロードします。,1,1,,2,
+q143_2,q143,drag_item,2,,音声サンプルをWMAファイルでアップロードします。,2,2,,,
+q143_3,q143,drag_item,3,,カスタム音声プロジェクトを作成します。,3,3,,1,
+q143_4,q143,drag_item,4,,声優の同意書を署名付きPDFファイルでアップロードします。,4,4,,,
+q143_5,q143,drag_item,5,,音声データの品質を分析し、特定された問題を解決します。,5,5,,4,
+q143_6,q143,drag_item,6,,音声サンプルをMP3ファイルでアップロードします。,6,6,,3,
+q143_7,q143,drag_item,7,,ニューラルトレーニング手法を使用してモデルをトレーニングします。,7,7,,5,
+q144_a,q144,choice,A,,A. 月別,A,1,,,true
+q144_b,q144,choice,B,,B. シカゴ,B,2,,,false
+q144_c,q144,choice,C,,C. 雨,C,3,,,false
+q144_d,q144,choice,D,,D. 場所,D,4,,,false
+q145_select01,q145,dropdown_blank,select01,,<select01>,,1,speechRecognitionLanguage,,
+q145_select02,q145,dropdown_blank,select02,,<select02>,,2,addTargetLanguage,,
+q145_opt1_1,q145,dropdown_option,opt1_1,select01,addTargetLanguage,addTargetLanguage,1,,,
+q145_opt1_2,q145,dropdown_option,opt1_2,select01,speechSynthesisLanguage,speechSynthesisLanguage,2,,,
+q145_opt1_3,q145,dropdown_option,opt1_3,select01,speechRecognitionLanguage,speechRecognitionLanguage,3,,,
+q145_opt1_4,q145,dropdown_option,opt1_4,select01,voiceName,voiceName,4,,,
+q145_opt2_1,q145,dropdown_option,opt2_1,select02,addTargetLanguage,addTargetLanguage,1,,,
+q145_opt2_2,q145,dropdown_option,opt2_2,select02,speechSynthesisLanguage,speechSynthesisLanguage,2,,,
+q145_opt2_3,q145,dropdown_option,opt2_3,select02,speechRecognitionLanguage,speechRecognitionLanguage,3,,,
+q145_opt2_4,q145,dropdown_option,opt2_4,select02,voiceName,voiceName,4,,,
+q146_a,q146,choice,A,,A. カスタム モデルをデプロイします。,A,1,,,false
+q146_b,q146,choice,B,,B. 読み取りモデルを実装します。,B,2,,,true
+q146_c,q146,choice,C,,C. 名刺モデルをv3.0にアップグレードします,C,3,,,false
+q146_d,q146,choice,D,,D. 契約モデルを実装する,D,4,,,false
+q147_s1,q147,statement,S1,,解決策：既存のモデルに新しい画像とラベルを追加します。モデルを再トレーニングしてから、モデルを公開します。,,1,,,true
+q148_a,q148,choice,A,,A. モデルをGPT-4-32lcに変更します,A,1,,,false
+q148_b,q148,choice,B,,B. プロンプトに「// 関数 F は何をしますか?」を追加します。,B,2,,,true
+q148_c,q148,choice,C,,C. プロンプトに関数 F(説明) を追加します。,C,3,,,false
+q148_d,q148,choice,D,,D. 温度パラメータを 1 に設定します。,D,4,,,false
+q149_a,q149,choice,A,,A. Face API の別のバージョンを使用します。,A,1,,,false
+q149_b,q149,choice,B,,B. Face サービスの代わりに Computer Vision サービスを使用します。,B,2,,,false
+q149_c,q149,choice,C,,C. Detect メソッドの代わりに Identify メソッドを使用します。,C,3,,,false
+q149_d,q149,choice,D,,D. 検出モデルを変更します。,D,4,,,true
+q150_a,q150,choice,A,,A. カスタム抽出モデル,A,1,,,false
+q150_b,q150,choice,B,,B. マルチラベル分類プロジェクト,B,2,,,true
+q150_c,q150,choice,C,,C. カスタム固有表現抽出（NER）プロジェクト,C,3,,,false
+q150_d,q150,choice,D,,D. マルチラベル画像分類モデル,D,4,,,false
