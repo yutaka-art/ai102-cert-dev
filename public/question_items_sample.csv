@@ -1965,3 +1965,41 @@ q350_a,q350,choice,A,,"A. create_resource(クライアント、""res1""、""Comp
 q350_b,q350,choice,B,,"B. create_resource(クライアント、""res1""、""CustomVision.Prediction""、""F0""、""westus"")",B,2,,,False
 q350_c,q350,choice,C,,"C. create_resource(クライアント、""res1""、""ComputerVision""、""S0""、""westus"")",C,3,,,False
 q350_d,q350,choice,D,,"D. create_resource(クライアント、""res1""、""CustomVision.Prediction""、""S0""、""westus"")",D,4,,,False
+q351_s1,q351,statement,S1,,回答には、大規模言語モデル（LLM）に関する高い確度の説明が含まれます。,,1,,,False
+q351_s2,q351,statement,S2,,「LLMとは何ですか？」を「AIモデルの文脈におけるLLMとは何ですか？」に変更すると、意図した回答が生成されます。,,2,,,True
+q351_s3,q351,statement,S3,,「あなたは役に立つアシスタントです。」を「AI言語モデルの文脈でのみ回答する必要があります。」に変更すると、意図した回答が生成される可能性が高まります。,,3,,,True
+q353_a,q353,choice,A,,A.アズール・アル・ボット,A,1,,,False
+q353_b,q353,choice,B,,B. Azure SQL,B,2,,,False
+q353_c,q353,choice,C,,C. Azure AI ドキュメント インテリジェンス,C,3,,,False
+q353_d,q353,choice,D,,D. Azure Blob ストレージ,D,4,,,True
+q353_e,q353,choice,E,,E. Azure AI 検索,E,5,,,True
+q354_a,q354,choice,A,,A. Azure OpenAI,A,1,,,False
+q354_b,q354,choice,B,,B. Azure Al イマーシブ リーダー,B,2,,,False
+q354_c,q354,choice,C,,C. Azure AI ドキュメント インテリジェンス,C,3,,,True
+q354_d,q354,choice,D,,D. Azure カスタム ビジョン,D,4,,,False
+q355_a,q355,choice,A,,A. フィドラー,A,1,,,False
+q355_b,q355,choice,B,,B. ボットフレームワークコンポーザー,B,2,,,False
+q355_c,q355,choice,C,,C. ボットフレームワークエミュレーター,C,3,,,True
+q355_d,q355,choice,D,,D. ボットフレームワークCLI,D,4,,,False
+q355_e,q355,choice,E,,E. ngrok,E,5,,,True
+q355_f,q355,choice,F,,F. nginx,F,6,,,False
+q356_drag_1,q356,drag_item,1,,必要に応じて、事前構築済みのドメインモデルを追加します。,1,1,,,
+q356_drag_2,q356,drag_item,2,,レビュー用に記録された発話を検証し、モデルを変更します。,2,2,,2.0,
+q356_drag_3,q356,drag_item,3,,オーサリングを Azure リソース オーサリング キーに移行します。,3,3,,,
+q356_drag_4,q356,drag_item,4,,アクティブラーニングを有効にします。,4,4,,1.0,
+q356_drag_5,q356,drag_item,5,,Log Analytics を使用してログ収集を有効にします。,5,5,,,
+q356_drag_6,q356,drag_item,6,,言語理解モデルをトレーニングして再公開します。,6,6,,3.0,
+q357_a,q357,choice,A,,A. File1.pdf のみ,A,1,,,False
+q357_b,q357,choice,B,,B. File2.jpgのみ,B,2,,,False
+q357_c,q357,choice,C,,C. File3 tiffのみ,C,3,,,True
+q357_d,q357,choice,D,,D. File2.jpg と File3.tiff のみ,D,4,,,False
+q357_e,q357,choice,E,,E. ファイル1.pdf、ファイル2.jpg、ファイル3.tiff,E,5,,,False
+q358_a,q358,choice,A,,A. ログ記録オプトアウト,A,1,,,True
+q358_b,q358,choice,B,,B. piiカテゴリー,B,2,,,False
+q358_c,q358,choice,C,,C. 統計情報を表示,C,3,,,False
+q358_d,q358,choice,D,,D. モデルバージョン,D,4,,,False
+q359_s1,q359,statement,S1,,解決策は目標を達成していますか?,,1,,,True
+q360_a,q360,choice,A,,A. Azure AI翻訳,A,1,,,False
+q360_b,q360,choice,B,,B. Azure AI ドキュメント インテリジェンス,B,2,,,False
+q360_c,q360,choice,C,,C. Azure AI イマーシブ リーダー,C,3,,,True
+q360_d,q360,choice,D,,D. Azure AI言語,D,4,,,False

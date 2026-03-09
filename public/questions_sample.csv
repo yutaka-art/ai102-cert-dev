@@ -2264,3 +2264,53 @@ resource_name, string kind, string account_tier, string location)
       new CognitiveServicesAccountProperties(), new Sku(account_tier));
   var result = client.Accounts.Create(resource_group_name, account_tier, parameters);
 }",1つ選択してください,1,画像キャプション用の無料リソースは ComputerVision の F0 を westus に作成します。,True,{}
+q351,#351,multi_yesno,Azure OpenAI 定義応答の改善,一般的な AJ 用語の定義をユーザーに提供するアプリを構築しています。,"OpenAIClient client =
+  new OpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
+ChatComplationsOptions options = new ChatCompletionsOptions()
+{
+  Messages =
+  {
+    new ChatMessage(ChatRole.System, ""You are a helpful assistant.""),
+    new ChatMessage(ChatRole.User, ""What us an LLM?"")
+  }
+};
+
+ChatCompletions response = client.GetChatCompletions(deploymentName, options);
+ChatMessage completion = response.Choices[0].Message;
+Console.WriteLine($""Chatbot: {completion.Content}"");",各文について Yes / No を選択してください,3,曖昧な質問やシステムメッセージの改善で、意図した回答が得られる可能性が高まります。,False,{}
+q353,#353,multi_choice,Azure OpenAI のグラウンディング用リソース,"Azure OpenAI リソースを含む Azure サブスクリプションがあります。
+GPT-4 モデルをリソースにデプロイします。
+モデルのグラウンディング データとして使用されるファイルをアップロードできることを確認する必要があります。
+作成する必要がある 2 つのリソースの種類はどれですか。それぞれの正解はソリューションの一部を示しています。
+注意: 正しい選択ごとに 1 ポイントが付与されます。",,2つ選択してください,2,グラウンディング用ファイルの保管と検索に Blob Storage と Azure AI Search を使用します。,True,{}
+q354,#354,single_choice,請求書プロパティ取得のカスタムスキル,"Search1 という名前の Azure Al Search リソースがあります。
+Search1 を使用してコンテンツのインデックスを作成する App1 という名前のアプリがあります。
+アプリが Search1 を使用して請求書のプロパティを認識して取得できるようにするには、App1 にカスタム スキルを追加する必要があります。
+ソリューションには何を含めるべきですか?",,1つ選択してください,1,請求書の項目抽出には Azure AI Document Intelligence が適しています。,True,{}
+q355,#355,multi_choice,Bot Framework のリモートデバッグ ツール,"Microsoftボットフレームワークを使用して構築されたチャットボットがあります。チャットボットエンドポイントをリモートでデバッグする必要があります。
+ローカルコンピュータにインストールする必要がある2つのツールはどれですか？それぞれの正解は、解決策の一部を示しています。（2つ選択してください。）注：正しい選択はそれぞれ1ポイントの価値があります。",,2つ選択してください,2,リモートデバッグには Bot Framework Emulator と ngrok を利用します。,True,{}
+q356,#356,drag_drop,LUIS 応答改善の手順,"Web ベースの顧客エージェントのユーザーからの自然言語入力を処理するために、言語理解サービスを使用しています。
+ユーザーから、エージェントが「申し訳ありませんが、理解できません」という一般的な応答を頻繁に返すという報告を受けています。エージェントがリクエストに応答する能力を改善する必要があります。
+順番に実行する必要がある 3 つのアクションはどれですか。回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順序に並べます。(3 つ選択してください。)",,正しい順に並べてください,3,アクティブラーニングを有効化し、記録発話をレビューしてモデル更新後に再トレーニング・再公開します。,True,"{""mode"": ""sequence"", ""required_items"": 3}"
+q357,#357,single_choice,Document Intelligence で分析可能なファイル,DM という名前の Azure Al Document Intelligence リソースを含む Azure サブスクリプションがあります。DI1 は、Standard SO 価格レベルを使用します。次の表に示すファイルがあります。,"|Name|Size|Description|
+|--|--|--|
+|File1.pdf|800MB|Contains scanned images|
+|File2.jpg|1KB|An image that has 25 x 25 pixels|
+|File3.tiff|5MB|An image that has 5000 x 5000 pixels|",1つ選択してください,1,サイズや解像度の制限から分析可能なのは File3.tiff のみです。,True,{}
+q358,#358,single_choice,Language Service のデータ保持を無効化するクエリパラメータ,"次のことを実行する言語サービス リソースがあります。
+* 感情分析
+* 固有表現抽出（NER）
+* 個人識別情報（Pll）の識別
+データの分析後、リソースが入力データを保持しないようにする必要があります。Language Service API のどのクエリパラメータを設定する必要がありますか？",,1つ選択してください,1,入力データを保持しないためには loggingOptOut を使用します。,True,{}
+q359,#359,single_yesno,Q&A の代替表現追加で価格質問を改善できるか,"注: この質問は、同じシナリオを示す一連の質問の一部です。このシリーズの各質問には、指定された目標を達成できる可能性のある独自の解決策が含まれています。一部の質問セットには複数の正しい解決策が含まれる場合がありますが、他の質問セットには正しい解決策がない場合があります。
+このセクションの質問に回答すると、その質問に戻ることはできません。そのため、これらの質問はレビュー画面には表示されません。
+Azure Cognitive Service for Language で質問応答を使用するチャットボットを構築しています。
+製品カタログと価格表を含む Doc1.pdf という名前の PDF があるとします。Doc1.pdf をアップロードしてモデルをトレーニングします。
+テスト中に、チャットボットが次の質問に正しく応答したとユーザーが報告しました: <製品> の価格はいくらですか?
+チャットボットは次の質問に応答できません: < 製品 > の価格はいくらですか?
+チャットボットが両方の質問に正しく応答することを確認する必要があります。
+解決策: Language Studio から、質問と回答のペアに代替表現を追加し、モデルを再トレーニングして再公開します。
+これは目標を達成していますか?",,はい / いいえ を選択してください,1,代替表現を追加して再トレーニング・再公開することで改善できます。,False,{}
+q360,#360,single_choice,失読症向け読書体験の最適化,"コンテンツ管理システムを設計しています。
+失読症などの総合的および学習的差異のあるユーザー向けに、読書エクスペリエンスが最適化されていることを確認する必要があります。
+ソリューションに含めるべき Azure サービスはどれですか?",,1つ選択してください,1,読書体験を最適化するには Azure AI イマーシブ リーダーが適しています。,True,{}
