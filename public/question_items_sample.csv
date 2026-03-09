@@ -1397,3 +1397,52 @@ q250_a,q250,choice,A,,A. Azure AI ビデオ インデクサー,A,1,,,False
 q250_b,q250,choice,B,,B. Azure Custom Vision でのオブジェクト検出,B,2,,,False
 q250_c,q250,choice,C,,C. Foundry Tools 空間分析における Azure Vision,C,3,,,True
 q250_d,q250,choice,D,,D. Foundry Tools の Azure Vision 画像分析,D,4,,,False
+q251_blank_1,q251,dropdown_blank,select01,,<select01>,,1,confidenceScoreThreshold,,
+q251_opt_select01_1,q251,dropdown_option,optselect01_1,select01,confidenceScore,confidenceScore,1,,,
+q251_opt_select01_2,q251,dropdown_option,optselect01_2,select01,confidenceScoreThreshold,confidenceScoreThreshold,2,,,
+q251_opt_select01_3,q251,dropdown_option,optselect01_3,select01,context,context,3,,,
+q251_opt_select01_4,q251,dropdown_option,optselect01_4,select01,rankerType,rankerType,4,,,
+q251_blank_2,q251,dropdown_blank,select02,,<select02>,,2,projectName,,
+q251_opt_select02_1,q251,dropdown_option,optselect02_1,select02,deploymentName,deploymentName,1,,,
+q251_opt_select02_2,q251,dropdown_option,optselect02_2,select02,kbId,kbId,2,,,
+q251_opt_select02_3,q251,dropdown_option,optselect02_3,select02,knowledgebases,knowledgebases,3,,,
+q251_opt_select02_4,q251,dropdown_option,optselect02_4,select02,projectName,projectName,4,,,
+q252_a,q252,choice,A,,A. 言語理解ポータルから、モデルのクローンを作成します。,A,1,,,False
+q252_b,q252,choice,B,,B. モデルを.luファイルとしてエクスポートします。,B,2,,,True
+q252_c,q252,choice,C,,C. 新しいSpeechサービスを作成します。,C,3,,,False
+q252_d,q252,choice,D,,D. 新しい言語理解サービスを作成します。,D,4,,,False
+q253_a,q253,choice,A,,A. Power BI レポートビルダー,A,1,,,True
+q253_b,q253,choice,B,,B. チャーシキュレーター,B,2,,,False
+q253_c,q253,choice,C,,C. Power BI デスクトップ,C,3,,,False
+q253_d,q253,choice,D,,D. Power BI サービス,D,4,,,False
+q254_blank_1,q254,dropdown_blank,select01,,<select01>,,1,Microsoft.CognitiveServices,,
+q254_opt_select01_1,q254,dropdown_option,optselect01_1,select01,Microsoft.CognitiveSearch,Microsoft.CognitiveSearch,1,,,
+q254_opt_select01_2,q254,dropdown_option,optselect01_2,select01,Microsoft.CognitiveServices,Microsoft.CognitiveServices,2,,,
+q254_opt_select01_3,q254,dropdown_option,optselect01_3,select01,Microsoft.MachineLearning,Microsoft.MachineLearning,3,,,
+q254_opt_select01_4,q254,dropdown_option,optselect01_4,select01,Microsoft.MachineLearningServices,Microsoft.MachineLearningServices,4,,,
+q254_blank_2,q254,dropdown_blank,select02,,<select02>,,2,FormRecognizer,,
+q254_opt_select02_1,q254,dropdown_option,optselect02_1,select02,AiBuilder,AiBuilder,1,,,
+q254_opt_select02_2,q254,dropdown_option,optselect02_2,select02,CognitiveSearch,CognitiveSearch,2,,,
+q254_opt_select02_3,q254,dropdown_option,optselect02_3,select02,FormRecognizer,FormRecognizer,3,,,
+q254_opt_select02_4,q254,dropdown_option,optselect02_4,select02,OpenAI,OpenAI,4,,,
+q255_a,q255,choice,A,,A. 検索可能かつ取得可能,A,1,,,True
+q255_b,q255,choice,B,,B. 並べ替えと検索が可能,B,2,,,False
+q255_c,q255,choice,C,,C. 検索可能かつファセット可能,C,3,,,False
+q255_d,q255,choice,D,,D. フィルタリングおよび取得可能,D,4,,,False
+q256_s1,q256,statement,S1,,解決策: Content Safety Studio から、保護された素材の検出機能を使用してテストを実行します。,,1,,,False
+q257_blank_1,q257,dropdown_blank,select01,,<select01>,,1,"""prebuilt-read""",,
+q257_opt_select01_1,q257,dropdown_option,optselect01_1,select01,"""prebuilt-document""","""prebuilt-document""",1,,,
+q257_opt_select01_2,q257,dropdown_option,optselect01_2,select01,"""prebuilt-contract""","""prebuilt-contract""",2,,,
+q257_opt_select01_3,q257,dropdown_option,optselect01_3,select01,"""prebuilt-read""","""prebuilt-read""",3,,,
+q257_blank_2,q257,dropdown_blank,select02,,<select02>,,2,0.75,,
+q257_opt_select02_1,q257,dropdown_option,optselect02_1,select02,0.1,0.1,1,,,
+q257_opt_select02_2,q257,dropdown_option,optselect02_2,select02,0.75,0.75,2,,,
+q257_opt_select02_3,q257,dropdown_option,optselect02_3,select02,1.0,1.0,3,,,
+q258_a,q258,choice,A,,A. アダプティブカード,A,1,,,False
+q258_b,q258,choice,B,,B. アクティビティハンドラー,B,2,,,True
+q258_c,q258,choice,C,,C. ダイアログ,C,3,,,False
+q258_d,q258,choice,D,,D. スキル,D,4,,,False
+q259_a,q259,choice,A,,A. bot1 の認証を実装します。,A,1,,,False
+q259_b,q259,choice,B,,B. lu1 のアクティブ ラーニングを有効にします。,B,2,,,False
+q259_c,q259,choice,C,,C. コンテナ内のホスト lu1。,C,3,,,False
+q259_d,q259,choice,D,,D. bot1 に Direct Line Speech を追加します。,D,4,,,True
