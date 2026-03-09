@@ -1180,3 +1180,70 @@ q210_opt_1_1,q210,dropdown_option,opt1_1,select01,account,account,1,,,
 q210_opt_1_2,q210,dropdown_option,opt1_2,select01,container,container,2,,,
 q210_opt_1_3,q210,dropdown_option,opt1_3,select01,database,database,3,,,
 q210_opt_1_4,q210,dropdown_option,opt1_4,select01,item,item,4,,,
+q211_a_1,q211,choice,A,,A. Azure.AI.Translation.Text,A,1,,,True
+q211_b_2,q211,choice,B,,B. Microsoft.CognitiveServices.Speech,B,2,,,False
+q211_c_3,q211,choice,C,,C. Azure.AI.翻訳.ドキュメント,C,3,,,False
+q211_d_4,q211,choice,D,,D. Azure.AI.翻訳.音声,D,4,,,False
+q212_a_1,q212,choice,A,,A. Azure Kubernetes サービス (AKS),A,1,,,False
+q212_b_2,q212,choice,B,,B. Azure Stack Hub 統合システムでホストされる Kubernetes クラスター,B,2,,,False
+q212_c_3,q212,choice,C,,C. Azure コンテナー インスタンス,C,3,,,False
+q212_d_4,q212,choice,D,,D. Dockerエンジン,D,4,,,True
+q213_a_1,q213,choice,A,,A. キーフレーズ抽出,A,1,,,True
+q213_b_2,q213,choice,B,,B. カスタム固有表現抽出 (NER),B,2,,,False
+q213_c_3,q213,choice,C,,C. 会話言語理解（CLU）,C,3,,,False
+q213_d_4,q213,choice,D,,D. 言語検出,D,4,,,False
+q214_stmt_1,q214,statement,S1,,テキスト値はJSON形式のテキストを使用する必要があります。,,1,,,False
+q214_stmt_2,q214,statement,S2,,コマンドは入力されたテキストを分析し、テキストに公開されている歌詞が含まれているかどうかを識別します。,,2,,,True
+q214_stmt_3,q214,statement,S3,,Ocp-Apim-Sunscription-Key値には、Resource1をホストするAzureサブスクリプションのIDが含まれている必要があります。,,3,,,False
+q215_a_1,q215,choice,A,,A. プロンプト,A,1,,,True
+q215_b_2,q215,choice,B,,B. アクション,B,2,,,False
+q215_c_3,q215,choice,C,,C. ウォーターフォール,C,3,,,False
+q215_d_4,q215,choice,D,,D. 適応型,D,4,,,False
+q216_a_1,q216,choice,A,,A. File1.avi を www.youtube.com の Web ページにアップロードし、ビデオの URL を Azure Al Video Indexer Web サイトにコピーします。,A,1,,,False
+q216_b_2,q216,choice,B,,B. OneDrive からダウンロード リンクを作成し、そのリンクを Azure Al Video Indexer Web サイトにコピーします。,B,2,,,True
+q216_c_3,q216,choice,C,,C. OneDrive から、File1.avi の共有リンクを作成し、そのリンクを Azure Al Video Indexer Web サイトにコピーします。,C,3,,,False
+q216_d_4,q216,choice,D,,D. File1 avi をローカル コンピューターにダウンロードし、そのファイルを Azure Al Video Indexer Web サイトにアップロードします。,D,4,,,False
+q217_blank_1,q217,dropdown_blank,select01,,<select01>,,1,"people,keywords",,
+q217_opt_1_1,q217,dropdown_option,opt1_1,select01,en-US,en-US,1,,,
+q217_opt_1_2,q217,dropdown_option,opt1_2,select01,false,false,2,,,
+q217_opt_1_3,q217,dropdown_option,opt1_3,select01,"people,keywords","people,keywords",3,,,
+q217_opt_1_4,q217,dropdown_option,opt1_4,select01,"people,search","people,search",4,,,
+q217_opt_1_5,q217,dropdown_option,opt1_5,select01,search,search,5,,,
+q217_opt_1_6,q217,dropdown_option,opt1_6,select01,true,true,6,,,
+q217_blank_2,q217,dropdown_blank,select02,,<select02>,,2,search,,
+q217_opt_2_1,q217,dropdown_option,opt2_1,select02,en-US,en-US,1,,,
+q217_opt_2_2,q217,dropdown_option,opt2_2,select02,false,false,2,,,
+q217_opt_2_3,q217,dropdown_option,opt2_3,select02,"people,keywords","people,keywords",3,,,
+q217_opt_2_4,q217,dropdown_option,opt2_4,select02,"people,search","people,search",4,,,
+q217_opt_2_5,q217,dropdown_option,opt2_5,select02,search,search,5,,,
+q217_opt_2_6,q217,dropdown_option,opt2_6,select02,true,true,6,,,
+q217_blank_3,q217,dropdown_blank,select03,,<select03>,,3,true,,
+q217_opt_3_1,q217,dropdown_option,opt3_1,select03,en-US,en-US,1,,,
+q217_opt_3_2,q217,dropdown_option,opt3_2,select03,false,false,2,,,
+q217_opt_3_3,q217,dropdown_option,opt3_3,select03,"people,keywords","people,keywords",3,,,
+q217_opt_3_4,q217,dropdown_option,opt3_4,select03,"people,search","people,search",4,,,
+q217_opt_3_5,q217,dropdown_option,opt3_5,select03,search,search,5,,,
+q217_opt_3_6,q217,dropdown_option,opt3_6,select03,true,true,6,,,
+q217_blank_4,q217,dropdown_blank,select04,,<select04>,,4,en-US,,
+q217_opt_4_1,q217,dropdown_option,opt4_1,select04,en-US,en-US,1,,,
+q217_opt_4_2,q217,dropdown_option,opt4_2,select04,false,false,2,,,
+q217_opt_4_3,q217,dropdown_option,opt4_3,select04,"people,keywords","people,keywords",3,,,
+q217_opt_4_4,q217,dropdown_option,opt4_4,select04,"people,search","people,search",4,,,
+q217_opt_4_5,q217,dropdown_option,opt4_5,select04,search,search,5,,,
+q217_opt_4_6,q217,dropdown_option,opt4_6,select04,true,true,6,,,
+q218_blank_1,q218,dropdown_blank,select01,,<select01>,,1,GetCompletions,,
+q218_opt_1_1,q218,dropdown_option,opt1_1,select01,GetCompletions,GetCompletions,1,,,
+q218_opt_1_2,q218,dropdown_option,opt1_2,select01,GetEmbeddings,GetEmbeddings,2,,,
+q218_opt_1_3,q218,dropdown_option,opt1_3,select01,GetImageGenerations,GetImageGenerations,3,,,
+q218_blank_2,q218,dropdown_blank,select02,,<select02>,,2,(response.Value.Choices[0].Text);,,
+q218_opt_2_1,q218,dropdown_option,opt2_1,select02,(response.Value.Choices[0].Text);,(response.Value.Choices[0].Text);,1,,,
+q218_opt_2_2,q218,dropdown_option,opt2_2,select02,"(response,Value.Id);","(response,Value.Id);",2,,,
+q218_opt_2_3,q218,dropdown_option,opt2_3,select02,(respons.Value.PromptFilterResults);,(respons.Value.PromptFilterResults);,3,,,
+q219_blank_1,q219,dropdown_blank,select01,,<select01>,,1,半構造化データ。,,
+q219_opt_1_1,q219,dropdown_option,opt1_1,select01,リレーショナルデータ。,リレーショナルデータ。,1,,,
+q219_opt_1_2,q219,dropdown_option,opt1_2,select01,半構造化データ。,半構造化データ。,2,,,
+q219_opt_1_3,q219,dropdown_option,opt1_3,select01,構造化データ。,構造化データ。,3,,,
+q219_opt_1_4,q219,dropdown_option,opt1_4,select01,非構造化データ。,非構造化データ。,4,,,
+q220_stmt_1,q220,statement,S1,,user.name はエンティティです。,,1,,,False
+q220_stmt_2,q220,statement,S2,,ダイアログはユーザー名と年齢を尋ね、user.name プロパティと user.age プロパティに適切な値を割り当てます。,,2,,,True
+q220_stmt_3,q220,statement,S3,,チャットボットは、userName または personName の最初の null 以外のエンティティ値を取得し、その値を user.name に割り当てます。,,3,,,True
