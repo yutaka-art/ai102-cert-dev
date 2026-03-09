@@ -929,3 +929,54 @@ q160_b,q160,choice,B,,B. 光学文字認識（OCR）,B,2,,,False
 q160_c,q160,choice,C,,C. 個人データ,C,3,,,False
 q160_d,q160,choice,D,,D. テキスト分類,D,4,,,False
 q160_e,q160,choice,E,,E. 際どい分類スコア,E,5,,,True
+q161_a,q161,choice,A,,A. トランザクション基幹業務（LOB）アプリケーションにストレージを提供する,A,1,,,False
+q161_b,q161,choice,B,,B. ソースデータストアとターゲットデータストア間の変換サービスを提供する,B,2,,,False
+q161_c,q161,choice,C,,C. リレーショナルおよび非リレーショナルの履歴データの読み取り専用ストレージを提供する,C,3,,,False
+q161_d,q161,choice,D,,D. 複数のソースからのデータに依存する複雑なクエリへの回答を提供する,D,4,,,True
+q162_select01,q162,dropdown_blank,select01,,<select01>,,1,半構造化データ。,,
+q162_opt01_1,q162,dropdown_option,opt01_1,select01,グラフデータ。,グラフデータ。,1,,,
+q162_opt01_2,q162,dropdown_option,opt01_2,select01,リレーショナルデータ。,リレーショナルデータ。,2,,,
+q162_opt01_3,q162,dropdown_option,opt01_3,select01,半構造化データ。,半構造化データ。,3,,,
+q162_opt01_4,q162,dropdown_option,opt01_4,select01,非構造化データ,非構造化データ,4,,,
+q163_select01,q163,dropdown_blank,select01,,<select01>,,1,value,,
+q163_select02,q163,dropdown_blank,select02,,<select02>,,2,alterations,,
+q163_opt01_1,q163,dropdown_option,opt01_1,select01,alterations,alterations,1,,,
+q163_opt01_2,q163,dropdown_option,opt01_2,select01,phrases,phrases,2,,,
+q163_opt01_3,q163,dropdown_option,opt01_3,select01,synonyms,synonyms,3,,,
+q163_opt01_4,q163,dropdown_option,opt01_4,select01,value,value,4,,,
+q163_opt02_1,q163,dropdown_option,opt02_1,select02,alterations,alterations,1,,,
+q163_opt02_2,q163,dropdown_option,opt02_2,select02,phrases,phrases,2,,,
+q163_opt02_3,q163,dropdown_option,opt02_3,select02,synonyms,synonyms,3,,,
+q163_opt02_4,q163,dropdown_option,opt02_4,select02,value,value,4,,,
+q164_select01,q164,dropdown_blank,select01,,<select01>,,1,BingGroundingTool,,
+q164_select02,q164,dropdown_blank,select02,,<select02>,,2,tools=,,
+q164_opt01_1,q164,dropdown_option,opt01_1,select01,AzureAISearchTool,AzureAISearchTool,1,,,
+q164_opt01_2,q164,dropdown_option,opt01_2,select01,BingGroundingTool,BingGroundingTool,2,,,
+q164_opt01_3,q164,dropdown_option,opt01_3,select01,FunctionTool,FunctionTool,3,,,
+q164_opt02_1,q164,dropdown_option,opt02_1,select02,metadata=,metadata=,1,,,
+q164_opt02_2,q164,dropdown_option,opt02_2,select02,tool_resource=,tool_resource=,2,,,
+q164_opt02_3,q164,dropdown_option,opt02_3,select02,tools=,tools=,3,,,
+q165_a,q165,choice,A,,A. ボットを Azure にデプロイし、ボットを Direct Une Speech チャネルに登録します。,A,1,,,True
+q165_b,q165,choice,B,,B. Bot Framework SDK を使用してボットを Cortana と統合します。,B,2,,,False
+q165_c,q165,choice,C,,C. Speech サービスを呼び出してボットを関数に接続する Azure 関数を作成します。,C,3,,,False
+q165_d,q165,choice,D,,D. ボットを Azure にデプロイし、ボットを Microsoft Teams チャネルに登録します。,D,4,,,False
+q166_a,q166,choice,A,,A. Content Safety Studio にサインインし、「テキスト コンテンツの管理」を選択します。,A,1,,,True
+q166_b,q166,choice,B,,B. Azure ポータルから、Azure Al コンテンツ セーフティ リソースを作成します。,B,2,,,True
+q166_c,q166,choice,C,,C. Azure ポータルから、Azure OpenAI リソースを作成します。,C,3,,,False
+q166_d,q166,choice,D,,D. Azure Al Foundry にサインインし、[安全性とセキュリティ] を選択します。,D,4,,,False
+q166_e,q166,choice,E,,E. Content Safety Studio にサインインし、テキストの保護された素材の検出を選択します。,E,5,,,False
+q167_1,q167,drag_item,1,,特定の会社名を除外リストに追加します。,1,1,,,
+q167_2,q167,drag_item,2,,Custom Vision の Web サイトにサインインします。,2,2,,,
+q167_3,q167,drag_item,3,,コンテンツ モデルのカスタマイズから、[言語] を選択します。,3,3,,,
+q167_4,q167,drag_item,4,,Azure Video Analyzer for Media の Web サイトにサインインします。,4,4,,1,
+q167_5,q167,drag_item,5,,コンテンツ モデルのカスタマイズから、[ブランド] を選択します。,5,5,,2,
+q167_6,q167,drag_item,6,,特定の会社名を包含リストに追加します。,6,6,,3,
+q168_a,q168,choice,A,,A. ビデオショット分析,A,1,,,False
+q168_b,q168,choice,B,,B. メディア資産管理,B,2,,,False
+q168_c,q168,choice,C,,C. 広告,C,3,,,True
+q169_s1,q169,statement,S1,,解決策: Language Studio から価格のエンティティを作成し、モデルを再トレーニングして再公開します。,,1,,,false
+q170_select01,q170,dropdown_blank,select01,,<select01>,,1,処理をコンピューティングノード全体に分散します。,,
+q170_opt01_1,q170,dropdown_option,opt01_1,select01,処理をコンピューティングノード全体に分散します。,処理をコンピューティングノード全体に分散します。,1,,,
+q170_opt01_2,q170,dropdown_option,opt01_2,select01,処理を制御ノード全体に分散します。,処理を制御ノード全体に分散します。,2,,,
+q170_opt01_3,q170,dropdown_option,opt01_3,select01,クライアント接続をコンピューティングノード全体にリダイレクトします。,クライアント接続をコンピューティングノード全体にリダイレクトします。,3,,,
+q170_opt01_4,q170,dropdown_option,opt01_4,select01,クライアント接続を制御ノード全体にリダイレクトします。,クライアント接続を制御ノード全体にリダイレクトします。,4,,,
