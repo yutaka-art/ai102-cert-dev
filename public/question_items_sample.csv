@@ -1124,3 +1124,59 @@ q200_opt02_2,q200,dropdown_option,opt02_2,select02,description,description,2,,,
 q200_opt02_3,q200,dropdown_option,opt02_3,select02,imageType,imageType,3,,,
 q200_opt02_4,q200,dropdown_option,opt02_4,select02,metadata,metadata,4,,,
 q200_opt02_5,q200,dropdown_option,opt02_5,select02,objects,objects,5,,,
+q201_a,q201,choice,A,,A. アクセス制御（IAM）,A,1,,,False
+q201_b,q201,choice,B,,B. プロパティ,B,2,,,False
+q201_c,q201,choice,C,,C. キーとエンドポイント,C,3,,,True
+q201_d,q201,choice,D,,D. アイデンティティ,D,4,,,False
+q202_blank_1,q202,dropdown_blank,select01,,<select01>,,1,"""definition"":",,
+q202_blank_2,q202,dropdown_blank,select02,,<select02>,,2,"""sampleBlobUrl"":",,
+q202_opt_1_1,q202,dropdown_option,opt1_1,select01,"""definition"":","""definition"":",1,,,
+q202_opt_1_2,q202,dropdown_option,opt1_2,select01,"""prompt"":","""prompt"":",2,,,
+q202_opt_1_3,q202,dropdown_option,opt1_3,select01,"""text"":","""text"":",3,,,
+q202_opt_2_1,q202,dropdown_option,opt2_1,select02,"""blocklistName"":","""blocklistName"":",1,,,
+q202_opt_2_2,q202,dropdown_option,opt2_2,select02,"""outputType"":","""outputType"":",2,,,
+q202_opt_2_3,q202,dropdown_option,opt2_3,select02,"""sampleBlobUrl"":","""sampleBlobUrl"":",3,,,
+q203_blank_1,q203,dropdown_blank,select01,,<select01>,,1,an Adaptive Card,,
+q203_blank_2,q203,dropdown_blank,select02,,<select02>,,2,an image,,
+q203_opt_1_1,q203,dropdown_option,opt1_1,select01,an Adaptive Card,an Adaptive Card,1,,,
+q203_opt_1_2,q203,dropdown_option,opt1_2,select01,a Hero Card,a Hero Card,2,,,
+q203_opt_1_3,q203,dropdown_option,opt1_3,select01,a Thumbnail Card,a Thumbnail Card,3,,,
+q203_opt_2_1,q203,dropdown_option,opt2_1,select02,an action set,an action set,1,,,
+q203_opt_2_2,q203,dropdown_option,opt2_2,select02,an image,an image,2,,,
+q203_opt_2_3,q203,dropdown_option,opt2_3,select02,an image group,an image group,3,,,
+q203_opt_2_4,q203,dropdown_option,opt2_4,select02,media,media,4,,,
+q204_a,q204,choice,A,,A. 旅行代理店のデータベースからのデータを含めるようにモデルを構成します。,A,1,,,False
+q204_b,q204,choice,B,,B. モデルの Top P パラメータを 0 に設定します。,B,2,,,False
+q204_c,q204,choice,C,,C. モデルの温度パラメータを 0 に設定します。,C,3,,,True
+q204_d,q204,choice,D,,D. モデルで使用されるシステム メッセージを変更して、回答が正確である必要があることを指定します。,D,4,,,False
+q205_1,q205,drag_item,1,,モデルを再トレーニングします。,1,1,,2,
+q205_2,q205,drag_item,2,,モデルをテストします。,2,2,,,
+q205_3,q205,drag_item,3,,モデルのドメインを変更します。,3,3,,1,
+q205_4,q205,drag_item,4,,モデルをエクスポートします。,4,4,,3,
+q206_a,q206,choice,A,,A. File1 avi を Azure ストレージ キューにアップロードします。,A,1,,,False
+q206_b,q206,choice,B,,B. File1.avi を www.youtube.com のページにアップロードします。,B,2,,,False
+q206_c,q206,choice,C,,C. file1 avi を Azure ビデオ インデクサー Web サイトにアップロードします。,C,3,,,False
+q206_d,q206,choice,D,,D. ファイル1 avi を Microsoft OneDrive にアップロードします。,D,4,,,True
+q207_a,q207,choice,A,,A. リコール,A,1,,,True
+q207_b,q207,choice,B,,B. Fスコア,B,2,,,False
+q207_c,q207,choice,C,,C. 重み付けされた精度,C,3,,,False
+q207_d,q207,choice,D,,D. 精度,D,4,,,True
+q207_e,q207,choice,E,,E. 曲線下面積（AUC）,E,5,,,False
+q208_blank_1,q208,dropdown_blank,select01,,<select01>,,1,bearer token,,
+q208_blank_2,q208,dropdown_blank,select02,,<select02>,,2,deployment name,,
+q208_opt_1_1,q208,dropdown_option,opt1_1,select01,API key,API key,1,,,
+q208_opt_1_2,q208,dropdown_option,opt1_2,select01,bearer token,bearer token,2,,,
+q208_opt_1_3,q208,dropdown_option,opt1_3,select01,shared access signnature(SAS) token,shared access signnature(SAS) token,3,,,
+q208_opt_2_1,q208,dropdown_option,opt2_1,select02,API key,API key,1,,,
+q208_opt_2_2,q208,dropdown_option,opt2_2,select02,deployment endpoint,deployment endpoint,2,,,
+q208_opt_2_3,q208,dropdown_option,opt2_3,select02,deployment name,deployment name,3,,,
+q208_opt_2_4,q208,dropdown_option,opt2_4,select02,deployment type,deployment type,4,,,
+q209_a,q209,choice,A,,A. テーブル,A,1,,,False
+q209_b,q209,choice,B,,B. キュー,B,2,,,False
+q209_c,q209,choice,C,,C. ファイル,C,3,,,True
+q209_d,q209,choice,D,,D. ブロブ,D,4,,,False
+q210_blank_1,q210,dropdown_blank,select01,,<select01>,,1,account,,
+q210_opt_1_1,q210,dropdown_option,opt1_1,select01,account,account,1,,,
+q210_opt_1_2,q210,dropdown_option,opt1_2,select01,container,container,2,,,
+q210_opt_1_3,q210,dropdown_option,opt1_3,select01,database,database,3,,,
+q210_opt_1_4,q210,dropdown_option,opt1_4,select01,item,item,4,,,
