@@ -1606,3 +1606,61 @@ q289_a,q289,choice,A,,A. 同義語マップ,A,1,,,True
 q289_b,q289,choice,B,,B.提案者,B,2,,,False
 q289_c,q289,choice,C,,C. カスタムアナライザー,C,3,,,False
 q289_d,q289,choice,D,,D. 組み込みのキーフレーズ抽出スキル,D,4,,,False
+q290_blank_1,q290,dropdown_blank,select01,,<select01>,,1,プライベートエンドポイントを作成します。,,
+q290_opt_select01_1,q290,dropdown_option,optselect01_1,select01,IP ファイアウォールを構成します。,IP ファイアウォールを構成します。,1,,,
+q290_opt_select01_2,q290,dropdown_option,optselect01_2,select01,プライベートエンドポイントを作成します。,プライベートエンドポイントを作成します。,2,,,
+q290_opt_select01_3,q290,dropdown_option,optselect01_3,select01,Azure ロールを使用します。,Azure ロールを使用します。,3,,,
+q290_blank_2,q290,dropdown_blank,select02,,<select02>,,2,Azure ロールを使用します。,,
+q290_opt_select02_1,q290,dropdown_option,optselect02_1,select02,プライベートエンドポイントを作成します。,プライベートエンドポイントを作成します。,1,,,
+q290_opt_select02_2,q290,dropdown_option,optselect02_2,select02,Azure ロールを使用します。,Azure ロールを使用します。,2,,,
+q290_opt_select02_3,q290,dropdown_option,optselect02_3,select02,キー認証を使用します。,キー認証を使用します。,3,,,
+q291_a,q291,choice,A,,A. チャットボットアプリのWebSocketを有効にします。,A,1,,,True
+q291_b,q291,choice,B,,B. スピーチサービスを作成します。,B,2,,,True
+q291_c,q291,choice,C,,C. ダイレクトライン音声チャネルを登録します。,C,3,,,True
+q291_d,q291,choice,D,,D. Cortanaチャネルを登録します。,D,4,,,False
+q291_e,q291,choice,E,,E. チャットボットアプリのCORSを有効にします。,E,5,,,False
+q291_f,q291,choice,F,,F. 言語理解サービスを作成します。,F,6,,,False
+q292_blank_1,q292,dropdown_blank,select01,,<select01>,,1,AddPhraseListAsync,,
+q292_opt_select01_1,q292,dropdown_option,optselect01_1,select01,AddPhraseListAsync,AddPhraseListAsync,1,,,
+q292_opt_select01_2,q292,dropdown_option,optselect01_2,select01,Phraselist,Phraselist,2,,,
+q292_opt_select01_3,q292,dropdown_option,optselect01_3,select01,PhraselistCreateObject,PhraselistCreateObject,3,,,
+q292_opt_select01_4,q292,dropdown_option,optselect01_4,select01,Phrases,Phrases,4,,,
+q292_opt_select01_5,q292,dropdown_option,optselect01_5,select01,SavePhraselistAsync,SavePhraselistAsync,5,,,
+q292_opt_select01_6,q292,dropdown_option,optselect01_6,select01,UploadPhraseListAsync,UploadPhraseListAsync,6,,,
+q292_blank_2,q292,dropdown_blank,select02,,<select02>,,2,PhraselistCreateObject,,
+q292_opt_select02_1,q292,dropdown_option,optselect02_1,select02,AddPhraseListAsync,AddPhraseListAsync,1,,,
+q292_opt_select02_2,q292,dropdown_option,optselect02_2,select02,Phraselist,Phraselist,2,,,
+q292_opt_select02_3,q292,dropdown_option,optselect02_3,select02,PhraselistCreateObject,PhraselistCreateObject,3,,,
+q292_opt_select02_4,q292,dropdown_option,optselect02_4,select02,Phrases,Phrases,4,,,
+q292_opt_select02_5,q292,dropdown_option,optselect02_5,select02,SavePhraselistAsync,SavePhraselistAsync,5,,,
+q292_opt_select02_6,q292,dropdown_option,optselect02_6,select02,UploadPhraseListAsync,UploadPhraseListAsync,6,,,
+q293_a,q293,choice,A,,A. キーフレーズ,A,1,,,True
+q293_b,q293,choice,B,,B. 感情,B,2,,,False
+q293_c,q293,choice,C,,C. 言語,C,3,,,False
+q293_d,q293,choice,D,,D. 実体/認識/一般,D,4,,,False
+q294_s1,q294,statement,S1,,このコードはドキュメントの言語を検出します。,,1,,,False
+q294_s2,q294,statement,S2,,リンクされた各エンティティに対して返される url 属性は、Bing 検索リンクになります。,,2,,,False
+q294_s3,q294,statement,S3,,リンクされた各エンティティに対して返される matches 属性は、ドキュメント内でそのエンティティが参照されている場所を示します。,,3,,,True
+q295_s1,q295,statement,S1,,セッション実行に対して、サブスクリプションに86トークンが課金されます。,,1,,,False
+q295_s2,q295,statement,S2,,最大レスポンストークン数を超えたため、テキスト補完は切り捨てられました。,,2,,,False
+q295_s3,q295,statement,S3,,prompt_tokensの値は、最大レスポンストークン数の計算に含まれます。,,3,,,False
+q296_1,q296,drag_item,1,,Azure OpenAI へのアクセスを申請します。,1,1,,1,
+q296_2,q296,drag_item,2,,埋め込みモデルをデプロイします。,2,2,,,
+q296_3,q296,drag_item,3,,Azure API Management をプロビジョニングします。,3,3,,,
+q296_4,q296,drag_item,4,,Azure OpenAI リソースをプロビジョニングします。,4,4,,2,
+q296_5,q296,drag_item,5,,GPT モデルをデプロイします。,5,5,,3,
+q296_6,q296,drag_item,6,,DALL-E モデルをデプロイします。,6,6,,,
+q297_a,q297,choice,A,,A. Liquid,A,1,,,True
+q297_b,q297,choice,B,,B. JSONL,B,2,,,False
+q297_c,q297,choice,C,,C. Handlebars,C,3,,,True
+q297_d,q297,choice,D,,D. yaml,D,4,,,False
+q297_e,q297,choice,E,,E. セマンティックカーネル,E,5,,,False
+q298_a,q298,choice,A,,A. mstts:express-as 要素の style 属性,A,1,,,False
+q298_b,q298,choice,B,,B. 強調要素の level 属性,B,2,,,False
+q298_c,q298,choice,C,,C. prosody 要素の pitch 属性,C,3,,,False
+q298_d,q298,choice,D,,D. voice 要素の effect 属性,D,4,,,True
+q299_a,q299,choice,A,,A. CSV,A,1,,,True
+q299_b,q299,choice,B,,B. JSON,B,2,,,False
+q299_c,q299,choice,C,,C. HTML,C,3,,,False
+q299_d,q299,choice,D,,D. Yaml,D,4,,,False
+q300_s1,q300,statement,S1,,解決策: ドメインに新しいエンティティを作成します。,,1,,,False
