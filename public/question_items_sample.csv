@@ -1511,3 +1511,60 @@ q269_opt_select02_7,q269,dropdown_option,optselect02_7,select02,verify,verify,7,
 q270_s1,q270,statement,S1,,CompanyDescription はインデックス作成に使用できます。,,1,,,True
 q270_s2,q270,statement,S2,,定義は、エンリッチメントプロセスの一環として Web API を呼び出します。,,2,,,True
 q270_s3,q270,statement,S3,,エンリッチメントステップは、「/document/organizations」配下の最初の組織に対してのみ呼び出されます。,,3,,,False
+q271_blank_1,q271,dropdown_blank,select01,,<select01>,,1,Azure AI Vision,,
+q271_blank_2,q271,dropdown_blank,select02,,<select02>,,2,Azure AI Language,,
+q271_opt_1_1,q271,dropdown_option,opt1_1,select01,Azure AI Document Intelligence,Azure AI Document Intelligence,1,,,
+q271_opt_1_2,q271,dropdown_option,opt1_2,select01,Azure AI Language,Azure AI Language,2,,,
+q271_opt_1_3,q271,dropdown_option,opt1_3,select01,Azure AI Search,Azure AI Search,3,,,
+q271_opt_1_4,q271,dropdown_option,opt1_4,select01,Azure AI Vision,Azure AI Vision,4,,,
+q271_opt_2_1,q271,dropdown_option,opt2_1,select02,Azure AI Document Intelligence,Azure AI Document Intelligence,1,,,
+q271_opt_2_2,q271,dropdown_option,opt2_2,select02,Azure AI Language,Azure AI Language,2,,,
+q271_opt_2_3,q271,dropdown_option,opt2_3,select02,Azure AI Search,Azure AI Search,3,,,
+q271_opt_2_4,q271,dropdown_option,opt2_4,select02,Azure AI Vision,Azure AI Vision,4,,,
+q272_a,q272,choice,A,,A. AzureOpenAI埋め込みスキル,A,1,,,False
+q272_b,q272,choice,B,,B. 文書抽出イオンスキル,B,2,,,False
+q272_c,q272,choice,C,,C. エンティティリンクスキル,C,3,,,False
+q272_d,q272,choice,D,,D. エンティティ認識スキル,D,4,,,True
+q273_a,q273,choice,A,,A. テキスト分類器,A,1,,,False
+q273_b,q273,choice,B,,B. テキストモデレーション,B,2,,,False
+q273_c,q273,choice,C,,C. 言語検出,C,3,,,False
+q273_d,q273,choice,D,,D. ブラックリスト,D,4,,,True
+q274_blank_1,q274,dropdown_blank,select01,,<select01>,,1,"""enabled"":",,
+q274_blank_2,q274,dropdown_blank,select02,,<select02>,,2,false,,
+q274_opt_1_1,q274,dropdown_option,opt1_1,select01,"""enabled"":","""enabled"":",1,,,
+q274_opt_1_2,q274,dropdown_option,opt1_2,select01,"""state"":","""state"":",2,,,
+q274_opt_1_3,q274,dropdown_option,opt1_3,select01,"""tags"":","""tags"":",3,,,
+q274_opt_1_4,q274,dropdown_option,opt1_4,select01,"""useBuiltin"":","""useBuiltin"":",4,,,
+q274_opt_2_1,q274,dropdown_option,opt2_1,select02,"[""Excluded""]","[""Excluded""]",1,,,
+q274_opt_2_2,q274,dropdown_option,opt2_2,select02,"[""Included""]","[""Included""]",2,,,
+q274_opt_2_3,q274,dropdown_option,opt2_3,select02,false,false,3,,,
+q274_opt_2_4,q274,dropdown_option,opt2_4,select02,true,true,4,,,
+q275_a,q275,choice,A,,A. カスタム言語モデルを作成する,A,1,,,False
+q275_b,q275,choice,B,,B. ビデオのみのオーディオインデックスを構成する,B,2,,,True
+q275_c,q275,choice,C,,C. 動画の多言語検出を有効にする,C,3,,,False
+q275_d,q275,choice,D,,D. ウェビナープレゼンター用のカスタムPersonモデルを構築する,D,4,,,False
+q276_s1,q276,statement,S1,,リソース1は、個人識別情報（PII）検出を使用してクエリされました。,,1,,,False
+q276_s2,q276,statement,S2,,応答は、リソース1が識別されたエンティティの正確性について低い信頼度を持っていることを示しています。,,2,,,False
+q276_s3,q276,statement,S3,,要求URLには、次の文字列が含まれています：https://resource1.cognitiveservices.azure.com/contentsafety,,3,,,False
+q277_a,q277,choice,A,,A. 透明性,A,1,,,True
+q277_b,q277,choice,B,,B. 公平性,B,2,,,False
+q277_c,q277,choice,C,,C. 包含,C,3,,,False
+q277_d,q277,choice,D,,D. 信頼性と安全性,D,4,,,False
+q278_blank_1,q278,dropdown_blank,select01,,<select01>,,1,Classfication,,
+q278_blank_2,q278,dropdown_blank,select02,,<select02>,,2,1,,
+q278_opt_1_1,q278,dropdown_option,opt1_1,select01,Classfication,Classfication,1,,,
+q278_opt_1_2,q278,dropdown_option,opt1_2,select01,pii,pii,2,,,
+q278_opt_1_3,q278,dropdown_option,opt1_3,select01,Terms,Terms,3,,,
+q278_opt_2_1,q278,dropdown_option,opt2_1,select02,1,1,1,,,
+q278_opt_2_2,q278,dropdown_option,opt2_2,select02,2,2,2,,,
+q278_opt_2_3,q278,dropdown_option,opt2_3,select02,3,3,3,,,
+q279_a,q279,choice,A,,A. アクティブラーニングを有効にします。,A,1,,,False
+q279_b,q279,choice,B,,B. 機械学習エンティティを追加します。,B,2,,,False
+q279_c,q279,choice,C,,C. GetContactDetailsインテントに例を追加します。,C,3,,,False
+q279_d,q279,choice,D,,D. Noneインテントに例を追加します。,D,4,,,True
+q280_a,q280,choice,A,,A. ファイル1,A,1,,,True
+q280_b,q280,choice,B,,B. ファイル2,B,2,,,False
+q280_c,q280,choice,C,,C. ファイル3,C,3,,,True
+q280_d,q280,choice,D,,D. ファイル4,D,4,,,False
+q280_e,q280,choice,E,,E. ファイル5,E,5,,,False
+q280_f,q280,choice,F,,F. ファイル6,F,6,,,True
