@@ -15,6 +15,24 @@ function shuffleArray<T>(array: T[]): T[] {
     .map(({ value }) => value)
 }
 
+/** シャッフル後の choice アイテムに A, B, C... のラベルを振り直す */
+function relabelChoiceItems(items: QuestionItem[]): QuestionItem[] {
+  const LABELS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  let choiceIndex = 0
+  return items.map((item) => {
+    if (item.item_type !== 'choice') return item
+    const newLetter = LABELS[choiceIndex++] || String(choiceIndex)
+    // "A. テキスト" → "B. テキスト" のようにラベル先頭のアルファベットを置換
+    const newLabel = item.label.replace(/^[A-Z]\./, `${newLetter}.`)
+    return {
+      ...item,
+      item_key: newLetter,
+      value: newLetter,
+      label: newLabel,
+    }
+  })
+}
+
 /**
  * CSV から問題データを読み込む composable
  * @param mode 'sequential' で question_no 順、'shuffle' でランダム順
@@ -33,8 +51,8 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
       const [questionsRes, itemsRes] = await Promise.all([
        fetch(import.meta.env.BASE_URL + 'questions_sample.csv'),
        fetch(import.meta.env.BASE_URL + 'question_items_sample.csv'),
-        // fetch(import.meta.env.BASE_URL + 'questions_sample_diff_041_050.csv'),
-        // fetch(import.meta.env.BASE_URL + 'question_items_sample_diff_041_050.csv'),
+        // fetch(import.meta.env.BASE_URL + 'questions_sample_diff_381_395.csv'),
+        // fetch(import.meta.env.BASE_URL + 'question_items_sample_diff_381_395.csv'),
       ])
 
       const questionsCsv = await questionsRes.text()
@@ -83,6 +101,10 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
         // shuffle_items が "true" の場合、選択肢をシャッフル
         if (String(q.shuffle_items).toLowerCase() === 'true') {
           qItems = shuffleArray(qItems)
+          // choice 型はシャッフル後にアルファベットラベルを振り直す
+          if (q.type === 'single_choice' || q.type === 'multi_choice') {
+            qItems = relabelChoiceItems(qItems)
+          }
         }
 
         // metadata_json をパース
