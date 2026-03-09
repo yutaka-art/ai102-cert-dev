@@ -2106,3 +2106,77 @@ q380_blank_2,q380,dropdown_blank,select02,,<select02>,,2,"{""name"": ""entities"
 q380_opt_2_1,q380,dropdown_option,opt2_1,select02,"{""name"": ""entities""}","{""name"": ""entities""}",1,,,
 q380_opt_2_2,q380,dropdown_option,opt2_2,select02,"{""name"": ""categories""}","{""name"": ""categories""}",2,,,
 q380_opt_2_3,q380,dropdown_option,opt2_3,select02,"{""name"": ""nameEntities""}","{""name"": ""nameEntities""}",3,,,
+q381_a,q381,choice,A,,A. a report,A,1,,,True
+q381_b,q381,choice,B,,B. Microsoft Power Apps,B,2,,,False
+q381_c,q381,choice,C,,C. a view,C,3,,,False
+q381_d,q381,choice,D,,D. a dataflow,D,4,,,False
+q382_a,q382,choice,A,,A. 一貫性,A,1,,,False
+q382_b,q382,choice,B,,B. 分離,B,2,,,False
+q382_c,q382,choice,C,,C. 原子性,C,3,,,True
+q382_d,q382,choice,D,,D. 耐久性,D,4,,,False
+q383_blank_1,q383,dropdown_blank,select01,,<select01>,,1,Face,,
+q383_blank_2,q383,dropdown_blank,select02,,<select02>,,2,Face,,
+q383_blank_3,q383,dropdown_blank,select03,,<select03>,,3,Speech,,
+q383_opt_1_1,q383,dropdown_option,opt1_1,select01,Face,Face,1,,,
+q383_opt_1_2,q383,dropdown_option,opt1_2,select01,Speech,Speech,2,,,
+q383_opt_1_3,q383,dropdown_option,opt1_3,select01,Text Analytics,Text Analytics,3,,,
+q383_opt_2_1,q383,dropdown_option,opt2_1,select02,Face,Face,1,,,
+q383_opt_2_2,q383,dropdown_option,opt2_2,select02,Speech,Speech,2,,,
+q383_opt_2_3,q383,dropdown_option,opt2_3,select02,Text Analytics,Text Analytics,3,,,
+q383_opt_3_1,q383,dropdown_option,opt3_1,select03,Face,Face,1,,,
+q383_opt_3_2,q383,dropdown_option,opt3_2,select03,Speech,Speech,2,,,
+q383_opt_3_3,q383,dropdown_option,opt3_3,select03,Text Analytics,Text Analytics,3,,,
+q384_a,q384,choice,A,,A. アズール・アル・スピーチ,A,1,,,False
+q384_b,q384,choice,B,,B. Azure AI コンテンツの安全性,B,2,,,False
+q384_c,q384,choice,C,,C. Azure AI Translator,C,3,,,False
+q384_d,q384,choice,D,,D. Azure Al 言語,D,4,,,True
+q385_a,q385,choice,A,,A. カスタム テキスト分類,A,1,,,False
+q385_b,q385,choice,B,,B. エンティティのリンク,B,2,,,False
+q385_c,q385,choice,C,,C. カスタム固有表現認識 (NER),C,3,,,True
+q385_d,q385,choice,D,,D. キーフレーズ抽出,D,4,,,False
+q386_a,q386,choice,A,,A. バッチ,A,1,,,True
+q386_b,q386,choice,B,,B. ストリーミング,B,2,,,False
+q386_c,q386,choice,C,,C. 変更点,C,3,,,False
+q387_blank_1,q387,dropdown_blank,select01,,<select01>,,1,Stream,,
+q387_blank_2,q387,dropdown_blank,select02,,<select02>,,2,AddFaceFromStreamAsync,,
+q387_opt_1_1,q387,dropdown_option,opt1_1,select01,File,File,1,,,
+q387_opt_1_2,q387,dropdown_option,opt1_2,select01,Stream,Stream,2,,,
+q387_opt_1_3,q387,dropdown_option,opt1_3,select01,Uro,Uro,3,,,
+q387_opt_1_4,q387,dropdown_option,opt1_4,select01,Url,Url,4,,,
+q387_opt_2_1,q387,dropdown_option,opt2_1,select02,AddFaceFromStreamAsync,AddFaceFromStreamAsync,1,,,
+q387_opt_2_2,q387,dropdown_option,opt2_2,select02,AddFaceFromUrlAsync,AddFaceFromUrlAsync,2,,,
+q387_opt_2_3,q387,dropdown_option,opt2_3,select02,CreateAsync,CreateAsync,3,,,
+q387_opt_2_4,q387,dropdown_option,opt2_4,select02,GetAsync,GetAsync,4,,,
+q389_blank_1,q389,dropdown_blank,select01,,<select01>,,1,prebuilt-layout,,
+q389_blank_2,q389,dropdown_blank,select02,,<select02>,,2,Ocp-Apim-Subscription-Key,,
+q389_opt_1_1,q389,dropdown_option,opt1_1,select01,prebuilt-contract,prebuilt-contract,1,,,
+q389_opt_1_2,q389,dropdown_option,opt1_2,select01,prebuilt-document,prebuilt-document,2,,,
+q389_opt_1_3,q389,dropdown_option,opt1_3,select01,prebuilt-layout,prebuilt-layout,3,,,
+q389_opt_1_4,q389,dropdown_option,opt1_4,select01,prebuilt-read,prebuilt-read,4,,,
+q389_opt_2_1,q389,dropdown_option,opt2_1,select02,Key1,Key1,1,,,
+q389_opt_2_2,q389,dropdown_option,opt2_2,select02,Ocp-Apim-Subscription-Key,Ocp-Apim-Subscription-Key,2,,,
+q389_opt_2_3,q389,dropdown_option,opt2_3,select02,Secret,Secret,3,,,
+q389_opt_2_4,q389,dropdown_option,opt2_4,select02,Subscription-Key,Subscription-Key,4,,,
+q390_a,q390,choice,A,,A. エンドポイント、キー、モデル名,A,1,,,False
+q390_b,q390,choice,B,,B. デプロイメント名、エンドポイント、およびキー,B,2,,,True
+q390_c,q390,choice,C,,C. エンドポイント、キー、モデルタイプ,C,3,,,False
+q390_d,q390,choice,D,,D. デプロイメント名、キー、モデル名,D,4,,,False
+q391_a,q391,choice,A,,"A. create_resource（ ""res1""、 ""ContentModerator""、 ""S0""、 ""eastus""）",A,1,,,False
+q391_b,q391,choice,B,,"B. create_resource（ ""res1""、 ""TextAnalytics""、 ""S0""、 ""eastus""）",B,2,,,True
+q391_c,q391,choice,C,,"C. create_resource（ ""res1""、 ""ContentModerator""、 ""Standard""、 ""East US""）",C,3,,,False
+q391_d,q391,choice,D,,"D. create_resource（ ""res1""、 ""TextAnalytics""、 ""Standard""、 ""East US""）",D,4,,,False
+q392_a,q392,choice,A,,A. キーフレーズ抽出,A,1,,,False
+q392_b,q392,choice,B,,B. 会話型言語理解（CLU）,B,2,,,False
+q392_c,q392,choice,C,,C. エンティティリンク,C,3,,,True
+q392_d,q392,choice,D,,D. カスタム名前付きエンティティ認識 (NER),D,4,,,False
+q393_a,q393,choice,A,,A. Azure アプリケーション ゲートウェイ,A,1,,,False
+q393_b,q393,choice,B,,B. IPsecルール,B,2,,,False
+q393_c,q393,choice,C,,C. 仮想ネットワークゲートウェイ,C,3,,,False
+q393_d,q393,choice,D,,D. 仮想ネットワークルール,D,4,,,True
+q394_s1,q394,statement,S1,,解決策: FindContact インテント内に新しいパターンを作成します。,,1,,,False
+q395_1,q395,drag_item,1,,質問と回答のペアを更新します。,1,1,,,
+q395_2,q395,drag_item,2,,代替フレーズを確認して承認します。,2,2,,2,
+q395_3,q395,drag_item,3,,ナレッジベースの編集パネルを開きます。,3,3,,1,
+q395_4,q395,drag_item,4,,アクティブラーニングを有効にします。,4,4,,,
+q395_5,q395,drag_item,5,,モデルを再トレーニングして再公開します。,5,5,,3,
+q395_6,q395,drag_item,6,,FAQドキュメントを修正し、再読み込みします。,6,6,,,
