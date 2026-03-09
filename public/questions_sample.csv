@@ -1582,3 +1582,97 @@ q259,#259,single_choice,責任ある AI の包括性に向けた bot1 拡張,"lu
 lu1 を使用する bot1 という名前の Azure ボットを構築してデプロイします。
 bot1 が Microsoft の責任ある AI の包括性の原則に準拠していることを確認する必要があります。
 bot1 をどのように拡張すればよいでしょうか?",,1つ選択してください,1,Direct Line Speech を追加すると音声入出力のアクセシビリティ向上に役立ちます。,True,{}
+q261,#261,dropdown,音声翻訳の Speech SDK 設定,"Azure AI Language サービスを使用して音声を翻訳するアプリを構築しています。
+音声を英語からイタリア語に翻訳するようにアプリを設定する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","speech_translation_config = speechsdk.translation.SpeechTranslationConfig(subscription=os.environ.get('SPEECH_KEY'), region=os.environ.get('SPEECH_REGION'))
+speech_translation_congig.<select01> = ""en-US""
+speech_translation_congig.<select02> (""it"")
+audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
+recognizer = speechsdk.translation.TranslationRecognizer(translation_config=speech_translation_config, audio_config=audio_config)",各ドロップダウンを選択してください,2,SpeechRecognitionLanguage で入力言語を設定し、add_target_language で翻訳先言語を追加します。,False,{}
+q262,#262,single_choice,質問検出に適した AI サービス,"インターネットベースのトレーニングソリューションの構築に成功しました。このソリューションでは、ユーザーのカメラとマイクが有効になっている必要があります。
+ユーザーのビデオストリームを監視し、ユーザーが講師に質問をしたことを検出する必要があります。ソリューションは開発労力を最小限に抑える必要があります。
+ソリューションには何を含めるべきですか?",,1つ選択してください,1,質問検出には音声を文字起こしして内容を解析する前提として Speech-to-Text が最適です。,True,{}
+q263,#263,single_choice,Form Recognizer のレビュー条件,"領収書画像を抽出するソリューションを開発する必要があります。このソリューションは、ドキュメント処理要件と技術要件を満たす必要があります。
+分析のためにレシート画像を Form Recognizer API にアップロードすると、API は次の JSON を返します。
+
+コンサルタント-簿記係グループのメンバーによる抽出された情報の手動レビューをトリガーするには、どの式を使用する必要がありますか?","{
+  ""documentResults"": [
+    {
+      ""docType"": ""prebuilt:receipt"",
+      ""pageRange"":[
+        1,
+        1
+      ],
+      ""fields"": {
+        ""ReceiptType"": {
+          ""type"": ""string"",
+          ""valueString"": ""Itemized"",
+          ""confidence"": 0.672
+        },
+        ""MerchantName"": {
+          ""type"": ""string"",
+          ""valueString"": ""Tailwind"",
+          ""text"": ""Tailwind"",
+          ""boundingBox"": [],
+          ""page"": 1,
+          ""confidence"": 0.913,
+          ""elements"": [
+            ""#/readResults/0/lines/0/words/0""
+          ]
+        }
+      }
+    }
+  ]
+}",1つ選択してください,1,MerchantName の confidence が 0.7 未満なら手動レビュー対象です。,True,{}
+q264,#264,single_choice,Wikipedia 参照の追加に使う機能,"Azure AI Language を使用してテキスト メッセージから意味を抽出するアプリを構築しています。
+Wikipedia の裏付けとなる記事への参照を追加して、追加のコンテキストを提供する必要があります。
+何を使うべきでしょうか?",,1つ選択してください,1,Wikipedia 等の既知情報源へリンクするのはエンティティリンクです。,True,{}
+q265,#265,single_choice,製品サポートマニュアル向けチャットボット,"製品サポートマニュアルがあります。
+マニュアルに基づいた製品サポートチャットボットを構築する必要があります。ソリューションは開発の労力とコストを最小限に抑える必要があります。
+何を使うべきでしょうか?",,1つ選択してください,1,FAQ/マニュアルベースで低コストに構築するならカスタム質問応答が適しています。,True,{}
+q266,#266,single_choice,ブランド認知度の測定,自然言語処理を用いて、ソーシャルメディアにおける自社ブランドの認知度を測定する必要があります。どのAzureサービスを使用すべきでしょうか？,,1つ選択してください,1,テキストベースのブランド言及分析には言語サービスが適しています。,True,{}
+q267,#267,dropdown,画像内テキスト抽出と不適切語検出,"ユーザー画像を共有するアプリを構築しています。
+次の要件を満たすようにアプリを設定する必要があります
+* アップロードされた画像はスキャンされ、画像からテキストが抽出される必要があります。
+* 抽出されたテキストは、不適切な言葉が含まれているかどうか分析する必要があります。
+* ソリューションは開発の労力を最小限に抑える必要があります。
+各要件には何を使用すればよいですか? 回答するには、回答エリアで該当する意見を選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+テキスト抽出:<select01>。
+不適切な言葉の検出:<select02>",,各ドロップダウンを選択してください,2,画像からのテキスト抽出には Computer Vision、不適切語の検出には Content Moderator を使います。,False,"{""placeholders"": [""select01"", ""select02""]}"
+q268,#268,single_choice,Anomaly Detector コンテナーの必須パラメーター,Anomaly Detector リソースを含む Azure サブスクリプションがあります。オンプレミス ネットワークに Server1 という名前の Docker ホスト サーバーをデプロイします。Server1 で Anomaly Detector サービスのインスタンスをホストする必要があります。docker run コマンドにはどのパラメーターを含める必要がありますか？,,1つ選択してください,1,Cognitive Services コンテナーの実行には Billing パラメーターが必要です。,True,{}
+q269,#269,dropdown,Face API の写真検索 POST リクエスト,"Face API を使用して、サンプル画像に基づいて人物の写真を検索する写真アプリケーションを開発しています。
+写真を検索するには、POST リクエストを作成する必要があります。
+リクエストをどのように完了すればよいですか？ 回答するには、適切な値を正しいターゲットにドラッグしてください。各値は1回、複数回、または全く使用されない場合があります。コンテンツを表示するには、ペイン間の分割バーをドラッグするか、スクロールする必要がある場合があります。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","POST {Endpoint}/face/v1.0/<select01>
+Request Body
+{
+  ""faceId"": ""c5c24a82-6845-4031-9d5d-978df9175426"",
+  ""largeFaceListId"": ""sample_list"",
+  ""largeFaceListId"": ""sample_list"",
+  ""maxNumOfCandidatesReturned"": 10,
+  ""mode"": <select02>
+}",各ドロップダウンを選択してください,2,類似顔検索は findsimilars と matchFace を使用します。,False,{}
+q270,#270,multi_yesno,Azure Cognitive Search カスタム スキル定義の評価,"Azure Cognitive Search カスタム スキルを構築しています。
+次のカスタム スキル スキーマ定義があります。
+
+以下の各項目について、該当する場合は「はい」を選択してください。該当しない場合は「いいえ」を選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","{
+  ""@odata.type"": ""#Microsoft.Skills.Custom.WebApiSkill"",
+  ""description"": ""My custom skill description"",
+  ""uri"": ""https://contoso-webskill.azurewebsites.net/api/process"",
+  ""context"": ""/document/organizations/*"",
+  ""inputs"": [
+    {
+      ""name"": ""companyName"",
+      ""source"": ""/document/organizations/*""
+    }
+  ],
+  ""outputs"": [
+    {
+      ""name"": ""companyDescription""
+    }
+  ]
+}",各文について Yes / No を選択してください,3,出力はインデックスに利用可能で、Web API は各 organizations 要素ごとに呼び出されます。最初の組織だけではありません。,False,{}

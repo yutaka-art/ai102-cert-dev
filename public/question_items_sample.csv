@@ -1446,3 +1446,68 @@ q259_a,q259,choice,A,,A. bot1 の認証を実装します。,A,1,,,False
 q259_b,q259,choice,B,,B. lu1 のアクティブ ラーニングを有効にします。,B,2,,,False
 q259_c,q259,choice,C,,C. コンテナ内のホスト lu1。,C,3,,,False
 q259_d,q259,choice,D,,D. bot1 に Direct Line Speech を追加します。,D,4,,,True
+q261_blank_1,q261,dropdown_blank,select01,,<select01>,,1,speech_recognition_language,,
+q261_opt_select01_1,q261,dropdown_option,optselect01_1,select01,add_target_language,add_target_language,1,,,
+q261_opt_select01_2,q261,dropdown_option,optselect01_2,select01,region,region,2,,,
+q261_opt_select01_3,q261,dropdown_option,optselect01_3,select01,speech_recognition_language,speech_recognition_language,3,,,
+q261_opt_select01_4,q261,dropdown_option,optselect01_4,select01,voice_name,voice_name,4,,,
+q261_blank_2,q261,dropdown_blank,select02,,<select02>,,2,add_target_language,,
+q261_opt_select02_1,q261,dropdown_option,optselect02_1,select02,add_target_language,add_target_language,1,,,
+q261_opt_select02_2,q261,dropdown_option,optselect02_2,select02,region,region,2,,,
+q261_opt_select02_3,q261,dropdown_option,optselect02_3,select02,speech_recognition_language,speech_recognition_language,3,,,
+q261_opt_select02_4,q261,dropdown_option,optselect02_4,select02,voice_name,voice_name,4,,,
+q262_a,q262,choice,A,,A. Azure AI Custom Vision での物体検出,A,1,,,False
+q262_b,q262,choice,B,,B. Azure AI Vision の Face サービス,B,2,,,False
+q262_c,q262,choice,C,,C. Azure AI Language Service における言語検出,C,3,,,False
+q262_d,q262,choice,D,,D. Azure AI Speech サービスでの音声テキスト変換,D,4,,,True
+q263_a,q263,choice,A,,"A. documentResults.docType == ""prebuilt:receipt""",A,1,,,False
+q263_b,q263,choice,B,,"B. documentResults.fields."".confidence < 0.7",B,2,,,False
+q263_c,q263,choice,C,,C. documentResults.fields.ReceiptType.confidence > 0.7,C,3,,,False
+q263_d,q263,choice,D,,D. documentResults.fields.MerchantName.confidence < 0.7,D,4,,,True
+q264_a,q264,choice,A,,A. エンティティリンク,A,1,,,True
+q264_b,q264,choice,B,,B. カスタムエンティティ抽出認識 (NER),B,2,,,False
+q264_c,q264,choice,C,,C. Azure AI コンテンツの安全性,C,3,,,False
+q264_d,q264,choice,D,,D. キーフレーズ抽出,D,4,,,False
+q265_a,q265,choice,A,,A. Azure AI Phi-3 medium（微調整済み）,A,1,,,False
+q265_b,q265,choice,B,,B. Azure AI Language カスタム質問応答,B,2,,,True
+q265_c,q265,choice,C,,C. Azure AI Search を使用するグラウンディング データを含む Azure OpenAI GPT-4,C,3,,,False
+q265_d,q265,choice,D,,D. Azure AI ドキュメント インテリジェンス,D,4,,,False
+q266_a,q266,choice,A,,A. コンテンツモデレーター,A,1,,,False
+q266_b,q266,choice,B,,B. フォーム認識機能,B,2,,,False
+q266_c,q266,choice,C,,C. コンピュータービジョン,C,3,,,False
+q266_d,q266,choice,D,,D. 言語サービス,D,4,,,True
+q267_blank_1,q267,dropdown_blank,select01,,<select01>,,1,Computer Vision,,
+q267_opt_select01_1,q267,dropdown_option,optselect01_1,select01,Azure Cognitive Service for Language,Azure Cognitive Service for Language,1,,,
+q267_opt_select01_2,q267,dropdown_option,optselect01_2,select01,Computer Vision,Computer Vision,2,,,
+q267_opt_select01_3,q267,dropdown_option,optselect01_3,select01,Content Moderator,Content Moderator,3,,,
+q267_opt_select01_4,q267,dropdown_option,optselect01_4,select01,Custom Vision,Custom Vision,4,,,
+q267_opt_select01_5,q267,dropdown_option,optselect01_5,select01,Form Recognizer,Form Recognizer,5,,,
+q267_blank_2,q267,dropdown_blank,select02,,<select02>,,2,Content Moderator,,
+q267_opt_select02_1,q267,dropdown_option,optselect02_1,select02,Azure Cognitive Service for Language,Azure Cognitive Service for Language,1,,,
+q267_opt_select02_2,q267,dropdown_option,optselect02_2,select02,Computer Vision,Computer Vision,2,,,
+q267_opt_select02_3,q267,dropdown_option,optselect02_3,select02,Content Moderator,Content Moderator,3,,,
+q267_opt_select02_4,q267,dropdown_option,optselect02_4,select02,Custom Vision,Custom Vision,4,,,
+q267_opt_select02_5,q267,dropdown_option,optselect02_5,select02,Form Recognizer,Form Recognizer,5,,,
+q268_a,q268,choice,A,,A. Fluentd,A,1,,,False
+q268_b,q268,choice,B,,B. 請求(Billing),B,2,,,True
+q268_c,q268,choice,C,,C. HTTPプロキシ,C,3,,,False
+q268_d,q268,choice,D,,D. マウント,D,4,,,False
+q269_blank_1,q269,dropdown_blank,select01,,<select01>,,1,findsimilatrs,,
+q269_opt_select01_1,q269,dropdown_option,optselect01_1,select01,detect,detect,1,,,
+q269_opt_select01_2,q269,dropdown_option,optselect01_2,select01,findsimilatrs,findsimilatrs,2,,,
+q269_opt_select01_3,q269,dropdown_option,optselect01_3,select01,group,group,3,,,
+q269_opt_select01_4,q269,dropdown_option,optselect01_4,select01,identify,identify,4,,,
+q269_opt_select01_5,q269,dropdown_option,optselect01_5,select01,matchFace,matchFace,5,,,
+q269_opt_select01_6,q269,dropdown_option,optselect01_6,select01,matchPerson,matchPerson,6,,,
+q269_opt_select01_7,q269,dropdown_option,optselect01_7,select01,verify,verify,7,,,
+q269_blank_2,q269,dropdown_blank,select02,,<select02>,,2,matchFace,,
+q269_opt_select02_1,q269,dropdown_option,optselect02_1,select02,detect,detect,1,,,
+q269_opt_select02_2,q269,dropdown_option,optselect02_2,select02,findsimilatrs,findsimilatrs,2,,,
+q269_opt_select02_3,q269,dropdown_option,optselect02_3,select02,group,group,3,,,
+q269_opt_select02_4,q269,dropdown_option,optselect02_4,select02,identify,identify,4,,,
+q269_opt_select02_5,q269,dropdown_option,optselect02_5,select02,matchFace,matchFace,5,,,
+q269_opt_select02_6,q269,dropdown_option,optselect02_6,select02,matchPerson,matchPerson,6,,,
+q269_opt_select02_7,q269,dropdown_option,optselect02_7,select02,verify,verify,7,,,
+q270_s1,q270,statement,S1,,CompanyDescription はインデックス作成に使用できます。,,1,,,True
+q270_s2,q270,statement,S2,,定義は、エンリッチメントプロセスの一環として Web API を呼び出します。,,2,,,True
+q270_s3,q270,statement,S3,,エンリッチメントステップは、「/document/organizations」配下の最初の組織に対してのみ呼び出されます。,,3,,,False
