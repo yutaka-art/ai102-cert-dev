@@ -1342,3 +1342,58 @@ q239_6,q239,drag_item,6,,新しいクエリキーを追加します。,6,6,,1,
 q240_s1,q240,statement,S1,,この呼び出しにより、入力文字列からキーフレーズがコンソールに出力されます。,,1,,,True
 q240_s2,q240,statement,S2,,出力には、the、cat、sat、on、mat などの単語が含まれます。,,2,,,False
 q240_s3,q240,statement,S3,,出力には、キーフレーズの信頼度レベルが含まれます。,,3,,,False
+q241_a,q241,choice,A,,A. Azure メトリックス アドバイザー,A,1,,,True
+q241_b,q241,choice,B,,B. フォーム認識機能,B,2,,,False
+q241_c,q241,choice,C,,C. Azure Machine チーム化,C,3,,,False
+q241_d,q241,choice,D,,D. 異常検出器,D,4,,,False
+q242_s1,q242,statement,S1,,Azure の Platform as a Service (PaaS) データベース オファリングは、Infrastructure as a Service (IaaS) データベース オファリングよりもセットアップと構成の手間が少なくて済みます。,,1,,,True
+q242_s2,q242,statement,S2,,Azure の Platform as a Service (PaaS) データベース オファリングでは、エンドユーザーがオペレーティング システムのバージョンを管理および更新できます。,,2,,,False
+q242_s3,q242,statement,S3,,Azure のすべてのリレーショナルおよび非リレーショナル Platform as a Service (PaaS) データベース オファリングは、コスト削減のために一時停止できます。,,3,,,False
+q243_1,q243,drag_item,1,,ディスクログを設定します。,1,1,,,
+q243_2,q243,drag_item,2,,model1 を Host1 にエクスポートします。,2,2,,2.0,
+q243_3,q243,drag_item,3,,コンテナの実行の承認をリクエストします。,3,3,,1.0,
+q243_4,q243,drag_item,4,,モデルを再トレーニングします。,4,4,,,
+q243_5,q243,drag_item,5,,コンテナを実行します。,5,5,,3.0,
+q244_s1,q244,statement,S1,,正規化とは、データベーステーブル間の関係性を排除することです。,,1,,,False
+q244_s2,q244,statement,S2,,データベースを正規化すると、データの冗長性が削減されます。,,2,,,True
+q244_s3,q244,statement,S3,,正規化により、データの整合性が向上します。,,3,,,True
+q245_blank_1,q245,dropdown_blank,select01,,<select01>,,1,データアナリスト,,
+q245_opt_select01_1,q245,dropdown_option,optselect01_1,select01,データアナリスト,データアナリスト,1,,,
+q245_opt_select01_2,q245,dropdown_option,optselect01_2,select01,データエンジニア,データエンジニア,2,,,
+q245_opt_select01_3,q245,dropdown_option,optselect01_3,select01,データサイエンティスト,データサイエンティスト,3,,,
+q245_opt_select01_4,q245,dropdown_option,optselect01_4,select01,データベース管理者,データベース管理者,4,,,
+q246_a,q246,choice,A,,A. カスタムビジョン,A,1,,,False
+q246_b,q246,choice,B,,B. パーソナライザー,B,2,,,False
+q246_c,q246,choice,C,,C. フォーム認識機能,C,3,,,True
+q246_d,q246,choice,D,,D. コンピュータービジョン,D,4,,,False
+q247_blank_1,q247,dropdown_blank,select01,,<select01>,,1,Contributor,,
+q247_blank_2,q247,dropdown_blank,select02,,<select02>,,2,Cognitive Services QnA Maker Editor,,
+q247_blank_3,q247,dropdown_blank,select03,,<select03>,,3,Cognitive Services QnA Maker Read,,
+q247_opt_select01_1,q247,dropdown_option,optselect01_1,select01,Owner,Owner,1,,,
+q247_opt_select01_2,q247,dropdown_option,optselect01_2,select01,Contributor,Contributor,2,,,
+q247_opt_select01_3,q247,dropdown_option,optselect01_3,select01,Cognitive Services User,Cognitive Services User,3,,,
+q247_opt_select01_4,q247,dropdown_option,optselect01_4,select01,Cognitive Services QnA Maker Read,Cognitive Services QnA Maker Read,4,,,
+q247_opt_select01_5,q247,dropdown_option,optselect01_5,select01,Cognitive Services QnA Maker Editor,Cognitive Services QnA Maker Editor,5,,,
+q247_opt_select02_1,q247,dropdown_option,optselect02_1,select02,Owner,Owner,1,,,
+q247_opt_select02_2,q247,dropdown_option,optselect02_2,select02,Contributor,Contributor,2,,,
+q247_opt_select02_3,q247,dropdown_option,optselect02_3,select02,Cognitive Services User,Cognitive Services User,3,,,
+q247_opt_select02_4,q247,dropdown_option,optselect02_4,select02,Cognitive Services QnA Maker Read,Cognitive Services QnA Maker Read,4,,,
+q247_opt_select02_5,q247,dropdown_option,optselect02_5,select02,Cognitive Services QnA Maker Editor,Cognitive Services QnA Maker Editor,5,,,
+q247_opt_select03_1,q247,dropdown_option,optselect03_1,select03,Owner,Owner,1,,,
+q247_opt_select03_2,q247,dropdown_option,optselect03_2,select03,Contributor,Contributor,2,,,
+q247_opt_select03_3,q247,dropdown_option,optselect03_3,select03,Cognitive Services User,Cognitive Services User,3,,,
+q247_opt_select03_4,q247,dropdown_option,optselect03_4,select03,Cognitive Services QnA Maker Read,Cognitive Services QnA Maker Read,4,,,
+q247_opt_select03_5,q247,dropdown_option,optselect03_5,select03,Cognitive Services QnA Maker Editor,Cognitive Services QnA Maker Editor,5,,,
+q248_1,q248,drag_item,1,,画像をアップロードしてタグ付けします。,1,1,,3.0,
+q248_2,q248,drag_item,2,,物体検出モデルをトレーニングします。,2,2,,,
+q248_3,q248,drag_item,3,,トレーニングデータセットを初期化します。,3,3,,2.0,
+q248_4,q248,drag_item,4,,分類器モデルをトレーニングします。,4,4,,,
+q248_5,q248,drag_item,5,,プロジェクトを作成します。,5,5,,1.0,
+q249_a,q249,choice,A,,A. サーバーインフラストラクチャを管理するための管理作業の削減,A,1,,,True
+q249_b,q249,choice,B,,B. バックアップと復元のプロセスを完全に制御,B,2,,,False
+q249_c,q249,choice,C,,C. データベース内機械学習サービスS3,C,3,,,False
+q249_d,q249,choice,D,,D. 最新機能へのアクセス,D,4,,,True
+q250_a,q250,choice,A,,A. Azure AI ビデオ インデクサー,A,1,,,False
+q250_b,q250,choice,B,,B. Azure Custom Vision でのオブジェクト検出,B,2,,,False
+q250_c,q250,choice,C,,C. Foundry Tools 空間分析における Azure Vision,C,3,,,True
+q250_d,q250,choice,D,,D. Foundry Tools の Azure Vision 画像分析,D,4,,,False
