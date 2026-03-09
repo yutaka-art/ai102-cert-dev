@@ -879,3 +879,53 @@ q150_a,q150,choice,A,,A. カスタム抽出モデル,A,1,,,false
 q150_b,q150,choice,B,,B. マルチラベル分類プロジェクト,B,2,,,true
 q150_c,q150,choice,C,,C. カスタム固有表現抽出（NER）プロジェクト,C,3,,,false
 q150_d,q150,choice,D,,D. マルチラベル画像分類モデル,D,4,,,false
+q151_a,q151,choice,A,,A. File1.tsvのみ,A,1,,,False
+q151_b,q151,choice,B,,B. File2.xmlのみ,B,2,,,False
+q151_c,q151,choice,C,,C. File3.pdf のみ,C,3,,,False
+q151_d,q151,choice,D,,D. File4.xlsxのみ,D,4,,,False
+q151_e,q151,choice,E,,E. File1.tsv と File4.xlsx のみ,E,5,,,True
+q151_f,q151,choice,F,,F. File1.tsv、File2.xml と File4.xlsx のみ,F,6,,,False
+q151_g,q151,choice,G,,G. ファイル1.tsv、ファイル2.xml、ファイル3.pdf、ファイル4.xlsx,G,7,,,False
+q152_a,q152,choice,A,,A. App1 の信頼スコアのしきい値を下げます。,A,1,,,False
+q152_b,q152,choice,B,,B. App1 の精度しきい値を下げます。,B,2,,,False
+q152_c,q152,choice,C,,C. 既存のトレーニングセットに追加の契約形式を追加します。モデルを再トレーニングします。,C,3,,,True
+q152_d,q152,choice,D,,D. 新しいトレーニング セットを作成し、追加のコントラクト形式を新しいトレーニング セットに追加します。,D,4,,,False
+q152_e,q152,choice,E,,E. 新しいカスタム モデルを作成してトレーニングします。,E,5,,,False
+q153_a,q153,choice,A,,A. 言語理解,A,1,,,False
+q153_b,q153,choice,B,,B. Azure SQL データベース,B,2,,,False
+q153_c,q153,choice,C,,C. Azure ストレージ,C,3,,,False
+q153_d,q153,choice,D,,D. Azure コグニティブ検索,D,4,,,True
+q153_e,q153,choice,E,,E. Azure アプリ サービス,E,5,,,True
+q154_drag_1,q154,drag_item,1,,Docker Hub からイメージをプルします。,1,1,,,
+q154_drag_2,q154,drag_item,2,,インターネットに接続されたオンプレミスの Kubernetes クラスターをプロビジョニングします。,2,2,,1,
+q154_drag_3,q154,drag_item,3,,Azure Kubernetes Service (AKS) リソースをプロビジョニングします。,3,3,,,
+q154_drag_4,q154,drag_item,4,,コンテナーを実行し、アプリ ID とクライアント シークレットを指定します。,4,4,,,
+q154_drag_5,q154,drag_item,5,,インターネットから分離されたオンプレミスの Kubernetes クラスターをプロビジョニングします。,5,5,,,
+q154_drag_6,q154,drag_item,6,,Microsoft Container Registry (MCR) からイメージをプルします。,6,6,,2,
+q154_drag_7,q154,drag_item,7,,コンテナーを実行し、Cognitive Services リソースの API キーとエンドポイント URL を指定します。,7,7,,3,
+q155_a,q155,choice,A,,A. Guid.Parse(operationId) パラメータを削除します。,A,1,,,False
+q155_b,q155,choice,B,,B. results.Status 値を検証するコードを追加します。,B,2,,,True
+q155_c,q155,choice,C,,C. txtHeaders.Status 値の状態を確認するコードを追加します。,C,3,,,False
+q155_d,q155,choice,D,,D. GetReadResultAsync への呼び出しを、遅延を含むループ内にラップします。,D,4,,,True
+q156_a,q156,choice,A,,A. Azure 機械学習,A,1,,,False
+q156_b,q156,choice,B,,B. ログ分析,B,2,,,False
+q156_c,q156,choice,C,,C. Azure AI コンテンツ セーフティ,C,3,,,True
+q156_d,q156,choice,D,,D. Microsoft Defender 脅威インテリジェンス (Defender TI),D,4,,,False
+q157_a,q157,choice,A,,A. テーブル名,A,1,,,True
+q157_b,q157,choice,B,,B. 生成されたキー名,B,2,,,True
+q157_c,q157,choice,C,,C. データソース,C,3,,,False
+q157_d,q157,choice,D,,D. データソース接続,D,4,,,False
+q157_e,q157,choice,E,,E. ソース,E,5,,,True
+q158_a,q158,choice,A,,A. embeddings,A,1,,,False
+q158_b,q158,choice,B,,B. DALL-E,B,2,,,False
+q158_c,q158,choice,C,,C. GPT-4,C,3,,,True
+q158_d,q158,choice,D,,D. Whisper,D,4,,,False
+q159_a,q159,choice,A,,A. ウォーターフォールチャート,A,1,,,True
+q159_b,q159,choice,B,,B. リボンチャート,B,2,,,False
+q159_c,q159,choice,C,,C. 棒グラフ,C,3,,,False
+q159_d,q159,choice,D,,D. 分解ツリー,D,4,,,False
+q160_a,q160,choice,A,,A. 成人分類スコア,A,1,,,True
+q160_b,q160,choice,B,,B. 光学文字認識（OCR）,B,2,,,False
+q160_c,q160,choice,C,,C. 個人データ,C,3,,,False
+q160_d,q160,choice,D,,D. テキスト分類,D,4,,,False
+q160_e,q160,choice,E,,E. 際どい分類スコア,E,5,,,True
