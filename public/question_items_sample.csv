@@ -2003,3 +2003,51 @@ q360_a,q360,choice,A,,A. Azure AI翻訳,A,1,,,False
 q360_b,q360,choice,B,,B. Azure AI ドキュメント インテリジェンス,B,2,,,False
 q360_c,q360,choice,C,,C. Azure AI イマーシブ リーダー,C,3,,,True
 q360_d,q360,choice,D,,D. Azure AI言語,D,4,,,False
+q361_a,q361,choice,A,,A. 生の画像バイナリ,A,1,,,True
+q361_b,q361,choice,B,,B. フォームURLエンコード,B,2,,,False
+q361_c,q361,choice,C,,C. JSON,C,3,,,False
+q362_blank_1,q362,dropdown_blank,select01,,<select01>,,1,Object projection,,
+q362_blank_2,q362,dropdown_blank,select02,,<select02>,,2,File projection,,
+q362_opt_1_1,q362,dropdown_option,opt1_1,select01,File projection,File projection,1,,,
+q362_opt_1_2,q362,dropdown_option,opt1_2,select01,Object projection,Object projection,2,,,
+q362_opt_1_3,q362,dropdown_option,opt1_3,select01,Table projection,Table projection,3,,,
+q362_opt_2_1,q362,dropdown_option,opt2_1,select02,File projection,File projection,1,,,
+q362_opt_2_2,q362,dropdown_option,opt2_2,select02,Object projection,Object projection,2,,,
+q362_opt_2_3,q362,dropdown_option,opt2_3,select02,Table projection,Table projection,3,,,
+q363_a,q363,choice,A,,A. Azure関数,A,1,,,False
+q363_b,q363,choice,B,,B. アダプティブカード,B,2,,,True
+q363_c,q363,choice,C,,C. エンティティ,C,3,,,False
+q363_d,q363,choice,D,,D. ダイアログ,D,4,,,True
+q363_e,q363,choice,E,,E. 発話,E,5,,,False
+q364_blank_1,q364,dropdown_blank,select01,,<select01>,,1,ContentSafetyClient,,
+q364_blank_2,q364,dropdown_blank,select02,,<select02>,,2,client.AnalyzeImage(request),,
+q364_opt_1_1,q364,dropdown_option,opt1_1,select01,AnalyzeTextOptions,AnalyzeTextOptions,1,,,
+q364_opt_1_2,q364,dropdown_option,opt1_2,select01,BlocklistClient,BlocklistClient,2,,,
+q364_opt_1_3,q364,dropdown_option,opt1_3,select01,ContentSafetyClient,ContentSafetyClient,3,,,
+q364_opt_1_4,q364,dropdown_option,opt1_4,select01,TextCategoriesAnalysis,TextCategoriesAnalysis,4,,,
+q364_opt_2_1,q364,dropdown_option,opt2_1,select02,AnalyzeImage(request),AnalyzeImage(request),1,,,
+q364_opt_2_2,q364,dropdown_option,opt2_2,select02,client.AnalyzeImage(request),client.AnalyzeImage(request),2,,,
+q364_opt_2_3,q364,dropdown_option,opt2_3,select02,client.AnalyzeText(request),client.AnalyzeText(request),3,,,
+q364_opt_2_4,q364,dropdown_option,opt2_4,select02,request.AnalyzeImage(client),request.AnalyzeImage(client),4,,,
+q365_a,q365,choice,A,,A. プライマリ管理者キーを再生成し、セカンダリ管理者キーを使用するようにアプリを変更して、セカンダリ管理者キーを再生成します。,A,1,,,False
+q365_b,q365,choice,B,,B. クエリ キーを使用するようにアプリを変更し、プライマリ管理者キーとセカンダリ管理者キーを再生成します。,B,2,,,False
+q365_c,q365,choice,C,,C. セカンダリ管理者キーを再生成し、セカンダリ管理者キーを使用するようにアプリを変更してから、プライマリキーを再生成します。,C,3,,,True
+q365_d,q365,choice,D,,D. 新しいクエリ キーを追加し、新しいクエリ キーを使用するようにアプリを変更してから、未使用のクエリ キーをすべて削除します。,D,4,,,False
+q366_s1,q366,statement,S1,,出力には「our」と「included」という単語が含まれます。,,1,,,False
+q366_s2,q366,statement,S2,,出力には「Paris」、「Eiffel」、「Tower」という単語が含まれます。,,2,,,True
+q366_s3,q366,statement,S3,,この関数は、入力文字列からすべてのキーフレーズをコンソールに出力します。,,3,,,False
+q367_s1,q367,statement,S1,,analyzer1 は準備完了状態です。,,1,,,False
+q367_s2,q367,statement,S2,,analyzer1 はファイルの解析を完了しました。,,2,,,False
+q367_s3,q367,statement,S3,,コマンド内のデータと出力を使用して、Video1.mp4 のキーフレームを取得できます。,,3,,,True
+q368_a,q368,choice,A,,A. SQL,A,1,,,True
+q368_b,q368,choice,B,,B. XML,B,2,,,False
+q368_c,q368,choice,C,,C. YAML,C,3,,,False
+q368_d,q368,choice,D,,D. KOL,D,4,,,False
+q369_a,q369,choice,A,,A. Azure OpenAI テキスト要約,A,1,,,False
+q369_b,q369,choice,B,,B. Azure OpenAI テキスト分類,B,2,,,True
+q369_c,q369,choice,C,,C. Azure AI Language のカスタム固有表現認識 (NER),C,3,,,False
+q369_d,q369,choice,D,,D. Azure AI Language のカスタムテキスト分類,D,4,,,False
+q370_a,q370,choice,A,,A. GPT-3.5,A,1,,,False
+q370_b,q370,choice,B,,B. Embeddings,B,2,,,True
+q370_c,q370,choice,C,,C. DALL-E,C,3,,,False
+q370_d,q370,choice,D,,D. GPT-4,D,4,,,False
