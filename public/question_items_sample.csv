@@ -1789,3 +1789,69 @@ q320_3,q320,drag_item,3,,acvdev の ImportProject エンドポイントを使用
 q320_4,q320,drag_item,4,,acvdev の ExportIteration エンドポイントを使用します。,4,4,,,
 q320_5,q320,drag_item,5,,acvdev の GetIterations エンドポイントを使用します。,5,5,,,
 q320_6,q320,drag_item,6,,acvdev の UpdateProject エンドポイントを使用します。,6,6,,,
+q321_blank_1,q321,dropdown_blank,select01,,<select01>,,1,Classification,,
+q321_opt_1_1,q321,dropdown_option,opt1_1,select01,Classification,Classification,1,,,
+q321_opt_1_2,q321,dropdown_option,opt1_2,select01,Object Detection,Object Detection,2,,,
+q321_blank_2,q321,dropdown_blank,select02,,<select02>,,2,Multiclass (Single tag per image),,
+q321_opt_2_1,q321,dropdown_option,opt2_1,select02,Multiclass (Single tag per image),Multiclass (Single tag per image),1,,,
+q321_opt_2_2,q321,dropdown_option,opt2_2,select02,Multilabel (Multiple tags per image),Multilabel (Multiple tags per image),2,,,
+q321_blank_3,q321,dropdown_blank,select03,,<select03>,,3,General(compact),,
+q321_opt_3_1,q321,dropdown_option,opt3_1,select03,Audit,Audit,1,,,
+q321_opt_3_2,q321,dropdown_option,opt3_2,select03,Food,Food,2,,,
+q321_opt_3_3,q321,dropdown_option,opt3_3,select03,General,General,3,,,
+q321_opt_3_4,q321,dropdown_option,opt3_4,select03,General(compact),General(compact),4,,,
+q321_opt_3_5,q321,dropdown_option,opt3_5,select03,Landmarks,Landmarks,5,,,
+q321_opt_3_6,q321,dropdown_option,opt3_6,select03,Landmarks(compact),Landmarks(compact),6,,,
+q321_opt_3_7,q321,dropdown_option,opt3_7,select03,Retail,Retail,7,,,
+q321_opt_3_8,q321,dropdown_option,opt3_8,select03,Retail(compact),Retail(compact),8,,,
+q322_blank_1,q322,dropdown_blank,select01,,<select01>,,1,assistants,,
+q322_opt_1_1,q322,dropdown_option,opt1_1,select01,assistants,assistants,1,,,
+q322_opt_1_2,q322,dropdown_option,opt1_2,select01,completions,completions,2,,,
+q322_opt_1_3,q322,dropdown_option,opt1_3,select01,embeddings,embeddings,3,,,
+q322_opt_1_4,q322,dropdown_option,opt1_4,select01,threads,threads,4,,,
+q322_blank_2,q322,dropdown_blank,select02,,<select02>,,2,tools=[{,,
+q322_opt_2_1,q322,dropdown_option,opt2_1,select02,content=[{,content=[{,1,,,
+q322_opt_2_2,q322,dropdown_option,opt2_2,select02,functions=[{,functions=[{,2,,,
+q322_opt_2_3,q322,dropdown_option,opt2_3,select02,tool_resources=[{,tool_resources=[{,3,,,
+q322_opt_2_4,q322,dropdown_option,opt2_4,select02,tools=[{,tools=[{,4,,,
+q323_a,q323,choice,A,,A.透明性,A,1,,,True
+q323_b,q323,choice,B,,B.公平性,B,2,,,True
+q323_c,q323,choice,C,,C.包含,C,3,,,False
+q323_d,q323,choice,D,,D. 信頼性と安全性,D,4,,,False
+q323_e,q323,choice,E,,E. プライバシーとセキュリティ,E,5,,,False
+q324_a,q324,choice,A,,A. Azure Al Foundry,A,1,,,True
+q324_b,q324,choice,B,,B. スピーチスタジオ,B,2,,,False
+q324_c,q324,choice,C,,C. 言語スタジオ,C,3,,,False
+q324_d,q324,choice,D,,D. Azureポータル,D,4,,,False
+q325_a,q325,choice,A,,A. 保護された素材のテキスト検出,A,1,,,False
+q325_b,q325,choice,B,,B. 脱獄リスク検出,B,2,,,True
+q325_c,q325,choice,C,,C. オンラインアクティビティを監視する,C,3,,,False
+q325_d,q325,choice,D,,D. 中程度のテキストコンテンツ,D,4,,,False
+q326_blank_1,q326,dropdown_blank,select01,,<select01>,,1,Typing,,
+q326_opt_1_1,q326,dropdown_option,opt1_1,select01,Attachment,Attachment,1,,,
+q326_opt_1_2,q326,dropdown_option,opt1_2,select01,ConversationUpdate,ConversationUpdate,2,,,
+q326_opt_1_3,q326,dropdown_option,opt1_3,select01,Typing,Typing,3,,,
+q326_blank_2,q326,dropdown_blank,select02,,<select02>,,2,carousel,,
+q326_opt_2_1,q326,dropdown_option,opt2_1,select02,adaptivecard,adaptivecard,1,,,
+q326_opt_2_2,q326,dropdown_option,opt2_2,select02,carousel,carousel,2,,,
+q326_opt_2_3,q326,dropdown_option,opt2_3,select02,thumbnail,thumbnail,3,,,
+q326_blank_3,q326,dropdown_blank,select03,,<select03>,,3,adaptivecard,,
+q326_opt_3_1,q326,dropdown_option,opt3_1,select03,adaptivecard,adaptivecard,1,,,
+q326_opt_3_2,q326,dropdown_option,opt3_2,select03,carousel,carousel,2,,,
+q326_opt_3_3,q326,dropdown_option,opt3_3,select03,list,list,3,,,
+q327_a,q327,choice,A,,A. File1.avi を Azure AI Video Indexer Web サイトにアップロードします。,A,1,,,False
+q327_b,q327,choice,B,,B. File1.avi を www.youtube.com ウェブページにアップロードします。,B,2,,,False
+q327_c,q327,choice,C,,C. File1.avi を Microsoft OneDrive にアップロードします。,C,3,,,True
+q327_d,q327,choice,D,,D. File1.avi を Azure Storage キューにアップロードします。,D,4,,,False
+q328_a,q328,choice,A,,A. ディスパッチ,A,1,,,True
+q328_b,q328,choice,B,,B. チャットダウン,B,2,,,False
+q328_c,q328,choice,C,,C. 言語理解,C,3,,,False
+q328_d,q328,choice,D,,D. Microsoft Translator,D,4,,,False
+q329_s1,q329,statement,S1,,${user.name} はプロンプトを使用してユーザー名を取得します。,,1,,,False
+q329_s2,q329,statement,S2,,Greet() は言語生成テンプレートの名前です。,,2,,,True
+q329_s3,q329,statement,S3,,${Greeting()} は言語生成ファイル内のテンプレートへの参照です。,,3,,,True
+q330_drag_1,q330,drag_item,1,,Language Understanding ポータルから、モデルを再トレーニングします。,1,1,,,
+q330_drag_2,q330,drag_item,2,,ホストコンピューターからコンテナを実行し、入力ディレクトリを指定します。,2,2,,3,
+q330_drag_3,q330,drag_item,3,,Language Understanding ポータルから、ソリューションをパッケージファイルとしてエクスポートします。,3,3,,1,
+q330_drag_4,q330,drag_item,4,,ホストコンピューターから、パッケージファイルを Docker 入力ディレクトリに移動します。,4,4,,2,
+q330_drag_5,q330,drag_item,5,,ホストコンピューターからコンテナをビルドし、出力ディレクトリを指定します。,5,5,,,
