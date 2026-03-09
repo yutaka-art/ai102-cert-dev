@@ -1720,3 +1720,72 @@ q310_blank_2,q310,dropdown_blank,select02,,<select02>,,2,TranslatedSpeech,,
 q310_opt_select02_1,q310,dropdown_option,optselect02_1,select02,NoMatch,NoMatch,1,,,
 q310_opt_select02_2,q310,dropdown_option,optselect02_2,select02,RecognizingSpeech,RecognizingSpeech,2,,,
 q310_opt_select02_3,q310,dropdown_option,optselect02_3,select02,TranslatedSpeech,TranslatedSpeech,3,,,
+q311_blank_1,q311,dropdown_blank,select01,,<select01>,,1,GeographyV2,,
+q311_blank_2,q311,dropdown_blank,select02,,<select02>,,2,Email,,
+q311_blank_3,q311,dropdown_blank,select03,,<select03>,,3,Machine learned,,
+q311_opt_1_1,q311,dropdown_option,opt1_1,select01,Email,Email,1,,,
+q311_opt_1_2,q311,dropdown_option,opt1_2,select01,List,List,2,,,
+q311_opt_1_3,q311,dropdown_option,opt1_3,select01,Regex,Regex,3,,,
+q311_opt_1_4,q311,dropdown_option,opt1_4,select01,GeographyV2,GeographyV2,4,,,
+q311_opt_1_5,q311,dropdown_option,opt1_5,select01,Machine learned,Machine learned,5,,,
+q311_opt_2_1,q311,dropdown_option,opt2_1,select02,Email,Email,1,,,
+q311_opt_2_2,q311,dropdown_option,opt2_2,select02,List,List,2,,,
+q311_opt_2_3,q311,dropdown_option,opt2_3,select02,Regex,Regex,3,,,
+q311_opt_2_4,q311,dropdown_option,opt2_4,select02,GeographyV2,GeographyV2,4,,,
+q311_opt_2_5,q311,dropdown_option,opt2_5,select02,Machine learned,Machine learned,5,,,
+q311_opt_3_1,q311,dropdown_option,opt3_1,select03,Email,Email,1,,,
+q311_opt_3_2,q311,dropdown_option,opt3_2,select03,List,List,2,,,
+q311_opt_3_3,q311,dropdown_option,opt3_3,select03,Regex,Regex,3,,,
+q311_opt_3_4,q311,dropdown_option,opt3_4,select03,GeographyV2,GeographyV2,4,,,
+q311_opt_3_5,q311,dropdown_option,opt3_5,select03,Machine learned,Machine learned,5,,,
+q312_a,q312,choice,A,,A. toScript=Latn,A,1,,,True
+q312_b,q312,choice,B,,B. from=el,B,2,,,False
+q312_c,q312,choice,C,,C. textType=plain,C,3,,,False
+q312_d,q312,choice,D,,D. textType=html,D,4,,,True
+q312_e,q312,choice,E,,E. to=el,E,5,,,True
+q312_f,q312,choice,F,,F. toScript=Curl,F,6,,,False
+q313_a,q313,choice,A,,A. アダプティブ,A,1,,,False
+q313_b,q313,choice,B,,B. アクション,B,2,,,False
+q313_c,q313,choice,C,,C. ウォーターフォール,C,3,,,True
+q313_d,q313,choice,D,,D. プロンプト,D,4,,,True
+q313_e,q313,choice,E,,E. 入力,E,5,,,False
+q314_a,q314,choice,A,,A. モデルを微調整します。,A,1,,,False
+q314_b,q314,choice,B,,B. 根拠となるコンテンツを提供します。,B,2,,,True
+q314_c,q314,choice,C,,C. サンプルのリクエスト/レスポンスのペアを追加します。,C,3,,,True
+q314_d,q314,choice,D,,D. 独自のデータを使用して言語モデルを再トレーニングします。,D,4,,,False
+q314_e,q314,choice,E,,E. カスタム大規模言語モデル (LLM) をトレーニングします。,E,5,,,False
+q315_1,q315,drag_item,1,,環境変数としてバージョンが設定されているコンテナを実行します。,1,1,,,
+q315_2,q315,drag_item,2,,「JSON としてエクスポート」オプションを使用してモデルをエクスポートします。,2,2,,,
+q315_3,q315,drag_item,3,,app1 の v1.1 を選択します。,3,3,,1,
+q315_4,q315,drag_item,4,,コンテナを実行し、モデルファイルをマウントします。,4,4,,3,
+q315_5,q315,drag_item,5,,app1 の v1.0 を選択します。,5,5,,,
+q315_6,q315,drag_item,6,,「コンテナ用にエクスポート (GZIP)」オプションを使用してモデルをエクスポートします。,6,6,,2,
+q315_7,q315,drag_item,7,,app1 の v1.2 を選択します。,7,7,,,
+q316_a,q316,choice,A,,A. インデックス,A,1,,,False
+q316_b,q316,choice,B,,B. ビュー,B,2,,,True
+q316_c,q316,choice,C,,C. スカラー関数,C,3,,,False
+q316_d,q316,choice,D,,D. テーブル,D,4,,,False
+q317_a,q317,choice,A,,A. Cognitive Services OpenAI コントリビューター,A,1,,,False
+q317_b,q317,choice,B,,B. Cognitive Services OpenAI ユーザー,B,2,,,False
+q317_c,q317,choice,C,,C. Azure AI管理者,C,3,,,False
+q317_d,q317,choice,D,,D. Azure AI 開発者,D,4,,,True
+q318_blank_1,q318,dropdown_blank,select01,,<select01>,,1,an intent,,
+q318_blank_2,q318,dropdown_blank,select02,,<select02>,,2,an utterance,,
+q318_opt_1_1,q318,dropdown_option,opt1_1,select01,a domain,a domain,1,,,
+q318_opt_1_2,q318,dropdown_option,opt1_2,select01,an entity,an entity,2,,,
+q318_opt_1_3,q318,dropdown_option,opt1_3,select01,an intent,an intent,3,,,
+q318_opt_1_4,q318,dropdown_option,opt1_4,select01,an utterance,an utterance,4,,,
+q318_opt_2_1,q318,dropdown_option,opt2_1,select02,a domain,a domain,1,,,
+q318_opt_2_2,q318,dropdown_option,opt2_2,select02,an entity,an entity,2,,,
+q318_opt_2_3,q318,dropdown_option,opt2_3,select02,an intent,an intent,3,,,
+q318_opt_2_4,q318,dropdown_option,opt2_4,select02,an utterance,an utterance,4,,,
+q319_a,q319,choice,A,,A. 頻度ペナルティパラメータ,A,1,,,False
+q319_b,q319,choice,B,,B.虐待監視,B,2,,,False
+q319_c,q319,choice,C,,C. コンテンツフィルタ,C,3,,,True
+q319_d,q319,choice,D,,D. 温度パラメータ,D,4,,,False
+q320_1,q320,drag_item,1,,acvdev の ExportProject エンドポイントを使用します。,1,1,,2,
+q320_2,q320,drag_item,2,,acvdev の GetProjects エンドポイントを使用します。,2,2,,1,
+q320_3,q320,drag_item,3,,acvdev の ImportProject エンドポイントを使用します。,3,3,,3,
+q320_4,q320,drag_item,4,,acvdev の ExportIteration エンドポイントを使用します。,4,4,,,
+q320_5,q320,drag_item,5,,acvdev の GetIterations エンドポイントを使用します。,5,5,,,
+q320_6,q320,drag_item,6,,acvdev の UpdateProject エンドポイントを使用します。,6,6,,,
