@@ -83,9 +83,6 @@ q008,#008,dropdown,PDF からのテキスト抽出と感情分析,"PDF ファイ
 感情分析を実行:<select02>",,各ドロップダウンを選択してください,2,OCR/テキスト抽出は Computer Vision、感情分析は Language サービスです。,false,{}
 q010,#010,dropdown,Relational Database,"文を正しく完成させる答えを選択してください。
 
-EN:
-A relational database is appropriate for scenarios that involve a high volume of <select01>.
-JP:
 リレーショナル データベースは、大量の <select01> が関係するシナリオに適しています。",,ドロップダウンを選択してください,1,リレーショナル データベースはトランザクション整合性が重要な大量トランザクション書き込みに向いています。,false,{}
 q034,#034,single_yesno,Search throttling,"注: この問題は、同じシナリオを提示する一連の問題の一部です。一連の問題にはそれぞれ、定められた目標を満たす可能性のある独自の解答が含まれています。
 Azure Cognitive Search サービスがあります。
