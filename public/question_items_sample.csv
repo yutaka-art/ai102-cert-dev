@@ -1014,3 +1014,45 @@ q180_a,q180,choice,A,,A. 検索可能、ファセット可能、取得可能,A,1
 q180_b,q180,choice,B,,B. 取得可能、フィルタリング可能、並べ替え可能,B,2,,,False
 q180_c,q180,choice,C,,C. 検索可能、ファセット可能、キー,C,3,,,False
 q180_d,q180,choice,D,,D. 検索可能、並べ替え可能、取得可能,D,4,,,False
+q181_a,q181,choice,A,,A. システム割り当てマネージドIDとX.509証明書,A,1,,,False
+q181_b,q181,choice,B,,B. エンドポイントURIとOAuthトークン,B,2,,,True
+q181_c,q181,choice,C,,C. エンドポイントURIと共有アクセス署名（SAS）トークン,C,3,,,False
+q181_d,q181,choice,D,,D. エンドポイントURIとサブスクリプションキー,D,4,,,False
+q182_a,q182,choice,A,,A. 変更フィード,A,1,,,False
+q182_b,q182,choice,B,,B. ライフサイクル管理ポリシー,B,2,,,True
+q182_c,q182,choice,C,,C. ソフト削除,C,3,,,False
+q182_d,q182,choice,D,,D. アーカイブストレージ,D,4,,,False
+q183_a,q183,choice,A,,A. Custom Vision 画像分類,A,1,,,False
+q183_b,q183,choice,B,,B. コンテンツ モデレーターによる画像モデレーション,B,2,,,False
+q183_c,q183,choice,C,,C. カスタム翻訳,C,3,,,False
+q183_d,q183,choice,D,,D. コンピュータービジョン画像解析,D,4,,,True
+q184_a,q184,choice,A,,A. 有名なナレッジベースからのリンクされたエンティティ,A,1,,,False
+q184_b,q184,choice,B,,B. 感情分析,B,2,,,True
+q184_c,q184,choice,C,,C. 主要なフレーズ,C,3,,,False
+q184_d,q184,choice,D,,D. 言語を検出する,D,4,,,True
+q184_e,q184,choice,E,,E. 本質的パフォーマンスの抽出,E,5,,,False
+q185_a,q185,choice,A,,A. 言語ジェネレーター,A,1,,,False
+q185_b,q185,choice,B,,B. カスタム イベント,B,2,,,False
+q185_c,q185,choice,C,,C. ダイアログ トリガー,C,3,,,True
+q185_d,q185,choice,D,,D. 会話アクティビティ,D,4,,,False
+q186_a,q186,choice,A,,A. Azure Active Directory (Azure AD) の条件付きアクセス ポリシー,A,1,,,False
+q186_b,q186,choice,B,,B. Azure ポータルのオーサリング リソースのアクセス制御 (1AM) ページ,B,2,,,True
+q186_c,q186,choice,C,,C. Azure ポータルの予測リソースのアクセス制御 (1AM) ページ,C,3,,,False
+q187_select01,q187,dropdown_blank,select01,,<select01>,,1,"{""fr"", ""de"", ""es""}",,
+q187_select02,q187,dropdown_blank,select02,,<select02>,,2,TranslationRecognizer,,
+q187_opt01_1,q187,dropdown_option,opt01_1,select01,"{""en-GB""}","{""en-GB""}",1,,,
+q187_opt01_2,q187,dropdown_option,opt01_2,select01,"{""fr"", ""de"", ""es""}","{""fr"", ""de"", ""es""}",2,,,
+q187_opt01_3,q187,dropdown_option,opt01_3,select01,"{""French"", ""Spanish"", ""German""}","{""French"", ""Spanish"", ""German""}",3,,,
+q187_opt01_4,q187,dropdown_option,opt01_4,select01,{languages},{languages},4,,,
+q187_opt02_1,q187,dropdown_option,opt02_1,select02,IntentRecognizer,IntentRecognizer,1,,,
+q187_opt02_2,q187,dropdown_option,opt02_2,select02,SpeakerRecognizer,SpeakerRecognizer,2,,,
+q187_opt02_3,q187,dropdown_option,opt02_3,select02,SpeechSynthesizer,SpeechSynthesizer,3,,,
+q187_opt02_4,q187,dropdown_option,opt02_4,select02,TranslationRecognizer,TranslationRecognizer,4,,,
+q188_a,q188,choice,A,,A.分離,A,1,,,False
+q188_b,q188,choice,B,,B.原子論,B,2,,,True
+q188_c,q188,choice,C,,C.一貫性,C,3,,,False
+q188_d,q188,choice,D,,D.耐久性,D,4,,,False
+q189_a,q189,choice,A,,A. エンティティリンク,A,1,,,False
+q189_b,q189,choice,B,,B. 名前付きエンティティ認識,B,2,,,True
+q189_c,q189,choice,C,,C. キーフレーズ抽出,C,3,,,False
+q189_d,q189,choice,D,,D.感情分析,D,4,,,False
