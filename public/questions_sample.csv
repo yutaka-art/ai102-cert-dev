@@ -2378,3 +2378,70 @@ q370,#370,single_choice,文書の意味的類似性比較に使う OpenAI モデ
 * 各ドキュメントのトークンを表す数値ベクトルを返します。
 * 開発の労力を最小限に抑えます。
 どの Azure OpenAI モデルを使用すればよいですか?",,1つ選択してください,1,数値ベクトルを返すには Embeddings モデルを使います。,True,{}
+q371,#371,single_choice,Bot integration,"次の要件を満たすチャットボットを構築する必要があります。
+チットチャット、ナレッジベース、および多言語モデルをサポートします
+ユーザーメッセージの感情分析を実行します
+最適な言語モデルを自動的に選択します
+チャットボットに何を統合する必要がありますか？",,1つ選択してください,1,QnA Maker、Language Understanding、Dispatch の組み合わせで要件を満たします。,True,{}
+q372,#372,single_choice,OpenAI upload role,"OpenAI1 という名前の Azure OpenAI リソースと User1 という名前のユーザーを含む Azure サブスクリプションがあります。
+User1 が OpenA11 にデータセットをアップロードし、既存のモデルを微調整できるようにする必要があります。このソリューションは、最小権限の原則に従う必要があります。
+ユーザーにどのロールを割り当てる必要がありますか?",,1つ選択してください,1,微調整やデータセット管理には Cognitive Services OpenAI 貢献者が必要です。,True,{}
+q373,#373,single_choice,OpenAI Studio least privilege,"All という名前の Azure OpenAI リソースと User1 という名前のユーザーが含まれる Azure サブスクリプションがあります。User1 が Azure OpenAI Studio で次のアクションを実行できることを確認する必要があります。
+* リソースのエンドポイントを識別します。
+* 展開可能なモデルを表示します。
+* デプロイされたモデルを使用してテキストと画像を生成する
+ソリューションは最小権限の原則に従う必要があります。User1 に割り当てるべきロールはどれですか?",,1つ選択してください,1,モデルの利用には Cognitive Services OpenAI ユーザー ロールが最小権限です。,True,{}
+q374,#374,single_choice,Unified speech and language resource,"音声および言語 API を使用するアプリの開発に成功しました。
+アプリのリソースをプロビジョニングする必要があります。ソリューションでは、各サービスに単一のエンドポイントと認証情報を使用してアクセスできるようにする必要があります。どのような種類のリソースを作成すればよいですか？",,1つ選択してください,1,単一エンドポイントと資格情報なら Azure AI サービス リソースを使用します。,True,{}
+q375,#375,single_choice,Video Indexer language model file,"Azure Video Indexer サービスを使用するアプリを構築しています。
+業界固有の用語を認識するために言語モデルをトレーニングする予定です。
+業界固有の用語を含むファイルをアップロードする必要があります。
+どのファイル形式を使用すればよいですか?",,1つ選択してください,1,Video Indexer のカスタム言語モデルには TXT を利用します。,True,{}
+q376,#376,dropdown,Create multi-service cognitive resource,"感情分析と光学式文字認識（OCR）を実行するために使用する新しいリソースを作成する必要があります。ソリューションは以下の要件を満たす必要があります。
+単一のキーとエンドポイントを使用して複数のサービスにアクセスします。
+将来使用する可能性のあるサービスの請求を統合します。
+将来的にはコンピュータビジョンの使用をサポートします。
+新しいリソースを作成するには、HTTP リクエストをどのように完了する必要がありますか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","<select01> https:management.azure.com/sunscriptions/xxxxx-xxxx-xxxx/resourceGroups/RG1/providers/Microsoft.CognitiveServices/accounts/CS1?api-version=2017-04-18
+{
+  ""location"": ""West US"",
+  ""kind"": ""<select02>"",
+  ""sku"": {
+    ""name"": ""S0""
+  },
+  ""properties"": {},
+  ""identity"": {
+    ""type"": ""SystemAssigned""
+  }
+}",各ドロップダウンを選択してください,2,複数サービス対応の CognitiveServices 種別を PUT で作成します。,False,{}
+q377,#377,dropdown,Speech translation config,"Speech SDKを使用してアプリを構築しています。このアプリは、自然言語処理を用いてフランス語からドイツ語への音声翻訳を行います。
+ソース言語と出力言語を定義する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","var speechTranslationConfig =
+SpeechTranslationConfig.FromSubscription(speechKey, speechRegion);
+speechTranslationConfig.<select01> = ""fr""
+speech_translation_config.<select02>(""de"")",各ドロップダウンを選択してください,2,入力言語は SpeechRecognitionLanguage、出力言語は AddTargetLanguage で指定します。,False,{}
+q378,#378,single_choice,Event log storage,半構造化され、ログの発生時に受信されるイベントログデータを保存する必要があります。何を使うべきですか？,,1つ選択してください,1,半構造化のイベントログ保存には Azure Table storage が適しています。,True,{}
+q379,#379,single_choice,QnA dialog class,"チャットボットを構築しています。
+ナレッジベースを照会するようにチャットボットを構成する必要があります。
+どのダイアログ クラスを使用する必要がありますか?",,1つ選択してください,1,ナレッジベース照会には QnAMakerDialog を使用します。,True,{}
+q380,#380,dropdown,EntityRecognitionSkill config,"Azure Cognitive Search を使用してナレッジベースを開発しています。
+インデクサーが使用するスキルを構築する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","{
+  ""@odata.type"": ""#Microsoft.Skills.Text.EntityRecognitionSkill"",
+  <select01>
+  ""minimumPrecision"": 0.7,
+  ""inputs"": [
+    {
+      ""name"": ""text"",
+      ""source"": ""/document/content""
+    }
+  ],
+  ""output"": [
+    {""name"": ""persons"", ""targetName"": ""people""},
+    {""name"": ""locations"", ""targetName"": ""locations""},
+    {""name"": ""organizations"", ""targetName"": ""organizations""},
+    <select02>
+  ]
+}",各ドロップダウンを選択してください,2,"EntityRecognitionSkill では Locations, Persons, Organizations を categories に指定し、entities を出力できます。",False,{}

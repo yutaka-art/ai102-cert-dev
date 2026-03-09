@@ -2051,3 +2051,58 @@ q370_a,q370,choice,A,,A. GPT-3.5,A,1,,,False
 q370_b,q370,choice,B,,B. Embeddings,B,2,,,True
 q370_c,q370,choice,C,,C. DALL-E,C,3,,,False
 q370_d,q370,choice,D,,D. GPT-4,D,4,,,False
+q371_a,q371,choice,A,,A. QnAメーカー、言語理解、および派遣,A,1,,,True
+q371_b,q371,choice,B,,B. 翻訳者、スピーチ、派遣,B,2,,,False
+q371_c,q371,choice,C,,C. 言語理解、テキスト分析、QnAメーカー,C,3,,,False
+q371_d,q371,choice,D,,D. テキスト分析、翻訳者、派遣,D,4,,,False
+q372_a,q372,choice,A,,A. Cognitive Services 貢献者,A,1,,,False
+q372_b,q372,choice,B,,B. 貢献者,B,2,,,False
+q372_c,q372,choice,C,,C. Cognitive Services OpenAI ユーザー,C,3,,,False
+q372_d,q372,choice,D,,D. Cognitive Services OpenAI 貢献者,D,4,,,True
+q373_a,q373,choice,A,,A. Cognitive Services OpenAI ユーザー,A,1,,,True
+q373_b,q373,choice,B,,B. Cognitive Services 貢献者,B,2,,,False
+q373_c,q373,choice,C,,C. 貢献者,C,3,,,False
+q373_d,q373,choice,D,,D. Cognitive Services OpenAI 貢献者,D,4,,,False
+q374_a,q374,choice,A,,A. Azure AI コンテンツの安全性,A,1,,,False
+q374_b,q374,choice,B,,B. Azure AI サービス,B,2,,,True
+q374_c,q374,choice,C,,C. アズール・アル・スピーチ,C,3,,,False
+q374_d,q374,choice,D,,D. Azure Al 言語,D,4,,,False
+q375_a,q375,choice,A,,A. PDF,A,1,,,False
+q375_b,q375,choice,B,,B. XML,B,2,,,False
+q375_c,q375,choice,C,,C. TXT,C,3,,,True
+q375_d,q375,choice,D,,D. XLS,D,4,,,False
+q376_blank_1,q376,dropdown_blank,select01,,<select01>,,1,PUT,,
+q376_opt_1_1,q376,dropdown_option,opt1_1,select01,PATCH,PATCH,1,,,
+q376_opt_1_2,q376,dropdown_option,opt1_2,select01,POST,POST,2,,,
+q376_opt_1_3,q376,dropdown_option,opt1_3,select01,PUT,PUT,3,,,
+q376_blank_2,q376,dropdown_blank,select02,,<select02>,,2,CognitiveServices,,
+q376_opt_2_1,q376,dropdown_option,opt2_1,select02,CognitiveServices,CognitiveServices,1,,,
+q376_opt_2_2,q376,dropdown_option,opt2_2,select02,ComputerVision,ComputerVision,2,,,
+q376_opt_2_3,q376,dropdown_option,opt2_3,select02,TextAnalytics,TextAnalytics,3,,,
+q377_blank_1,q377,dropdown_blank,select01,,<select01>,,1,SpeechRecognitionLanguage,,
+q377_opt_1_1,q377,dropdown_option,opt1_1,select01,AddTargetLanguage,AddTargetLanguage,1,,,
+q377_opt_1_2,q377,dropdown_option,opt1_2,select01,SpeechRecognitionLanguage,SpeechRecognitionLanguage,2,,,
+q377_opt_1_3,q377,dropdown_option,opt1_3,select01,SpeechSynthesisLanguage,SpeechSynthesisLanguage,3,,,
+q377_opt_1_4,q377,dropdown_option,opt1_4,select01,TargetLanguages,TargetLanguages,4,,,
+q377_opt_1_5,q377,dropdown_option,opt1_5,select01,VoiceName,VoiceName,5,,,
+q377_blank_2,q377,dropdown_blank,select02,,<select02>,,2,AddTargetLanguage,,
+q377_opt_2_1,q377,dropdown_option,opt2_1,select02,AddTargetLanguage,AddTargetLanguage,1,,,
+q377_opt_2_2,q377,dropdown_option,opt2_2,select02,SpeechRecognitionLanguage,SpeechRecognitionLanguage,2,,,
+q377_opt_2_3,q377,dropdown_option,opt2_3,select02,SpeechSynthesisLanguage,SpeechSynthesisLanguage,3,,,
+q377_opt_2_4,q377,dropdown_option,opt2_4,select02,TargetLanguages,TargetLanguages,4,,,
+q377_opt_2_5,q377,dropdown_option,opt2_5,select02,VoiceName,VoiceName,5,,,
+q378_a,q378,choice,A,,A. Azure Table storage,A,1,,,True
+q378_b,q378,choice,B,,B. Azure Queue storage,B,2,,,False
+q378_c,q378,choice,C,,C. Azure Files,C,3,,,False
+q379_a,q379,choice,A,,A. アダプティブダイアログ,A,1,,,False
+q379_b,q379,choice,B,,B. QnAMakerダイアログ,B,2,,,True
+q379_c,q379,choice,C,,C. コンポーネントダイアログ,C,3,,,False
+q379_d,q379,choice,D,,D. スキルダイアログ,D,4,,,False
+q380_blank_1,q380,dropdown_blank,select01,,<select01>,,1,"""categories"": [""Locations"", ""Persons"", ""Organizations""]",,
+q380_opt_1_1,q380,dropdown_option,opt1_1,select01,"""categories"": []","""categories"": []",1,,,
+q380_opt_1_2,q380,dropdown_option,opt1_2,select01,"""categories"": [""Email"", ""Persons"", ""Organizations""]","""categories"": [""Email"", ""Persons"", ""Organizations""]",2,,,
+q380_opt_1_3,q380,dropdown_option,opt1_3,select01,"""categories"": [""Locations"", ""Persons"", ""Organizations""]","""categories"": [""Locations"", ""Persons"", ""Organizations""]",3,,,
+q380_blank_2,q380,dropdown_blank,select02,,<select02>,,2,"{""name"": ""entities""}",,
+q380_opt_2_1,q380,dropdown_option,opt2_1,select02,"{""name"": ""entities""}","{""name"": ""entities""}",1,,,
+q380_opt_2_2,q380,dropdown_option,opt2_2,select02,"{""name"": ""categories""}","{""name"": ""categories""}",2,,,
+q380_opt_2_3,q380,dropdown_option,opt2_3,select02,"{""name"": ""nameEntities""}","{""name"": ""nameEntities""}",3,,,
