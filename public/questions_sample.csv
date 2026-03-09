@@ -1914,3 +1914,75 @@ Language Understanding サービスを使用して言語モデルを構築しま
 Language Understanding でフレーズ リストを実装する必要があります。
 解決策: ドメインに新しいエンティティを作成します。
 これは目標を満たしていますか?",,はい / いいえ を選択してください,1,,False,{}
+q301,#301,drag_drop,Form Recognizer サンプル ラベリング ツールの手順,"管理会計グループ向けのドキュメント処理要件を満たすソリューションを開発しています。ソリューションには以下のコンポーネントが含まれている必要があります。
+フォーム認識リソース
+Form Recognizer サンプル ラベリング ツールをホストする Azure Web アプリ
+Management-Bookkeepers グループは、サンプル ラベル付けツールを使用してカスタム テーブル抽出プログラムを作成する必要があります。
+Management-Bookkeepers グループは、どの 3 つのアクションを順番に実行する必要がありますか? 回答するには、適切なコマンドレットをコマンドレットの一覧から回答領域に移動し、正しい順序に並べます。",,正しい順に並べてください,3,新しいプロジェクトを作成し、サンプルにラベルを付けてからカスタムモデルをトレーニングします。,True,"{""mode"": ""sequence"", ""required_items"": 3}"
+q302,#302,single_choice,音声対話用 Bot Framework チャネル,"Microsoft Bot Framework を使用して構築され、Azure にデプロイされたチャットボットがあります。
+音声対話をサポートするようにボットを構成する必要があります。ソリューションは、複数のクライアント アプリをサポートする必要があります。",,1つ選択してください,1,音声対応には Direct Line Speech チャネルを使用します。,False,{}
+q303,#303,single_choice,複数データソースの Search 統合,"次のデータ ソースがあります。
+財務: オンプレミスの Microsoft SQL Server データベース
+セールス: Core (SQL) API を使用した Azure Cosmos DB
+ログ: Azure テーブル ストレージ
+HR: Azure SQL データベース
+Azure Cognitive Search REST API を使用してすべてのデータを検索できることを確認する必要があります。どうすればよいでしょうか？",,1つ選択してください,1,オンプレミスの SQL Server を Azure SQL Database にミラーリングすると Azure Cognitive Search で扱いやすくなります。,False,{}
+q304,#304,single_choice,CLU 用 C# パッケージ,"テキスト入力の意図を識別する Model という名前の Azure Cognitive Services モデルがあります。
+C# で App1 という名前のアプリを開発します。
+Model1 を使用するには、App1 を構成する必要があります。
+App1 に追加するパッケージはどれですか?",,1つ選択してください,1,会話言語理解には Azure.AI.Language.Conversations パッケージを使用します。,False,{}
+q305,#305,single_choice,誤った要求を識別する CLU 学習,"Language Studio を使用して、要求の少ない会話型言語モデルを開発します。テスト中に、ユーザーはモデルの機能に関係のない要求に対して誤った応答を受け取ります。
+モデルが不正なリクエストを識別できるようにする必要があります。
+何をすべきでしょうか?",,1つ選択してください,1,無関係な要求の例は None インテントに追加します。,False,{}
+q306,#306,multi_choice,ナレッジ ストア定義の必須フィールド,"Azure Cognitive Search ソリューションと、ソーシャル メディアの投稿に対して感情分析を実行するエンリッチメント パイプラインがあります。
+ソーシャル メディアの投稿と感情分析の結果を含めるナレッジ ストアを定義する必要があります。
+定義に含めるべき 2 つのフィールドはどれですか。それぞれの正解は解決策の一部を示しています。
+注意: 正しい選択ごとに 1 ポイントが付与されます。",,2つ選択してください,2,ナレッジ ストアにはストレージ コンテナーとストア接続文字列が必要です。,False,{}
+q307,#307,dropdown,都市名識別の Text Analytics コード補完,"文書は 100,000 件あります。
+Azure AI Language を使用して、各ドキュメント内の都市名を識別するアプリを構築しています。
+検出クライアントをテストする必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","static void EntityRecognitionExample(<select01>
+{
+  var response = client.RecognizeEntities(""I had a great experience visiting Contoso in Redmond."");
+  Console.WriteLine(""Named Entities:"");
+  foreach (var entity in response.Value)
+  {
+    if (entity.<select02>.Contains(""City""))
+    {
+      Console.WriteLine($""Text: {entity.Text}, Result: {entity.ConfidenceScore}"");
+    }
+  }
+}",各ドロップダウンを選択してください,2,都市名の抽出には TextAnalyticsClient と Category を使用します。,False,{}
+q308,#308,dropdown,Translator の地域制限付き翻訳コード補完,"言語翻訳を含むアプリケーションを開発しています。
+アプリケーションは、getTextToBeTranslated 関数を使用して取得したテキストを翻訳します。テキストは複数の言語から選択できます。テキストの内容は、Azure の地域（アメリカ大陸）に限定する必要があります。
+テキストを単一の言語に翻訳するコードを開発する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","var endpoint = <select01>;
+var apiKey = ""sasafafafa"";
+var text = getTextToBeTranslated();
+var body = '[{""Text:""' + text + '}]';
+var client = new HttpClient();
+client.DefaultRequestHeaders.Add(""Ocp-Apim-Subscription-Key"", apiKey);
+<select02>
+HttpResponseMessage response;
+var content = new StringContent(body, Encoding.UTF8, ""application/json"");
+var response = await client.PutAsync(uri, content);",各ドロップダウンを選択してください,2,アメリカ大陸向けのエンドポイント api-nam と to=en を使います。,False,{}
+q309,#309,multi_choice,データ視覚化の用途,データ視覚化の2つの用途を食べたのは何ですか？それぞれの正解は完全な解決策を提示します。注：正しい選択はそれぞれ1ポイントの価値があります。,,2つ選択してください,2,データ視覚化はデータの重要性を伝え、傾向やパターンを表すのに役立ちます。,False,{}
+q310,#310,dropdown,音声翻訳結果の出力コード補完,"Azure AI Speech サービスを使用して音声ファイルを翻訳するアプリを構築する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","static void OutputSpeechRecognitionResult(TranslationRecognitionResult translationRecognitionResult)
+{
+  switch (translationRecognitionResult.<select01>)
+  {
+    case ResultReason.<select02>
+      Console.WriteLine($""RECOGNIZED:"" Text={translationRecognitionResult.Text});
+      foreach(var element in translationRecognitionResult.Translations){
+        Console.WriteLine($""TRANSLATED into '{element.key}': {element.Value}"");
+      }
+      break;
+    case ResultReason.NoMatch:
+      Comsole.WriteLine($""Speech could not be recognized."");
+      break;
+  }
+}",各ドロップダウンを選択してください,2,TranslationRecognitionResult の reason が TranslatedSpeech のときに出力します。,False,{}

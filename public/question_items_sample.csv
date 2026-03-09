@@ -1664,3 +1664,59 @@ q299_b,q299,choice,B,,B. JSON,B,2,,,False
 q299_c,q299,choice,C,,C. HTML,C,3,,,False
 q299_d,q299,choice,D,,D. Yaml,D,4,,,False
 q300_s1,q300,statement,S1,,解決策: ドメインに新しいエンティティを作成します。,,1,,,False
+q301_1,q301,drag_item,1,,カスタムモデルをトレーニングする,1,1,,3,
+q301_2,q301,drag_item,2,,サンプルドキュメントにラベルを付ける,2,2,,2,
+q301_3,q301,drag_item,3,,新しいプロジェクトを作成し、サンプルドキュメントを読み込む,3,3,,1,
+q301_4,q301,drag_item,4,,複合モデルを作成する。,4,4,,,
+q302_a,q302,choice,A,,A. コルタナ,A,1,,,False
+q302_b,q302,choice,B,,B. Microsoft チーム,B,2,,,False
+q302_c,q302,choice,C,,C. ダイレクト ライン スピーチ,C,3,,,True
+q303_a,q303,choice,A,,A. Sales のデータに対して複数の読み取りレプリカを構成します。,A,1,,,False
+q303_b,q303,choice,B,,B. Finance を Azure SQL データベースにミラーリングします。,B,2,,,True
+q303_c,q303,choice,C,,C. Sales のデータを MongoDB API に移行します。,C,3,,,False
+q303_d,q303,choice,D,,D. ログ内のデータを Azure Sentinel に取り込みます。,D,4,,,False
+q304_a,q304,choice,A,,A. Azure.AI.言語.会話,A,1,,,True
+q304_b,q304,choice,B,,B. 音声サービスツールキット,B,2,,,False
+q304_c,q304,choice,C,,C. ユニバーサル.Microsoft.CognitiveServices.Speech,C,3,,,False
+q304_d,q304,choice,D,,D. Xamarin.認知音声,D,4,,,False
+q305_a,q305,choice,A,,A. アクティブラーニングを有効にします。,A,1,,,False
+q305_b,q305,choice,B,,B. カスタムインテントに例を追加します。,B,2,,,False
+q305_c,q305,choice,C,,C. Noneインテントに例を追加する,C,3,,,True
+q305_d,q305,choice,D,,D. エンティティを追加します。,D,4,,,False
+q306_a,q306,choice,A,,A. ストレージコンテナ,A,1,,,True
+q306_b,q306,choice,B,,B. テーブル,B,2,,,False
+q306_c,q306,choice,C,,C. ストア接続文字列,C,3,,,True
+q306_d,q306,choice,D,,D. ファイル,D,4,,,False
+q306_e,q306,choice,E,,E. オブジェクト,E,5,,,False
+q307_blank_1,q307,dropdown_blank,select01,,<select01>,,1,TextAnalyticsClient client),,
+q307_opt_select01_1,q307,dropdown_option,optselect01_1,select01,DocumentAnalysisClient client),DocumentAnalysisClient client),1,,,
+q307_opt_select01_2,q307,dropdown_option,optselect01_2,select01,FromRecognizerClient client),FromRecognizerClient client),2,,,
+q307_opt_select01_3,q307,dropdown_option,optselect01_3,select01,QuestionAnsweringClient client),QuestionAnsweringClient client),3,,,
+q307_opt_select01_4,q307,dropdown_option,optselect01_4,select01,TextAnalyticsClient client),TextAnalyticsClient client),4,,,
+q307_blank_2,q307,dropdown_blank,select02,,<select02>,,2,Category,,
+q307_opt_select02_1,q307,dropdown_option,optselect02_1,select02,Category,Category,1,,,
+q307_opt_select02_2,q307,dropdown_option,optselect02_2,select02,LeyValuePairs,LeyValuePairs,2,,,
+q307_opt_select02_3,q307,dropdown_option,optselect02_3,select02,SubCategory,SubCategory,3,,,
+q307_opt_select02_4,q307,dropdown_option,optselect02_4,select02,TextAppearance,TextAppearance,4,,,
+q308_blank_1,q308,dropdown_blank,select01,,<select01>,,1,"""https://api-nam.cognitive.microsofttranslator.com/translate"";",,
+q308_opt_select01_1,q308,dropdown_option,optselect01_1,select01,"""https://api.cognitive.microsofttranslator.com/translate"";","""https://api.cognitive.microsofttranslator.com/translate"";",1,,,
+q308_opt_select01_2,q308,dropdown_option,optselect01_2,select01,"""https://api.cognitive.microsofttranslator.com/transliterate"";","""https://api.cognitive.microsofttranslator.com/transliterate"";",2,,,
+q308_opt_select01_3,q308,dropdown_option,optselect01_3,select01,"""https://api-apc.cognitive.microsofttranslator.com/detect"";","""https://api-apc.cognitive.microsofttranslator.com/detect"";",3,,,
+q308_opt_select01_4,q308,dropdown_option,optselect01_4,select01,"""https://api-nam.cognitive.microsofttranslator.com/detect"";","""https://api-nam.cognitive.microsofttranslator.com/detect"";",4,,,
+q308_opt_select01_5,q308,dropdown_option,optselect01_5,select01,"""https://api-nam.cognitive.microsofttranslator.com/translate"";","""https://api-nam.cognitive.microsofttranslator.com/translate"";",5,,,
+q308_blank_2,q308,dropdown_blank,select02,,<select02>,,2,"var uri = endpoint + ""?to=en"";",,
+q308_opt_select02_1,q308,dropdown_option,optselect02_1,select02,"var uri = endpoint + ""?from=en"";","var uri = endpoint + ""?from=en"";",1,,,
+q308_opt_select02_2,q308,dropdown_option,optselect02_2,select02,"var uri = endpoint + ""?suggestedFrom=en"";","var uri = endpoint + ""?suggestedFrom=en"";",2,,,
+q308_opt_select02_3,q308,dropdown_option,optselect02_3,select02,"var uri = endpoint + ""?to=en"";","var uri = endpoint + ""?to=en"";",3,,,
+q309_a,q309,choice,A,,A. データの重要性を伝えます。,A,1,,,True
+q309_b,q309,choice,B,,B. 時間の経過に伴う傾向とパターンを表します。,B,2,,,True
+q309_c,q309,choice,C,,C. 機械学習を実装して将来の価値を予測します。,C,3,,,False
+q309_d,q309,choice,D,,D. レポート全体にビジネスロジックを適用します。,D,4,,,False
+q310_blank_1,q310,dropdown_blank,select01,,<select01>,,1,reason,,
+q310_opt_select01_1,q310,dropdown_option,optselect01_1,select01,reason,reason,1,,,
+q310_opt_select01_2,q310,dropdown_option,optselect01_2,select01,text,text,2,,,
+q310_opt_select01_3,q310,dropdown_option,optselect01_3,select01,translations,translations,3,,,
+q310_blank_2,q310,dropdown_blank,select02,,<select02>,,2,TranslatedSpeech,,
+q310_opt_select02_1,q310,dropdown_option,optselect02_1,select02,NoMatch,NoMatch,1,,,
+q310_opt_select02_2,q310,dropdown_option,optselect02_2,select02,RecognizingSpeech,RecognizingSpeech,2,,,
+q310_opt_select02_3,q310,dropdown_option,optselect02_3,select02,TranslatedSpeech,TranslatedSpeech,3,,,
