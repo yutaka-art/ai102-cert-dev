@@ -1915,3 +1915,53 @@ q339_5,q339,drag_item,5,,AISearch1 インデックス内のデータについて
 q340_s1,q340,statement,S1,,Azure Databricks は、Apache Spark ベースの分析プラットフォームです。,,1,,,True
 q340_s2,q340,statement,S2,,Azure Analysis Services は、トランザクション ワークロードに使用されます。,,2,,,False
 q340_s3,q340,statement,S3,,Azure Data Factory は、データ統合ワークフローを調整します。,,3,,,True
+q341_a,q341,choice,A,,A. ストリーム非同期読み取り,A,1,,,False
+q341_b,q341,choice,B,,B. DescribeImageInStreamAsync を記述する,B,2,,,True
+q341_c,q341,choice,C,,C. tagImageInStreamAsync,C,3,,,False
+q341_d,q341,choice,D,,D. ドメイン内の画像をストリーム同期で分析する,D,4,,,False
+q342_blank_1,q342,dropdown_blank,select01,,<select01>,,1,投影グループ1つ,,
+q342_blank_2,q342,dropdown_blank,select02,,<select02>,,2,保存されません。,,
+q342_opt_1_1,q342,dropdown_option,opt1_1,select01,投影グループなし,投影グループなし,1,,,
+q342_opt_1_2,q342,dropdown_option,opt1_2,select01,投影グループ1つ,投影グループ1つ,2,,,
+q342_opt_1_3,q342,dropdown_option,opt1_3,select01,投影グループ2つ,投影グループ2つ,3,,,
+q342_opt_1_4,q342,dropdown_option,opt1_4,select01,投影グループ4つ,投影グループ4つ,4,,,
+q342_opt_2_1,q342,dropdown_option,opt2_1,select02,保存されません。,保存されません。,1,,,
+q342_opt_2_2,q342,dropdown_option,opt2_2,select02,BLOB コンテナーに保存されます。,BLOB コンテナーに保存されます。,2,,,
+q342_opt_2_3,q342,dropdown_option,opt2_3,select02,ファイル ストレージに保存されます。,ファイル ストレージに保存されます。,3,,,
+q342_opt_2_4,q342,dropdown_option,opt2_4,select02,Azure Data Lake に保存されます。,Azure Data Lake に保存されます。,4,,,
+q343_a,q343,choice,A,,A. Azure Monitor のアプリケーション インサイト,A,1,,,False
+q343_b,q343,choice,B,,B. Azure Monitor のメトリック アラート,B,2,,,False
+q343_c,q343,choice,C,,C. 多変量異常検出,C,3,,,True
+q343_d,q343,choice,D,,D. 単変量異常検出,D,4,,,False
+q344_blank_1,q344,dropdown_blank,select01,,<select01>,,1,POST,,
+q344_blank_2,q344,dropdown_blank,select02,,<select02>,,2,imageType,,
+q344_opt_1_1,q344,dropdown_option,opt1_1,select01,GET,GET,1,,,
+q344_opt_1_2,q344,dropdown_option,opt1_2,select01,PATCH,PATCH,2,,,
+q344_opt_1_3,q344,dropdown_option,opt1_3,select01,POST,POST,3,,,
+q344_opt_2_1,q344,dropdown_option,opt2_1,select02,description,description,1,,,
+q344_opt_2_2,q344,dropdown_option,opt2_2,select02,imageType,imageType,2,,,
+q344_opt_2_3,q344,dropdown_option,opt2_3,select02,objects,objects,3,,,
+q344_opt_2_4,q344,dropdown_option,opt2_4,select02,tags,tags,4,,,
+q345_a,q345,choice,A,,A. インデックス サイズが増加します。,A,1,,,True
+q345_b,q345,choice,B,,B. クエリ時間が長くなります。,B,2,,,True
+q345_c,q345,choice,C,,C. 自己署名 X.509 証明書が必要です。,C,3,,,False
+q345_d,q345,choice,D,,D. インデックス サイズが減少します。,D,4,,,False
+q345_e,q345,choice,E,,E. クエリ時間が短縮されます。,E,5,,,False
+q345_f,q345,choice,F,,F. Azure Key Vault が必要です。,F,6,,,True
+q346_blank_1,q346,dropdown_blank,select01,,<select01>,,1,データアナリスト,,
+q346_opt_1_1,q346,dropdown_option,opt1_1,select01,データアナリスト,データアナリスト,1,,,
+q346_opt_1_2,q346,dropdown_option,opt1_2,select01,データエンジニア,データエンジニア,2,,,
+q346_opt_1_3,q346,dropdown_option,opt1_3,select01,データサイエンティスト,データサイエンティスト,3,,,
+q347_a,q347,choice,A,,A. Azure ファイル,A,1,,,False
+q347_b,q347,choice,B,,B. Azure Blob,B,2,,,False
+q347_c,q347,choice,C,,C. Azureテーブル,C,3,,,True
+q347_d,q347,choice,D,,D. Azure キュー,D,4,,,False
+q348_a,q348,choice,A,,A. VNet1 で、仮想ネットワークの設定を変更します。,A,1,,,False
+q348_b,q348,choice,B,,B. VNet1でCSAccount1のサービスエンドポイントを有効にします,B,2,,,False
+q348_c,q348,choice,C,,C. CSAccount1 で、アクセス制御 (IAM) 設定を構成します。,C,3,,,False
+q348_d,q348,choice,D,,D. VNet1 で仮想サブネットを作成します。,D,4,,,True
+q348_e,q348,choice,E,,E. CSAccount1 で、仮想ネットワークの設定を変更します。,E,5,,,True
+q350_a,q350,choice,A,,"A. create_resource(クライアント、""res1""、""ComputerVision""、""F0""、""westus"")",A,1,,,True
+q350_b,q350,choice,B,,"B. create_resource(クライアント、""res1""、""CustomVision.Prediction""、""F0""、""westus"")",B,2,,,False
+q350_c,q350,choice,C,,"C. create_resource(クライアント、""res1""、""ComputerVision""、""S0""、""westus"")",C,3,,,False
+q350_d,q350,choice,D,,"D. create_resource(クライアント、""res1""、""CustomVision.Prediction""、""S0""、""westus"")",D,4,,,False

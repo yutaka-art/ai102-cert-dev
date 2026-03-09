@@ -2192,3 +2192,75 @@ q339,#339,drag_drop,Agent Service と AI Search インデックス接続手順,"
 どの 4 つのアクションを順番に実行する必要がありますか? 回答するには、適切なアクションをアクション リストから回答領域に移動し、正しい順序に並べます。",,正しい順に並べてください,4,まず接続 ID を取得し、ツールを構成し、エージェントを作成してから質問して検証します。,True,"{""mode"": ""sequence"", ""required_items"": 4}"
 q340,#340,multi_yesno,データプラットフォーム サービスの説明,"以下の各文について、正しい場合は「はい」を選択してください。そうでない場合は「いいえ」を選択してください。
 注意: 正しい選択ごとに 1 ポイントが加算されます。",,各文について Yes / No を選択してください,3,Databricks は Spark ベース、Analysis Services はトランザクション用途ではなく、Data Factory はデータ統合ワークフローを調整します。,False,{}
+q341,#341,single_choice,視覚障がい者向けに完全な文章を返す API 呼び出し,"Computer Vision API を使用して画像を分析するアプリがあります。
+視覚に障がいのあるユーザー向けに出力を提供するようにアプリを設定する必要があります。ソリューションでは、出力を完全な文章で提供する必要があります。
+どの API 呼び出しを実行する必要がありますか?",,1つ選択してください,1,完全な文章による説明を返す DescribeImageInStreamAsync を使います。,True,{}
+q342,#342,dropdown,ナレッジ ストア JSON の解釈,"次の JSON を使用して、Azure Cognitive Search のナレッジ ストアを作成します。
+
+ドロップダウン メニューを使用して、各ステートメントを完成させる回答の選択肢を選択します。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","""KnowledgeStore"": {
+  ""storageConnectionString"": ""DefaultEndpointsProtocol=https;AccountName=<Acct Name>;AccountKey=<Acct Key>;"",
+  ""projections"": [
+    {
+      ""tables"": [
+        {
+          ""tableName"": ""unrelatedDocument"",
+          ""generatedKeyName"": ""Documentid"",
+          ""source"": ""/document/pbiShape""
+        },
+        {
+          ""tableName"": ""unrelatedKeyPhrases"",
+          ""generatedKeyName"": ""KeyPhraseid"",
+          ""source"": ""/document/pbiShape/keyPhrases""
+        }
+      ],
+      ""objects"": [
+        {
+          ""storageContainer"": ""unrelatedocrlayout"",
+          ""source"": null,
+          ""sourceContext"": ""/document/normalized_images/*/layoutText"",
+          ""inputs"": [
+            {
+              ""name"": ""ocrLayoutText"",
+              ""source"": ""/document/normalized_images/*/layoutText"",
+            }
+          ]
+        }
+      ],
+      ""files"": []
+    }
+  ]
+}
+
+<select01> が表示されます。
+画像は <select02> に表示されます。",各ドロップダウンを選択してください,2,projections 配列に1要素だけなので投影グループは1つで、images は files が空のため保存されません。,False,{}
+q343,#343,single_choice,複数センサー値の異常検出,"回転速度、角度、温度、圧力などのエンジン センサー データを分析する監視システムを開発しています。システムは、異常な値に応答してアラートを生成する必要があります。
+ソリューションには何を含める必要がありますか?",,1つ選択してください,1,複数の相関センサーを扱うなら多変量異常検出が適しています。,True,{}
+q344,#344,dropdown,imageType を使う Vision API リクエスト,"Azure AI Vision API を使用して画像を分析するアプリを開発しています。
+画像がクリップアートか線画かを識別するためにアプリが使用するリクエストを構成する必要があります。
+リクエストをどのように完了すればよいですか？回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+<select01> https://cognitiveservices.azure.com/vision/v3.2/analyze?visualFeatures=<select02>&details={string}&language=e",,各ドロップダウンを選択してください,2,Analyze API は POST で呼び、clip art/line drawing 判定には imageType を指定します。,False,{}
+q345,#345,multi_choice,CMK + サーバー側暗号化の影響,"顧客は Azure Cognitive Search を使用します。
+顧客は、サーバー側の暗号化を有効にし、Azure に保存されているカスタマー マネージド キー (CMK) を使用する予定です。
+計画されている変更がもたらす 3 つの影響は何ですか? それぞれの正解は完全な解決策を示しています。",,3つ選択してください,3,CMK を使うと Key Vault が必要になり、インデックスサイズ増加やクエリ時間増加の影響があります。,True,{}
+q346,#346,dropdown,ビジネスルールを識別する役割,"文を正しく完成させる答えを選択してください。
+
+<select01> は、会社のデータに適用する必要があるビジネス ルールを識別する役割を担います。",,ドロップダウンを選択してください,1,ビジネスルールを特定する役割はデータアナリストです。,False,{}
+q347,#347,single_choice,キー/値モデルの Azure ストレージ,どのAzureストレージサービスがキー/値モデルを実装していますか？,,1つ選択してください,1,キー/値モデルを実装するのは Azure Table です。,True,{}
+q348,#348,multi_choice,特定リソースのみから AI サービスへアクセスさせる手順,"CSAccount1 という Azure AI サービスリソースと VNet1 という仮想ネットワークを含む Azure サブスクリプションがあります。CSAccount1 は VNet1 に接続されています。特定のリソースのみが CSAccount1 にアクセスできるようにする必要があります。ソリューションは以下の要件を満たす必要があります。
+* CSAccount1への外部アクセスを防止
+* 管理作業の最小化
+実行すべき2つのアクションはどれですか？ それぞれの正解は解決策の一部を示しています。",,2つ選択してください,2,サブネットを分け、CSAccount1 側の仮想ネットワーク設定を構成します。,True,{}
+q350,#350,single_choice,Computer Vision F0 リソース作成呼び出し,"プログラムで Azure Cognitive Services リソースを作成するための次の C# メソッドがあります。
+
+米国西部Azureリージョンに無料のAzureリソースを作成するには、メソッドを呼び出す必要があります。このリソースは、画像のキャプションを自動生成するために使用されます。
+どのコードを使用すればよいですか?","static void create_resource(CognitiveServicesManagementClient client, string
+resource_name, string kind, string account_tier, string location)
+{
+  CognitiveServicesAccount parameters = 
+    new CognitiveServicesAccount(null, null, kind, location, resource_name,
+      new CognitiveServicesAccountProperties(), new Sku(account_tier));
+  var result = client.Accounts.Create(resource_group_name, account_tier, parameters);
+}",1つ選択してください,1,画像キャプション用の無料リソースは ComputerVision の F0 を westus に作成します。,True,{}
