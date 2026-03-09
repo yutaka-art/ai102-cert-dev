@@ -1208,3 +1208,65 @@ q189,#189,single_choice,この出力を返す Language Service API,"アプリケ
 |Trip|Event|0.78|
 |Seattle|Location|0.78|
 |Last week|DateTime|0.80|",1つ選択してください,1,カテゴリ付きエンティティが返っているため名前付きエンティティ認識です。,True,{}
+q191,#191,dropdown,Text Analytics Sentiment コンテナー起動コマンド,"テキスト分析に使用される Azure Cognitive Services サービスのコンテナー化されたバージョンをデプロイする予定です。
+サービスのエンドポイント URI として https://contoso.cognitiveservices.azure.com を構成し、最新バージョンの Text Analytics Sentiment Analysis コンテナーをプルします。
+Docker を使用して、Azure 仮想マシン上でコンテナーを実行する必要があります。
+コマンドをどのように完了すればよいですか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","docker run --rm -it -p 5000:5000 --memory 8g --cpus 1
+<select01>
+Eula=accept
+Billing=<select02>
+ApiKey=xxxxxxxxxx",各ドロップダウンを選択してください,2,Sentiment Analysis コンテナーは sentiment イメージを使い、Billing には Cognitive Services のエンドポイント URI を指定します。,False,{}
+q192,#192,single_choice,ストリーミング ワークロードの例,ストリーミングワークロードの例はどのシナリオですか？,,1つ選択してください,1,エッジ デバイスから継続的に届くテレメトリは典型的なストリーミング データです。,True,{}
+q193,#193,dropdown,Face API 類似顔検索リクエスト本文,"Face APIの呼び出しを開発しています。この呼び出しでは、既存のemployeefacesというリストから類似の顔を検索する必要があります。employeefacesリストには60,000枚の画像が含まれています。
+HTTPリクエストの本文はどのように記述すればよいでしょうか？ 適切な値を正しいターゲットにドラッグしてください。各値は1回、複数回、または全く使用されない場合があります。コンテンツを表示するには、ペイン間の分割バーをドラッグするか、スクロールする必要がある場合があります。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","{
+  ""faceId"": ""18c51a87-3a69-47a8-aedc-a54745f708a1"",
+  ""<select01>"": ""employeefaces"",
+  ""maxNumOfCandidatesReturned"": 1,
+  ""mode"": <select02>
+}",各ドロップダウンを選択してください,2,"60,000 枚の画像には LargeFaceList を使い、類似顔検索モードは matchFace です。",False,{}
+q194,#194,single_yesno,QnA chitchat の professional 変更,"注: この質問は、同じシナリオを示す一連の質問の一部です。このシリーズの各質問には、指定された目標を達成できる可能性のある独自の解決策が含まれています。一部の質問セットには複数の正しい解決策が含まれる場合がありますが、他の質問セットには正しい解決策がない場合があります。
+このセクションの質問に回答すると、その質問に戻ることはできません。そのため、これらの質問はレビュー画面には表示されません。
+Azure Cognitive Service for Language Users で質問応答を使用するチャットボットがあり、偽の質問に回答するときにチャットボットの応答に形式性が欠けていると報告されています。チャットボットが偽の質問に対して正式な応答を提供することを確認する必要があります。
+解決策: Language Studio から、chitchat ソースを qna_chitchat_professional.tsv に変更します。その後、モデルを再トレーニングして再公開します。
+これは目標を達成していますか?",,はい / いいえ を選択してください,1,professional の chitchat ソースに変更して再トレーニング・再公開すれば、よりフォーマルな応答にできます。,False,{}
+q195,#195,dropdown,Cosmos DB Gremlin API のコンテナー種別,"文を正しく完成させる答えを選択してください。
+
+Azure Cosmos DB Gremlin API を使用する場合、コンテナー リソースの種類は <select01> として投影されます。",,ドロップダウンを選択してください,1,Gremlin API では、コンテナーは graph として扱われます。,False,{}
+q196,#196,single_choice,Speech と Language を単一エンドポイントで使うリソース,"Speech and Language API を使用するアプリを開発しています。
+アプリのリソースをプロビジョニングする必要があります。ソリューションでは、各サービスに単一のエンドポイントと資格情報を使用してアクセスできるようにする必要があります。
+どのようなタイプのリソースを作成する必要がありますか?",,1つ選択してください,1,単一のエンドポイントと資格情報で複数の AI サービスにアクセスするには Azure AI Foundry サービスを使用します。,True,{}
+q197,#197,dropdown,データベースで実行されるコード ブロックの名称,"文を正しく完成させる答えを選択してください。
+
+データベースで実行されるコード ブロックは <select01> と呼ばれます。",,ドロップダウンを選択してください,1,データベース内で実行されるコード ブロックはストアドプロシージャです。,False,{}
+q198,#198,dropdown,Speech Translation の出力言語と認識器設定,"Azure AI サービスを使用して、音声を英語からフランス語、ドイツ語、スペイン語に自動的に翻訳するアプリを構築しています。
+出力言語を定義し、Azure AI Speech サービスを構成する必要があります。
+コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","static async Task TranslateSpeechAsync()
+{
+  var config = SpeechTranslationConfig.FromSubScription(SPEECH__SUBSCRIPTION__KEY, SPEECH__SERVICE__REGION);
+  var languages = new List<string><select01>
+  languages.ForEach(config.AddTargetLanguage);
+
+  using var recognizer = new <select02>;
+}",各ドロップダウンを選択してください,2,"対象言語一覧は {""fr"", ""de"", ""es""} とし、翻訳用には TranslationRecognizer を使います。",False,{}
+q199,#199,dropdown,OpenAI リソース作成スクリプトの補完,"Azureサブスクリプションをお持ちの場合
+ユーザーのプロンプトに応じて架空のストーリーを生成する新しいリソースを作成する必要があります。このソリューションでは、リソースが顧客管理キーを使用してデータを保護できるようにする必要があります。
+スクリプトをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。","az cognitiveservices account create \
+-n myresource -g myResourceGroup -l westeurope \
+--kind <select01> --sku S \
+--assign-identity \
+<select02> '{
+""keyName"":""keyname"",
+""keyVersion"":""secretVersion"",
+""keyVaultUri"":""https://<your-kv>.vault.azure.net/""
+}'",各ドロップダウンを選択してください,2,架空のストーリー生成には OpenAI を選び、CMK には --encryption オプションを使用します。,False,{}
+q200,#200,dropdown,画像を写真・図面・クリップアートに分類する設定,"何千もの画像を含むライブラリがあります。
+画像に写真、図面、またはクリップアートとしてタグを付ける必要があります。
+どのサービス エンドポイントと応答プロパティを使用する必要がありますか? 回答するには、回答領域で適切なオプションを選択してください。
+注意: 正しい選択ごとに 1 ポイントが付与されます。
+
+Service endpoint:<select01>
+Property:<select02>",,各ドロップダウンを選択してください,2,画像の種類判定には Computer Vision の Analyze Images エンドポイントと imageType プロパティを使用します。,False,{}
