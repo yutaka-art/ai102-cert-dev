@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/',
+  base: '/ai102-cert-dev/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
