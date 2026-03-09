@@ -1568,3 +1568,41 @@ q280_c,q280,choice,C,,C. ファイル3,C,3,,,True
 q280_d,q280,choice,D,,D. ファイル4,D,4,,,False
 q280_e,q280,choice,E,,E. ファイル5,E,5,,,False
 q280_f,q280,choice,F,,F. ファイル6,F,6,,,True
+q281_s1,q281,statement,S1,,解決策: Language Studio から、雑談の質問と回答のペアをすべて削除し、モデルを再トレーニングして再公開します。,,1,,,False
+q282_blank_1,q282,dropdown_blank,select01,,<select01>,,1,Azure Data Factory,,
+q282_blank_2,q282,dropdown_blank,select02,,<select02>,,2,Azure Synapse Analytics,,
+q282_opt_1_1,q282,dropdown_option,opt1_1,select01,Azure Cognitve Search,Azure Cognitve Search,1,,,
+q282_opt_1_2,q282,dropdown_option,opt1_2,select01,Azure Data Catalog,Azure Data Catalog,2,,,
+q282_opt_1_3,q282,dropdown_option,opt1_3,select01,Azure Data Factory,Azure Data Factory,3,,,
+q282_opt_1_4,q282,dropdown_option,opt1_4,select01,Azure Synapse Analytics,Azure Synapse Analytics,4,,,
+q282_opt_2_1,q282,dropdown_option,opt2_1,select02,Azure Cognitve Search,Azure Cognitve Search,1,,,
+q282_opt_2_2,q282,dropdown_option,opt2_2,select02,Azure Data Catalog,Azure Data Catalog,2,,,
+q282_opt_2_3,q282,dropdown_option,opt2_3,select02,Azure Data Factory,Azure Data Factory,3,,,
+q282_opt_2_4,q282,dropdown_option,opt2_4,select02,Azure Synapse Analytics,Azure Synapse Analytics,4,,,
+q283_s1,q283,statement,S1,,OnMembersAddedAsync は、ユーザーが会話に参加するとトリガーされます。,,1,,,True
+q283_s2,q283,statement,S2,,新しいユーザーが会話に参加すると、会話に参加している既存のユーザーにはチャットボットの挨拶が表示されます。,,2,,,True
+q283_s3,q283,statement,S3,,OnMembersAddedAsync は、ユーザーがメッセージを送信すると初期化されます。,,3,,,False
+q284_s1,q284,statement,S1,,解決策：新しい画像を追加してから、SmartLabelerツールを使用します。,,1,,,True
+q285_blank_1,q285,dropdown_blank,select01,,<select01>,,1,GetLanguagesAsync,,
+q285_blank_2,q285,dropdown_blank,select02,,<select02>,,2,ContainsKey,,
+q285_opt_1_1,q285,dropdown_option,opt1_1,select01,GetLanguages,GetLanguages,1,,,
+q285_opt_1_2,q285,dropdown_option,opt1_2,select01,GetLanguagesAsync,GetLanguagesAsync,2,,,
+q285_opt_1_3,q285,dropdown_option,opt1_3,select01,TranslationRecognizer,TranslationRecognizer,3,,,
+q285_opt_2_1,q285,dropdown_option,opt2_1,select02,Contains,Contains,1,,,
+q285_opt_2_2,q285,dropdown_option,opt2_2,select02,ContainsKey,ContainsKey,2,,,
+q285_opt_2_3,q285,dropdown_option,opt2_3,select02,GetValueOrDefault,GetValueOrDefault,3,,,
+q285_opt_2_4,q285,dropdown_option,opt2_4,select02,Where,Where,4,,,
+q286_s1,q286,statement,S1,,エージェントはアップロードされたファイルについて推論を行います。,,1,,,False
+q286_s2,q286,statement,S2,,コードは実行を作成し、出力をチェックします。,,2,,,False
+q286_s3,q286,statement,S3,,コードはエージェントを作成し、ファイル検索を有効にします。,,3,,,False
+q287_a,q287,choice,A,,A. スタッフの財務状況に影響を与える決定を下す前に、人間によるレビューと承認の手順を追加します。,A,1,,,True
+q287_b,q287,choice,B,,B. アンケートで低い信頼スコアが返された場合は、感情分析の結果を含めます。,B,2,,,False
+q287_c,q287,choice,C,,C. アカウントの削除とデータの削除をリクエストした顧客によるアンケートを含む、すべてのアンケートを使用します。,C,3,,,False
+q287_d,q287,choice,D,,D. 生の調査データを中央の場所に公開し、スタッフにその場所へのアクセスを提供します。,D,4,,,False
+q288_s1,q288,statement,S1,,出力には「Paris」、「Eiffel」、「Tower」という単語が含まれます。,,1,,,False
+q288_s2,q288,statement,S2,,関数は入力文字列のすべてのキーフレーズをコンソールに出力します。,,2,,,False
+q288_s3,q288,statement,S3,,出力には「our」と「included」という単語が含まれます。,,3,,,False
+q289_a,q289,choice,A,,A. 同義語マップ,A,1,,,True
+q289_b,q289,choice,B,,B.提案者,B,2,,,False
+q289_c,q289,choice,C,,C. カスタムアナライザー,C,3,,,False
+q289_d,q289,choice,D,,D. 組み込みのキーフレーズ抽出スキル,D,4,,,False
