@@ -1293,3 +1293,52 @@ q230_a,q230,choice,A,,A. Azure Al Language 会話型言語理解 (CLU),A,1,,,Fal
 q230_b,q230,choice,B,,B. Azure AI 言語検出,B,2,,,False
 q230_c,q230,choice,C,,C. Azure Al Language のカスタム質問応答,C,3,,,True
 q230_d,q230,choice,D,,D. Azure OpenAI,D,4,,,False
+q231_a,q231,choice,A,,A. ファイル1のみ,A,1,,,False
+q231_b,q231,choice,B,,B. ファイル3のみ,B,2,,,False
+q231_c,q231,choice,C,,C. ファイル1とファイル3のみ,C,3,,,True
+q231_d,q231,choice,D,,D. ファイル1、ファイル2、ファイル3のみ,D,4,,,False
+q231_e,q231,choice,E,,E. ファイル1、ファイル2、ファイル3、およびファイル4,E,5,,,False
+q232_s1,q232,statement,S1,,解決策: Language Studio から、カスタム インテントの質問と回答のペアを変更し、モデルを再トレーニングして再公開します。,,1,,,False
+q233_blank_1,q233,dropdown_blank,select01,,<select01>,,1,ニューヨークを市として識別する,,
+q233_blank_2,q233,dropdown_blank,select02,,<select02>,,2,言語理解インテントを認識,,
+q233_opt_1_1,q233,dropdown_option,opt1_1,select01,別のダイアログに切り替える,別のダイアログに切り替える,1,,,
+q233_opt_1_2,q233,dropdown_option,opt1_2,select01,ニューヨークを市として識別する,ニューヨークを市として識別する,2,,,
+q233_opt_1_3,q233,dropdown_option,opt1_3,select01,ニューヨークを州として識別する,ニューヨークを州として識別する,3,,,
+q233_opt_1_4,q233,dropdown_option,opt1_4,select01,シアトルの天気を答える,シアトルの天気を答える,4,,,
+q233_opt_2_1,q233,dropdown_option,opt2_1,select02,カスタムイベント,カスタムイベント,1,,,
+q233_opt_2_2,q233,dropdown_option,opt2_2,select02,ダイアログイベント,ダイアログイベント,2,,,
+q233_opt_2_3,q233,dropdown_option,opt2_3,select02,言語理解インテントを認識,言語理解インテントを認識,3,,,
+q233_opt_2_4,q233,dropdown_option,opt2_4,select02,Q&Aインテントを認識,Q&Aインテントを認識,4,,,
+q234_s1,q234,statement,S1,,解決策: 場所に関する新しいインテントを作成します。,,1,,,False
+q235_a,q235,choice,A,,A. フォローアッププロンプトを追加します。,A,1,,,True
+q235_b,q235,choice,B,,B. アクティブラーニングを有効にします。,B,2,,,False
+q235_c,q235,choice,C,,C. 代替の質問を追加します。,C,3,,,False
+q235_d,q235,choice,D,,D. 雑談を有効にします。,D,4,,,False
+q236_a,q236,choice,A,,A. Bot ID,A,1,,,False
+q236_b,q236,choice,B,,B. テナントID,B,2,,,False
+q236_c,q236,choice,C,,C. アプリID,C,3,,,True
+q236_d,q236,choice,D,,D. オブジェクトID,D,4,,,False
+q236_e,q236,choice,E,,E. アプリシークレット,E,5,,,True
+q237_a,q237,choice,A,,A. データを複数のBLOBコンテナーに分割します。各コンテナーにCognitive Searchサービスを作成します。各インデクサー定義内で、同じランタイム実行パターンをスケジュールします。,A,1,,,False
+q237_b,q237,choice,B,,B. データを複数のBLOBコンテナに分割します。コンテナごとにインデクサーを作成します。検索単位を増やします。各インデクサー定義内で、順次実行パターンをスケジュールします。,B,2,,,False
+q237_c,q237,choice,C,,C. ドキュメントの種類ごとに Cognitive Search サービスを作成します。,C,3,,,False
+q237_d,q237,choice,D,,D. データを複数の仮想フォルダに分割します。各フォルダにインデクサーを作成します。検索単位を増やします。各インデクサー定義内で、同じランタイム実行パターンをスケジュールします。,D,4,,,True
+q238_blank_1,q238,dropdown_blank,select01,,<select01>,,1,contentsafety/,,
+q238_blank_2,q238,dropdown_blank,select02,,<select02>,,2,text:analyze,,
+q238_opt_1_1,q238,dropdown_option,opt1_1,select01,completions/,completions/,1,,,
+q238_opt_1_2,q238,dropdown_option,opt1_2,select01,contentsafety/,contentsafety/,2,,,
+q238_opt_1_3,q238,dropdown_option,opt1_3,select01,healthinsights/,healthinsights/,3,,,
+q238_opt_1_4,q238,dropdown_option,opt1_4,select01,language/,language/,4,,,
+q238_opt_2_1,q238,dropdown_option,opt2_1,select02,completions,completions,1,,,
+q238_opt_2_2,q238,dropdown_option,opt2_2,select02,embeddings,embeddings,2,,,
+q238_opt_2_3,q238,dropdown_option,opt2_3,select02,text:analyze,text:analyze,3,,,
+q238_opt_2_4,q238,dropdown_option,opt2_4,select02,text/blocklists,text/blocklists,4,,,
+q239_1,q239,drag_item,1,,侵害されたキーを削除します。,1,1,,3,
+q239_2,q239,drag_item,2,,セカンダリ管理者キーを再生成します。,2,2,,,
+q239_3,q239,drag_item,3,,プライマリ管理者キーを再生成します。,3,3,,,
+q239_4,q239,drag_item,4,,セカンダリ管理者キーを使用するようにアプリを変更します。,4,4,,,
+q239_5,q239,drag_item,5,,新しいキーを使用するようにアプリを変更します。,5,5,,2,
+q239_6,q239,drag_item,6,,新しいクエリキーを追加します。,6,6,,1,
+q240_s1,q240,statement,S1,,この呼び出しにより、入力文字列からキーフレーズがコンソールに出力されます。,,1,,,True
+q240_s2,q240,statement,S2,,出力には、the、cat、sat、on、mat などの単語が含まれます。,,2,,,False
+q240_s3,q240,statement,S3,,出力には、キーフレーズの信頼度レベルが含まれます。,,3,,,False
