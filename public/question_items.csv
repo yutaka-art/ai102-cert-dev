@@ -532,10 +532,10 @@ q085_a,q085,choice,A,,A. QnADialogResponseOptions.CardNoMatchText,A,1,,,False
 q085_b,q085,choice,B,,B. Qna MakerOptions-ScoreThreshold,B,2,,,False
 q085_c,q085,choice,C,,C. Qna Maker オプション ストリックフィルター,C,3,,,False
 q085_d,q085,choice,D,,D. QnaMakerOptions.RankerType,D,4,,,True
-q086_a,q086,choice,A,,A. 言語スタジオ,A,1,,,False
+q086_a,q086,choice,A,,A. Language Studio,A,1,,,False
 q086_b,q086,choice,B,,B. Azure AI Foundry,B,2,,,True
-q086_c,q086,choice,C,,C. スピーチスタジオ,C,3,,,False
-q086_d,q086,choice,D,,D. Azureポータル,D,4,,,False
+q086_c,q086,choice,C,,C. Speech Studio,C,3,,,False
+q086_d,q086,choice,D,,D. Azure Portal,D,4,,,False
 q087_blank_1,q087,dropdown_blank,select01,,顧客からの電話をテキストクエリに変換します:<select01>。,,1,SpeechRecognizer,,
 q087_blank_2,q087,dropdown_blank,select02,,顧客に注文の詳細を提供します:<select02>。,,2,SpeechSynthesizer,,
 q087_opt_1_1,q087,dropdown_option,opt1_1,select01,SpeechRecognizer,SpeechRecognizer,1,,,
@@ -556,10 +556,10 @@ q089_opt_2_1,q089,dropdown_option,opt2_1,select02,/text/analytics/v3.1/entites/r
 q089_opt_2_2,q089,dropdown_option,opt2_2,select02,/text/analytics/v3.1/languages,/text/analytics/v3.1/languages,2,,,
 q089_opt_2_3,q089,dropdown_option,opt2_3,select02,/translator/text/v3.0/translate?to=en,/translator/text/v3.0/translate?to=en,3,,,
 q089_opt_2_4,q089,dropdown_option,opt2_4,select02,/translator/text/v3.0/translate?to=fr,/translator/text/v3.0/translate?to=fr,4,,,
-q090_a,q090,choice,A,,A. Azure AI Foundry コンテンツの安全性,A,1,,,False
-q090_b,q090,choice,B,,B. Azure AI 音声,B,2,,,False
-q090_c,q090,choice,C,,C. Azure AI言語,C,3,,,True
-q090_d,q090,choice,D,,D. Azure AI翻訳,D,4,,,False
+q090_a,q090,choice,A,,A. Azure AI Foundry Content Safety,A,1,,,False
+q090_b,q090,choice,B,,B. Azure AI Speech,B,2,,,False
+q090_c,q090,choice,C,,C. Azure AI Language,C,3,,,True
+q090_d,q090,choice,D,,D. Azure AI Translator,D,4,,,False
 q091_blank_1,q091,dropdown_blank,select01,,道路標識を識別し、それぞれの道路標識の簡単な説明を生成します:<select01>。,,1,Azure AI Vision,,
 q091_blank_2,q091,dropdown_blank,select02,,説明を分析して、さまざまな種類の道路標識と、それぞれの種類の出現頻度に関するレポートを生成します:<select02>。,,2,Azure AI Phi-3-mini,,
 q091_opt_1_1,q091,dropdown_option,opt1_1,select01,Azure AI Document Intelligence,Azure AI Document Intelligence,1,,,
@@ -603,8 +603,8 @@ q097_opt_2_1,q097,dropdown_option,opt2_1,select02,AnalyzeImage(request),AnalyzeI
 q097_opt_2_2,q097,dropdown_option,opt2_2,select02,client.AnalyzeImage(request),client.AnalyzeImage(request),2,,,
 q097_opt_2_3,q097,dropdown_option,opt2_3,select02,client.AnalyzeText(request),client.AnalyzeText(request),3,,,
 q097_opt_2_4,q097,dropdown_option,opt2_4,select02,request.Analyzeimage(Client),request.Analyzeimage(Client),4,,,
-q098_a,q098,choice,A,,A. 顔,A,1,,,False
-q098_b,q098,choice,B,,B. コンピュータービジョン,B,2,,,True
+q098_a,q098,choice,A,,A. Face,A,1,,,False
+q098_b,q098,choice,B,,B. Computer Vision,B,2,,,True
 q098_c,q098,choice,C,,C. Azure Video Analyzer for Media (旧称 Video indexer),C,3,,,False
 q099_a,q099,choice,A,,A. SOL言語のバリアントを使用して、データが照会および操作されます,A,1,,,True
 q099_b,q099,choice,B,,B. テーブル間の依存関係の欠如,B,2,,,False
