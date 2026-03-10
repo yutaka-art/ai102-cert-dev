@@ -203,10 +203,10 @@ q025_opt_1_3,q025,dropdown_option,opt1_3,select01,table,table,3,,,
 q025_opt_2_1,q025,dropdown_option,opt2_1,select02,2,2,1,,,
 q025_opt_2_2,q025,dropdown_option,opt2_2,select02,5,5,2,,,
 q025_opt_2_3,q025,dropdown_option,opt2_3,select02,10,10,3,,,
-q026_a,q026,choice,A,,A. Azure Al 言語,A,1,,,true
-q026_b,q026,choice,B,,B. Azure 機械学習,B,2,,,false
+q026_a,q026,choice,A,,A. Azure Al Language,A,1,,,true
+q026_b,q026,choice,B,,B. Azure Machine Learning,B,2,,,false
 q026_c,q026,choice,C,,C. Azure OpenAI,C,3,,,false
-q026_d,q026,choice,D,,D. Azure AI ドキュメント インテリジェンス,D,4,,,false
+q026_d,q026,choice,D,,D. Azure AI Document Intelligence,D,4,,,false
 q027_1,q027,drag_item,1,,あらかじめ構築されたドメインのToDoを追加します。,1,1,,2,
 q027_2,q027,drag_item,2,,新しいアプリケーションを追加します。,2,2,,1,
 q027_3,q027,drag_item,3,,発話例を追加します。,3,3,,,
@@ -429,10 +429,10 @@ q064_opt_1_3,q064,dropdown_option,opt1_3,select01,https://westus.api.cognitive.m
 q064_opt_2_1,q064,dropdown_option,opt2_1,select02,are◯flnterest,are◯flnterest,1,,,
 q064_opt_2_2,q064,dropdown_option,opt2_2,select02,detect,detect,2,,,
 q064_opt_2_3,q064,dropdown_option,opt2_3,select02,generateThumbnail,generateThumbnail,3,,,
-q065_a,q065,choice,A,,A. 接続文字列,A,1,,,False
-q065_b,q065,choice,B,,B. プロジェクトスコープキー,B,2,,,False
-q065_c,q065,choice,C,,C. AIProjectClient オブジェクト,C,3,,,True
-q065_d,q065,choice,D,,D. SASCredentialsオブジェクト,D,4,,,False
+q065_a,q065,choice,A,,A. Connection String,A,1,,,False
+q065_b,q065,choice,B,,B. Project Scope Key,B,2,,,False
+q065_c,q065,choice,C,,C. AIProjectClient Object,C,3,,,True
+q065_d,q065,choice,D,,D. SASCredentials Object,D,4,,,False
 q066_1,q066,drag_item,1,,Azure で言語サービス リソースをプロビジョニングします。,1,1,,1,
 q066_2,q066,drag_item,2,,Azure コンテナー インスタンスに Docker コンテナーをデプロイします。,2,2,,,
 q066_3,q066,drag_item,3,,オンプレミス サーバーに Docker コンテナーをデプロイします。,3,3,,2,
@@ -443,10 +443,10 @@ q068_a,q068,choice,A,,A. XML,A,1,,,False
 q068_b,q068,choice,B,,B. JSONL,B,2,,,True
 q068_c,q068,choice,C,,C. CSV,C,3,,,False
 q068_d,q068,choice,D,,D. TSV,D,4,,,False
-q069_a,q069,choice,A,,A. ビジュアルスタジオ,A,1,,,False
+q069_a,q069,choice,A,,A. Visual Studio,A,1,,,False
 q069_b,q069,choice,B,,B. Azure AI Vision の Vision Studio,B,2,,,False
-q069_c,q069,choice,C,,C. Azure AI コンテンツ セーフティ スタジオ,C,3,,,True
-q069_d,q069,choice,D,,D. Azure AI スタジオ,D,4,,,False
+q069_c,q069,choice,C,,C. Azure AI Content Safety Studio,C,3,,,True
+q069_d,q069,choice,D,,D. Azure AI Studio,D,4,,,False
 q070_a,q070,choice,A,,A. 言語検出スキルとテキスト翻訳スキルを含むスキルセットに接続された Azure Blob Storage のインデクサー,A,1,,,False
 q070_b,q070,choice,B,,B. 言語検出スキルを含むスキルセットにアタッチされた Azure Blob ストレージのインデクサー,B,2,,,False
 q070_c,q070,choice,C,,C. ドキュメント抽出スキルとテキスト翻訳スキルを含むスキルセットに接続された Azure Cosmos DB のインデクサー,C,3,,,True
