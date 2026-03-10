@@ -38,11 +38,13 @@ function relabelChoiceItems(items: QuestionItem[]): QuestionItem[] {
  * @param mode 'sequential' で question_no 順、'shuffle' でランダム順
  * @param from 出題開始番号 (例: 61) — 省略時は先頭から
  * @param to   出題終了番号 (例: 120) — 省略時は末尾まで
+ * @param limit 出題数上限 (シャッフル時に有効) — 省略時は全問
  */
 export function useQuizData(
   mode: 'sequential' | 'shuffle' = 'shuffle',
   from?: number,
   to?: number,
+  limit?: number,
 ) {
   const quizQuestions = ref<QuestionWithItems[]>([])
   const loading = ref(true)
@@ -155,6 +157,11 @@ export function useQuizData(
         quizQuestions.value = shuffleArray(sorted)
       } else {
         quizQuestions.value = sorted
+      }
+
+      // limit が指定されている場合、先頭 N 問に絞る
+      if (limit != null && limit > 0) {
+        quizQuestions.value = quizQuestions.value.slice(0, limit)
       }
     } catch (e) {
       error.value = e instanceof Error ? e.message : 'データ読み込みに失敗しました'

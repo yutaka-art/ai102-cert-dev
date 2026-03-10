@@ -5,34 +5,55 @@
     <h2 class="opening-sub">―</h2>
     <div class="opening-date">2026/3/8</div>
 
-    <!-- 範囲指定 -->
-    <div class="range-section">
-      <label class="range-label">出題範囲（任意）</label>
-      <div class="range-inputs">
-        <span class="range-prefix">Q</span>
-        <input
-          v-model.number="rangeFrom"
-          type="number"
-          min="1"
-          placeholder="開始"
-          class="range-input"
-        />
-        <span class="range-separator">〜</span>
-        <span class="range-prefix">Q</span>
-        <input
-          v-model.number="rangeTo"
-          type="number"
-          min="1"
-          placeholder="終了"
-          class="range-input"
-        />
+    <div class="mode-cards">
+      <!-- 順番通りに出題 -->
+      <div class="mode-card">
+        <div class="mode-card-title sequential-title">📋 順番通りに出題</div>
+        <div class="range-section">
+          <label class="range-label">出題範囲（任意）</label>
+          <div class="range-inputs">
+            <span class="range-prefix">Q</span>
+            <input
+              v-model.number="rangeFrom"
+              type="number"
+              min="1"
+              placeholder="開始"
+              class="range-input"
+            />
+            <span class="range-separator">〜</span>
+            <span class="range-prefix">Q</span>
+            <input
+              v-model.number="rangeTo"
+              type="number"
+              min="1"
+              placeholder="終了"
+              class="range-input"
+            />
+          </div>
+          <div class="range-hint">例: Q61〜Q120 → 61 と 120 を入力</div>
+        </div>
+        <router-link :to="sequentialLink" class="start-btn mode-btn">スタート</router-link>
       </div>
-      <div class="range-hint">例: Q61〜Q120 → 61 と 120 を入力。空欄で全問出題</div>
-    </div>
 
-    <div class="mode-selection">
-      <router-link :to="quizLink('sequential')" class="start-btn mode-btn">順番通りに出題</router-link>
-      <router-link :to="quizLink('shuffle')" class="start-btn mode-btn shuffle-btn">シャッフルで出題</router-link>
+      <!-- シャッフルで出題 -->
+      <div class="mode-card">
+        <div class="mode-card-title shuffle-title">🔀 シャッフルで出題</div>
+        <div class="range-section">
+          <label class="range-label">出題数（任意）</label>
+          <div class="range-inputs">
+            <input
+              v-model.number="shuffleLimit"
+              type="number"
+              min="1"
+              placeholder="例: 60"
+              class="range-input limit-input"
+            />
+            <span class="range-suffix">問</span>
+          </div>
+          <div class="range-hint">全問からランダム出題。空欄で全問</div>
+        </div>
+        <router-link :to="shuffleLink" class="start-btn mode-btn shuffle-btn">スタート</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -43,13 +64,20 @@ import viteLogo from '/vite.svg'
 
 const rangeFrom = ref(null)
 const rangeTo = ref(null)
+const shuffleLimit = ref(null)
 
-const quizLink = (mode) => {
-  const query = { mode }
+const sequentialLink = computed(() => {
+  const query = { mode: 'sequential' }
   if (rangeFrom.value) query.from = String(rangeFrom.value)
   if (rangeTo.value) query.to = String(rangeTo.value)
   return { path: '/quiz', query }
-}
+})
+
+const shuffleLink = computed(() => {
+  const query = { mode: 'shuffle' }
+  if (shuffleLimit.value) query.limit = String(shuffleLimit.value)
+  return { path: '/quiz', query }
+})
 </script>
 
 <style scoped>
@@ -93,21 +121,37 @@ const quizLink = (mode) => {
   letter-spacing: 0.08em;
   margin-bottom: 1.5rem;
 }
-.mode-selection {
+.mode-cards {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+.mode-card {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  width: 100%;
-  max-width: 320px;
+  align-items: center;
+  background: #2a2c2e;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  border: 1px solid #3a3c3e;
 }
+.mode-card-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.sequential-title { color: #41d1ff; }
+.shuffle-title { color: #42b883; }
 /* 範囲指定 */
 .range-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   width: 100%;
-  max-width: 320px;
 }
 .range-label {
   font-size: 0.95rem;
@@ -151,6 +195,19 @@ const quizLink = (mode) => {
   font-size: 0.78rem;
   color: #777;
   margin-top: 0.35rem;
+}
+.limit-input {
+  width: 100px;
+}
+.range-suffix {
+  color: #aaa;
+  font-size: 1rem;
+  margin-left: 0.2em;
+}
+@media (max-width: 600px) {
+  .mode-cards {
+    flex-direction: column;
+  }
 }
 .start-btn {
   display: inline-block;
