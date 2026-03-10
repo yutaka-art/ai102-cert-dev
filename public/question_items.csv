@@ -83,7 +83,7 @@ q006_opt_5,q006,dropdown_option,opt5,select02,/detect,/detect,1,,,
 q006_opt_6,q006,dropdown_option,opt6,select02,/languages,/languages,2,,,
 q006_opt_7,q006,dropdown_option,opt7,select02,/text-to-speech,/text-to-speech,3,,,
 q006_opt_8,q006,dropdown_option,opt8,select02,/translate,/translate,4,,,
-q007_blank_1,q007,dropdown_blank,select01,,<select01>,,1,QnA Maker Editor,,
+q007_blank_1,q007,dropdown_blank,select01,,<select01>,,1,Cognitive Service User,,
 q007_blank_2,q007,dropdown_blank,select02,,<select02>,,2,Contributor,,
 q007_opt_1,q007,dropdown_option,opt1,select01,Cognitive Service User,Cognitive Service User,1,,,
 q007_opt_10,q007,dropdown_option,opt10,select02,QnA Maker Read,QnA Maker Read,5,,,
@@ -119,7 +119,7 @@ q011_c,q011,choice,C,,C. 地理V2,C,3,,,false
 q011_d,q011,choice,D,,D. パターン.任意,D,4,,,false
 q011_e,q011,choice,E,,E. リスト,E,5,,,false
 q012_blank_1,q012,dropdown_blank,select01,,社内支出申請承認フォーム:<select01>,,1,Azure AI Document Intelligence custom model,,
-q012_blank_2,q012,dropdown_blank,select02,,仕入先請求書:<select02>,,2,Azure Immersive Reader,,
+q012_blank_2,q012,dropdown_blank,select02,,仕入先請求書:<select02>,,2,Azure AI Document Intelligence pre-built model,,
 q012_opt_1_1,q012,dropdown_option,opt1_1,select01,Azure AI Document Intelligence custom model,Azure AI Document Intelligence custom model,1,,,
 q012_opt_1_2,q012,dropdown_option,opt1_2,select01,Azure AI Document Intelligence pre-built model,Azure AI Document Intelligence pre-built model,2,,,
 q012_opt_1_3,q012,dropdown_option,opt1_3,select01,Azure Custom Vision,Azure Custom Vision,3,,,
