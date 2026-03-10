@@ -157,8 +157,17 @@
           <span class="result-title-text">{{ result.title }}</span>
         </div>
       </div>
-      <button class="restart-btn" @click="restartQuiz">もう一度挑戦する</button>
-      <router-link to="/" class="back-link">トップに戻る</router-link>
+      <div class="result-actions">
+        <button class="restart-btn" @click="restartQuiz">もう一度挑戦する</button>
+        <button
+          v-if="wrongCount > 0"
+          class="restart-btn retry-wrong-btn"
+          @click="retryWrong"
+        >
+          間違えた問題だけ再挑戦（{{ wrongCount }}問）
+        </button>
+        <router-link to="/" class="back-link">トップに戻る</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -372,6 +381,11 @@ export default defineComponent({
       showResults.value = true
     }
 
+    // 不正解の問題数
+    const wrongCount = computed(() => {
+      return quizQuestions.value.length - correctCount.value
+    })
+
     // やり直す
     const restartQuiz = () => {
       currentIndex.value = 0
@@ -379,6 +393,18 @@ export default defineComponent({
       currentAnswer.value = {}
       answerStates.value = []
       reload()
+    }
+
+    // 間違えた問題だけ再挑戦
+    const retryWrong = () => {
+      const wrongQuestions = quizQuestions.value.filter(
+        (_, idx) => !answerStates.value[idx]?.isCorrect
+      )
+      quizQuestions.value = wrongQuestions
+      currentIndex.value = 0
+      showResults.value = false
+      currentAnswer.value = {}
+      answerStates.value = []
     }
 
     return {
@@ -412,6 +438,8 @@ export default defineComponent({
       goToNext,
       viewResults,
       restartQuiz,
+      retryWrong,
+      wrongCount,
     }
   },
 })
@@ -799,6 +827,19 @@ export default defineComponent({
 }
 .restart-btn:hover {
   background: #2bc4f5;
+}
+.retry-wrong-btn {
+  background: #ff9f43;
+  color: #1a1a1a;
+}
+.retry-wrong-btn:hover {
+  background: #e68a2e;
+}
+.result-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .back-link {
   display: inline-block;
