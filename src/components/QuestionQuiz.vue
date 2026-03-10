@@ -204,7 +204,9 @@ export default defineComponent({
   setup() {
     const route = useRoute()
     const quizMode = (route.query.mode as string) === 'sequential' ? 'sequential' : 'shuffle'
-    const { quizQuestions, loading, error, reload } = useQuizData(quizMode)
+    const rangeFrom = route.query.from ? Number(route.query.from) : undefined
+    const rangeTo = route.query.to ? Number(route.query.to) : undefined
+    const { quizQuestions, loading, error, reload } = useQuizData(quizMode, rangeFrom, rangeTo)
     const { checkAnswer, getCorrectAnswerText } = useAnswerChecker()
 
     const currentIndex = ref(0)

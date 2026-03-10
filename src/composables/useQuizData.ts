@@ -36,8 +36,14 @@ function relabelChoiceItems(items: QuestionItem[]): QuestionItem[] {
 /**
  * CSV から問題データを読み込む composable
  * @param mode 'sequential' で question_no 順、'shuffle' でランダム順
+ * @param from 出題開始番号 (例: 61) — 省略時は先頭から
+ * @param to   出題終了番号 (例: 120) — 省略時は末尾まで
  */
-export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
+export function useQuizData(
+  mode: 'sequential' | 'shuffle' = 'shuffle',
+  from?: number,
+  to?: number,
+) {
   const quizQuestions = ref<QuestionWithItems[]>([])
   const loading = ref(true)
   const error = ref<string | null>(null)
@@ -127,14 +133,28 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
         }
       })
 
+      // question_no でソート（例: #001, #002, ...）
+      let sorted = allQuestions.sort((a, b) =>
+        a.question.question_no.localeCompare(b.question.question_no)
+      )
+
+      // from / to が指定されている場合、question_no の数値でフィルタリング
+      if (from != null || to != null) {
+        sorted = sorted.filter((q) => {
+          const m = q.question.question_no.match(/\d+/)
+          if (!m) return false
+          const num = parseInt(m[0], 10)
+          if (from != null && num < from) return false
+          if (to != null && num > to) return false
+          return true
+        })
+      }
+
       // モードに応じて順序を決定
       if (mode === 'shuffle') {
-        quizQuestions.value = shuffleArray(allQuestions)
+        quizQuestions.value = shuffleArray(sorted)
       } else {
-        // question_no でソート（例: #001, #002, ...）
-        quizQuestions.value = allQuestions.sort((a, b) =>
-          a.question.question_no.localeCompare(b.question.question_no)
-        )
+        quizQuestions.value = sorted
       }
     } catch (e) {
       error.value = e instanceof Error ? e.message : 'データ読み込みに失敗しました'
