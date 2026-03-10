@@ -6,7 +6,9 @@ Microsoft Azure AI Engineer Associate (AI-102) 試験対策用のインタラク
 
 ## 機能
 
-- **2つの出題モード** — 順番通り (Sequential) / ランダム (Shuffle)
+- **2つの出題モード**
+  - **📋 順番通り (Sequential)** — 出題範囲を指定可能（例: Q61〜Q120）
+  - **🔀 シャッフル (Shuffle)** — 全問からランダム出題。出題数の上限を指定可能（例: 60問）
 - **6種類の問題形式** — 択一選択・複数選択・ドラッグ&ドロップ・ドロップダウン・Yes/No (単一)・Yes/No (複数)
 - **即時フィードバック** — 回答後に正誤と正解・解説を表示
 - **選択肢シャッフル** — choice 形式はランダム並び替え後にラベル (A, B, C…) を振り直し
@@ -29,7 +31,7 @@ Microsoft Azure AI Engineer Associate (AI-102) 試験対策用のインタラク
 ```
 src/
 ├── components/
-│   ├── OpeningPage.vue          # タイトル画面・モード選択
+│   ├── OpeningPage.vue          # タイトル画面・モード選択（範囲指定・出題数設定）
 │   ├── QuestionQuiz.vue         # クイズ本体（進捗・ナビゲーション・結果）
 │   └── questions/               # 問題タイプ別コンポーネント
 │       ├── SingleChoice.vue
@@ -39,13 +41,13 @@ src/
 │       ├── SingleYesNo.vue
 │       └── MultiYesNo.vue
 ├── composables/
-│   ├── useQuizData.ts           # CSV 読み込み・データ結合・シャッフル
+│   ├── useQuizData.ts           # CSV 読み込み・データ結合・シャッフル・範囲/件数フィルタ
 │   └── useAnswerChecker.ts      # 問題タイプ別の正誤判定
 ├── types/
 │   └── quiz.ts                  # 型定義
 public/
-├── questions_sample.csv         # 問題データ
-└── question_items_sample.csv    # 選択肢データ
+├── questions.csv                # 問題データ
+└── question_items.csv           # 選択肢データ
 ```
 
 ## セットアップ
@@ -74,11 +76,22 @@ npm run preview
 npm run deploy
 ```
 
+## クエリパラメータ
+
+クイズ画面 (`/quiz`) は URL クエリパラメータで出題動作を制御します。
+
+| パラメータ | 説明 | 例 |
+|---|---|---|
+| `mode` | 出題モード (`sequential` / `shuffle`) | `?mode=shuffle` |
+| `from` | 出題開始番号（順番モード用） | `&from=61` |
+| `to` | 出題終了番号（順番モード用） | `&to=120` |
+| `limit` | 出題数上限（シャッフルモード用） | `&limit=60` |
+
 ## データ形式
 
 問題データは `public/` 配下の CSV ファイルで管理します。
 
-**questions_sample.csv** — 問題定義
+**questions.csv** — 問題定義
 
 | カラム | 説明 |
 |---|---|
@@ -94,7 +107,7 @@ npm run deploy
 | shuffle_items | 選択肢シャッフル (true/false) |
 | metadata_json | メタデータ JSON |
 
-**question_items_sample.csv** — 選択肢・項目定義
+**question_items.csv** — 選択肢・項目定義
 
 | カラム | 説明 |
 |---|---|
