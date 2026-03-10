@@ -49,8 +49,8 @@ export function useQuizData(mode: 'sequential' | 'shuffle' = 'shuffle') {
 
       // 2つの CSV を並列取得
       const [questionsRes, itemsRes] = await Promise.all([
-       fetch(import.meta.env.BASE_URL + 'questions_sample.csv'),
-       fetch(import.meta.env.BASE_URL + 'question_items_sample.csv'),
+       fetch(import.meta.env.BASE_URL + 'questions.csv'),
+       fetch(import.meta.env.BASE_URL + 'question_items.csv'),
         // fetch(import.meta.env.BASE_URL + 'questions_sample_diff_381_395.csv'),
         // fetch(import.meta.env.BASE_URL + 'question_items_sample_diff_381_395.csv'),
       ])
