@@ -389,10 +389,10 @@ q055_opt_2_2,q055,dropdown_option,opt2_2,select02,Speech to Text,Speech to Text,
 q055_opt_2_3,q055,dropdown_option,opt2_3,select02,Text Analytics,Text Analytics,3,,,
 q055_opt_2_4,q055,dropdown_option,opt2_4,select02,Text to Speech,Text to Speech,4,,,
 q055_opt_2_5,q055,dropdown_option,opt2_5,select02,Translator,Translator,5,,,
-q056_a,q056,choice,A,,A. Coputer Vision の画像解析,A,1,,,False
-q056_b,q056,choice,B,,B. Coputer Vision のRead API,B,2,,,True
-q056_c,q056,choice,C,,C. Form Recognizer,C,3,,,False
-q056_d,q056,choice,D,,D. Language向け Azure Cognitive Service,D,4,,,False
+q056_a,q056,choice,A,,A. Azure AI Vision の Image Analysis,A,1,,,False
+q056_b,q056,choice,B,,B. Azure AI Vision の Read API API,B,2,,,True
+q056_c,q056,choice,C,,C. Azure AI Document Intelligence（旧 Form Recognizer）,C,3,,,False
+q056_d,q056,choice,D,,D. Azure AI Language,D,4,,,False
 q057_s1,q057,statement,S1,,解決策: service1 とプライベート エンドポイントを vnet1 にデプロイします。,,1,,,True
 q058_1,q058,drag_item,1,,text-embedding-ada-002 モデルを使用するデプロイメントを作成します。,1,1,,,
 q058_2,q058,drag_item,2,,デフォルトのシステムメッセージテンプレートを適用します。,2,2,,,
@@ -467,10 +467,10 @@ q074_a,q074,choice,A,,A. 飛び越える,A,1,,,False
 q074_b,q074,choice,B,,B. 素早い茶色のキツネが怠け者の犬を飛び越える,B,2,,,False
 q074_c,q074,choice,C,,C. 素早い茶色のキツネの怠け者の犬,C,3,,,True
 q074_d,q074,choice,D,,D. 素早い,D,4,,,False
-q075_a,q075,choice,A,,A. Custom Vision,A,1,,,False
-q075_b,q075,choice,B,,B. Computer Vision,B,2,,,False
-q075_c,q075,choice,C,,C. Immersive Reader,C,3,,,False
-q075_d,q075,choice,D,,D. Form Recognizer,D,4,,,True
+q075_a,q075,choice,A,,A. Azure Custom Vision,A,1,,,False
+q075_b,q075,choice,B,,B. Azure AI Vision（旧 Computer Vision）,B,2,,,False
+q075_c,q075,choice,C,,C. Azure Immersive Reader,C,3,,,False
+q075_d,q075,choice,D,,D. Azure AI Document Intelligence（旧 Form Recognizer）,D,4,,,True
 q076_blank_1,q076,dropdown_blank,select01,,<select01>,,1,BingGroundingToolDefinition,,
 q076_blank_2,q076,dropdown_blank,select02,,<select02>,,2,tools:,,
 q076_opt_1_1,q076,dropdown_option,opt1_1,select01,AzureAISearchResource,AzureAISearchResource,1,,,
@@ -624,10 +624,10 @@ q101_b,q101,choice,B,,B. キーとエンドポイント,B,2,,,True
 q101_c,q101,choice,C,,C. プロパティ,C,3,,,False
 q101_d,q101,choice,D,,D. ネットワーキング,D,4,,,False
 q102_s1,q102,statement,S1,,解決策: Content Safety Studio から、テキスト コンテンツのモデレート機能を使用してテストを実行します。,,1,,,True
-q103_a,q103,choice,A,,A. Language,A,1,,,False
-q103_b,q103,choice,B,,B. Speech,B,2,,,False
-q103_c,q103,choice,C,,C. Azure Cognitive Service,C,3,,,True
-q103_d,q103,choice,D,,D. Content Moderator,D,4,,,False
+q103_a,q103,choice,A,,A. Azure AI Language,A,1,,,False
+q103_b,q103,choice,B,,B. Azure AI Speech,B,2,,,False
+q103_c,q103,choice,C,,C. Azure AI Services のマルチサービス リソース,C,3,,,True
+q103_d,q103,choice,D,,D. Azure AI Content Safety,D,4,,,False
 q104_drag_1,q104,drag_item,1,,カテゴリー別に画像をアップロードします。,1,1,,,
 q104_drag_2,q104,drag_item,2,,タグの提案を取得します。,2,2,,2,
 q104_drag_3,q104,drag_item,3,,すべての画像をアップロードします。,3,3,,1,
@@ -1086,10 +1086,10 @@ q195_opt01_2,q195,dropdown_option,opt01_2,select01,table,table,2,,,
 q195_opt01_3,q195,dropdown_option,opt01_3,select01,partition key,partition key,3,,,
 q195_opt01_4,q195,dropdown_option,opt01_4,select01,document,document,4,,,
 q195_select01,q195,dropdown_blank,select01,,<select01>,,1,graph,,
-q196_a,q196,choice,A,,A. Azure AI 言語,A,1,,,False
-q196_b,q196,choice,B,,B. Azure AI Foundry サービス,B,2,,,True
-q196_c,q196,choice,C,,C. Azure AI音声,C,3,,,False
-q196_d,q196,choice,D,,D. Azure AI Foundry コンテンツの安全性,D,4,,,False
+q196_a,q196,choice,A,,A. Azure AI Language,A,1,,,False
+q196_b,q196,choice,B,,B. Microsoft Foundry resource（Azure AI services のマルチサービス リソース）,B,2,,,True
+q196_c,q196,choice,C,,C. Azure AI Speech,C,3,,,False
+q196_d,q196,choice,D,,D. Azure AI Content Safety,D,4,,,False
 q197_opt01_1,q197,dropdown_option,opt01_1,select01,ストアドプロシージャ,ストアドプロシージャ,1,,,
 q197_opt01_2,q197,dropdown_option,opt01_2,select01,テーブル,テーブル,2,,,
 q197_opt01_3,q197,dropdown_option,opt01_3,select01,ビュー,ビュー,3,,,
@@ -1477,15 +1477,15 @@ q266_b,q266,choice,B,,B. Azure AI Document Intelligence（旧 Form Recognizer）
 q266_c,q266,choice,C,,C. Azure AI Vision（旧 Computer Vision）,C,3,,,False
 q266_d,q266,choice,D,,D. Azure AI Language,D,4,,,True
 q267_blank_1,q267,dropdown_blank,select01,,<select01>,,1,Computer Vision,,
-q267_blank_2,q267,dropdown_blank,select02,,<select02>,,2,Content Moderator,,
+q267_blank_2,q267,dropdown_blank,select02,,<select02>,,2,Content Safety,,
 q267_opt_select01_1,q267,dropdown_option,optselect01_1,select01,Azure Cognitive Service for Language,Azure Cognitive Service for Language,1,,,
 q267_opt_select01_2,q267,dropdown_option,optselect01_2,select01,Computer Vision,Computer Vision,2,,,
-q267_opt_select01_3,q267,dropdown_option,optselect01_3,select01,Content Moderator,Content Moderator,3,,,
+q267_opt_select01_3,q267,dropdown_option,optselect01_3,select01,Content Safety,Content Safety,3,,,
 q267_opt_select01_4,q267,dropdown_option,optselect01_4,select01,Custom Vision,Custom Vision,4,,,
 q267_opt_select01_5,q267,dropdown_option,optselect01_5,select01,Form Recognizer,Form Recognizer,5,,,
 q267_opt_select02_1,q267,dropdown_option,optselect02_1,select02,Azure Cognitive Service for Language,Azure Cognitive Service for Language,1,,,
 q267_opt_select02_2,q267,dropdown_option,optselect02_2,select02,Computer Vision,Computer Vision,2,,,
-q267_opt_select02_3,q267,dropdown_option,optselect02_3,select02,Content Moderator,Content Moderator,3,,,
+q267_opt_select02_3,q267,dropdown_option,optselect02_3,select02,Content Safety,Content Safety,3,,,
 q267_opt_select02_4,q267,dropdown_option,optselect02_4,select02,Custom Vision,Custom Vision,4,,,
 q267_opt_select02_5,q267,dropdown_option,optselect02_5,select02,Form Recognizer,Form Recognizer,5,,,
 q268_a,q268,choice,A,,A. Fluentd,A,1,,,False

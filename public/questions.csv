@@ -710,7 +710,7 @@ q110,#110,dropdown,Translator SDK のテキスト翻訳コード,"Azure Al Trans
   string input = Console.Readline();
   if (input.ToLower() == 'exit') break;
   Response<IReadOnlyList<TranslatedTextItem>> translationResponse = 
-    await client.TranslateAsync <select01>.ConfigureAwait(false);
+    await client.<select01>.ConfigureAwait(false);
   IReadOnlyList<TranslatedTextItem> translations = translationResponse.Value;
   TranslatedTextItem translation = translation[0];
   string sourceLanguage = translation?.DetectedLanguage?.Language;
