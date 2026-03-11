@@ -1965,7 +1965,7 @@ client.DefaultRequestHeaders.Add(""Ocp-Apim-Subscription-Key"", apiKey);
 HttpResponseMessage response;
 var content = new StringContent(body, Encoding.UTF8, ""application/json"");
 var response = await client.PutAsync(uri, content);",各ドロップダウンを選択してください,2,アメリカ大陸向けのエンドポイント api-nam と to=en を使います。,False,{}
-q309,#309,multi_choice,データ視覚化の用途,データ視覚化の2つの用途を食べたのは何ですか？それぞれの正解は完全な解決策を提示します。注：正しい選択はそれぞれ1ポイントの価値があります。,,2つ選択してください,2,データ視覚化はデータの重要性を伝え、傾向やパターンを表すのに役立ちます。,False,{}
+q309,#309,multi_choice,データ視覚化の用途として適切なものは何ですか？2つ選んでください。それぞれの正解は完全な解決策を提示します。注：正しい選択はそれぞれ1ポイントの価値があります。,,2つ選択してください,2,データ視覚化はデータの重要性を伝え、傾向やパターンを表すのに役立ちます。,False,{}
 q310,#310,dropdown,音声翻訳結果の出力コード補完,"Azure AI Speech サービスを使用して音声ファイルを翻訳するアプリを構築する必要があります。
 コードをどのように完成させるべきですか? 回答するには、回答エリアで適切なオプションを選択してください。
 注意: 正しい選択ごとに 1 ポイントが付与されます。","static void OutputSpeechRecognitionResult(TranslationRecognitionResult translationRecognitionResult)
