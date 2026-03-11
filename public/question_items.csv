@@ -2051,22 +2051,22 @@ q370_a,q370,choice,A,,A. GPT-3.5,A,1,,,False
 q370_b,q370,choice,B,,B. Embeddings,B,2,,,True
 q370_c,q370,choice,C,,C. DALL-E,C,3,,,False
 q370_d,q370,choice,D,,D. GPT-4,D,4,,,False
-q371_a,q371,choice,A,,A. QnAメーカー、言語理解、および派遣,A,1,,,True
-q371_b,q371,choice,B,,B. 翻訳者、スピーチ、派遣,B,2,,,False
-q371_c,q371,choice,C,,C. 言語理解、テキスト分析、QnAメーカー,C,3,,,False
-q371_d,q371,choice,D,,D. テキスト分析、翻訳者、派遣,D,4,,,False
-q372_a,q372,choice,A,,A. Cognitive Services 貢献者,A,1,,,False
-q372_b,q372,choice,B,,B. 貢献者,B,2,,,False
-q372_c,q372,choice,C,,C. Cognitive Services OpenAI ユーザー,C,3,,,False
-q372_d,q372,choice,D,,D. Cognitive Services OpenAI 貢献者,D,4,,,True
-q373_a,q373,choice,A,,A. Cognitive Services OpenAI ユーザー,A,1,,,True
-q373_b,q373,choice,B,,B. Cognitive Services 貢献者,B,2,,,False
-q373_c,q373,choice,C,,C. 貢献者,C,3,,,False
-q373_d,q373,choice,D,,D. Cognitive Services OpenAI 貢献者,D,4,,,False
-q374_a,q374,choice,A,,A. Azure AI コンテンツの安全性,A,1,,,False
-q374_b,q374,choice,B,,B. Azure AI サービス,B,2,,,True
-q374_c,q374,choice,C,,C. アズール・アル・スピーチ,C,3,,,False
-q374_d,q374,choice,D,,D. Azure Al 言語,D,4,,,False
+q371_a,q371,choice,A,,A. QnA Maker、Language Understanding（LUIS）、Dispatch,A,1,,,True
+q371_b,q371,choice,B,,B. Translator、Speech、Dispatch,B,2,,,False
+q371_c,q371,choice,C,,C. Language Understanding（LUIS）、Text Analytics、QnA Maker,C,3,,,False
+q371_d,q371,choice,D,,D. Text Analytics、Translator、Dispatch,D,4,,,False
+q372_a,q372,choice,A,,A. Cognitive Services Contributor,A,1,,,False
+q372_b,q372,choice,B,,B. Contributor,B,2,,,False
+q372_c,q372,choice,C,,C. Cognitive Services OpenAI User,C,3,,,False
+q372_d,q372,choice,D,,D. Cognitive Services OpenAI Contributor,D,4,,,True
+q373_a,q373,choice,A,,A. Cognitive Services OpenAI User,A,1,,,True
+q373_b,q373,choice,B,,B. Cognitive Services Contributor,B,2,,,False
+q373_c,q373,choice,C,,C. Contributor,C,3,,,False
+q373_d,q373,choice,D,,D. Cognitive Services OpenAI Contributor,D,4,,,False
+q374_a,q374,choice,A,,A. Azure AI Content Safety,A,1,,,False
+q374_b,q374,choice,B,,B. Azure AI Services,B,2,,,True
+q374_c,q374,choice,C,,C. Azure AI Speech,C,3,,,False
+q374_d,q374,choice,D,,D. Azure Al Language,D,4,,,False
 q375_a,q375,choice,A,,A. PDF,A,1,,,False
 q375_b,q375,choice,B,,B. XML,B,2,,,False
 q375_c,q375,choice,C,,C. TXT,C,3,,,True
@@ -2091,13 +2091,13 @@ q377_opt_2_2,q377,dropdown_option,opt2_2,select02,SpeechRecognitionLanguage,Spee
 q377_opt_2_3,q377,dropdown_option,opt2_3,select02,SpeechSynthesisLanguage,SpeechSynthesisLanguage,3,,,
 q377_opt_2_4,q377,dropdown_option,opt2_4,select02,TargetLanguages,TargetLanguages,4,,,
 q377_opt_2_5,q377,dropdown_option,opt2_5,select02,VoiceName,VoiceName,5,,,
-q378_a,q378,choice,A,,A. Azure Table storage,A,1,,,True
-q378_b,q378,choice,B,,B. Azure Queue storage,B,2,,,False
+q378_a,q378,choice,A,,A. Azure Table Storage,A,1,,,True
+q378_b,q378,choice,B,,B. Azure Queue Storage,B,2,,,False
 q378_c,q378,choice,C,,C. Azure Files,C,3,,,False
-q379_a,q379,choice,A,,A. アダプティブダイアログ,A,1,,,False
-q379_b,q379,choice,B,,B. QnAMakerダイアログ,B,2,,,True
-q379_c,q379,choice,C,,C. コンポーネントダイアログ,C,3,,,False
-q379_d,q379,choice,D,,D. スキルダイアログ,D,4,,,False
+q379_a,q379,choice,A,,A. アダプティブ ダイアログ,A,1,,,False
+q379_b,q379,choice,B,,B. QnAMaker ダイアログ,B,2,,,True
+q379_c,q379,choice,C,,C. コンポーネント ダイアログ,C,3,,,False
+q379_d,q379,choice,D,,D. スキル ダイアログ,D,4,,,False
 q380_blank_1,q380,dropdown_blank,select01,,<select01>,,1,"""categories"": [""Locations"", ""Persons"", ""Organizations""]",,
 q380_blank_2,q380,dropdown_blank,select02,,<select02>,,2,"{""name"": ""entities""}",,
 q380_opt_1_1,q380,dropdown_option,opt1_1,select01,"""categories"": []","""categories"": []",1,,,
@@ -2106,14 +2106,14 @@ q380_opt_1_3,q380,dropdown_option,opt1_3,select01,"""categories"": [""Locations"
 q380_opt_2_1,q380,dropdown_option,opt2_1,select02,"{""name"": ""entities""}","{""name"": ""entities""}",1,,,
 q380_opt_2_2,q380,dropdown_option,opt2_2,select02,"{""name"": ""categories""}","{""name"": ""categories""}",2,,,
 q380_opt_2_3,q380,dropdown_option,opt2_3,select02,"{""name"": ""nameEntities""}","{""name"": ""nameEntities""}",3,,,
-q381_a,q381,choice,A,,A. a report,A,1,,,True
+q381_a,q381,choice,A,,A. レポート（report）,A,1,,,True
 q381_b,q381,choice,B,,B. Microsoft Power Apps,B,2,,,False
-q381_c,q381,choice,C,,C. a view,C,3,,,False
-q381_d,q381,choice,D,,D. a dataflow,D,4,,,False
-q382_a,q382,choice,A,,A. 一貫性,A,1,,,False
-q382_b,q382,choice,B,,B. 分離,B,2,,,False
-q382_c,q382,choice,C,,C. 原子性,C,3,,,True
-q382_d,q382,choice,D,,D. 耐久性,D,4,,,False
+q381_c,q381,choice,C,,C. ビュー（view）,C,3,,,False
+q381_d,q381,choice,D,,D. データフロー（dataflow）,D,4,,,False
+q382_a,q382,choice,A,,A. 一貫性(Consistency),A,1,,,False
+q382_b,q382,choice,B,,B. 分離(Isolation),B,2,,,False
+q382_c,q382,choice,C,,C. 原子論(Atomicity),C,3,,,True
+q382_d,q382,choice,D,,D. 一貫性(Consistency),D,4,,,False
 q383_blank_1,q383,dropdown_blank,select01,,<select01>,,1,Face,,
 q383_blank_2,q383,dropdown_blank,select02,,<select02>,,2,Face,,
 q383_blank_3,q383,dropdown_blank,select03,,<select03>,,3,Speech,,
@@ -2126,10 +2126,10 @@ q383_opt_2_3,q383,dropdown_option,opt2_3,select02,Text Analytics,Text Analytics,
 q383_opt_3_1,q383,dropdown_option,opt3_1,select03,Face,Face,1,,,
 q383_opt_3_2,q383,dropdown_option,opt3_2,select03,Speech,Speech,2,,,
 q383_opt_3_3,q383,dropdown_option,opt3_3,select03,Text Analytics,Text Analytics,3,,,
-q384_a,q384,choice,A,,A. アズール・アル・スピーチ,A,1,,,False
-q384_b,q384,choice,B,,B. Azure AI コンテンツの安全性,B,2,,,False
+q384_a,q384,choice,A,,A. Azure AI Speech,A,1,,,False
+q384_b,q384,choice,B,,B. Azure AI Content Safety,B,2,,,False
 q384_c,q384,choice,C,,C. Azure AI Translator,C,3,,,False
-q384_d,q384,choice,D,,D. Azure Al 言語,D,4,,,True
+q384_d,q384,choice,D,,D. Azure Al Language,D,4,,,True
 q385_a,q385,choice,A,,A. カスタム テキスト分類,A,1,,,False
 q385_b,q385,choice,B,,B. エンティティのリンク,B,2,,,False
 q385_c,q385,choice,C,,C. カスタム固有表現認識 (NER),C,3,,,True
@@ -2169,10 +2169,10 @@ q392_a,q392,choice,A,,A. キーフレーズ抽出,A,1,,,False
 q392_b,q392,choice,B,,B. 会話型言語理解（CLU）,B,2,,,False
 q392_c,q392,choice,C,,C. エンティティリンク,C,3,,,True
 q392_d,q392,choice,D,,D. カスタム名前付きエンティティ認識 (NER),D,4,,,False
-q393_a,q393,choice,A,,A. Azure アプリケーション ゲートウェイ,A,1,,,False
-q393_b,q393,choice,B,,B. IPsecルール,B,2,,,False
-q393_c,q393,choice,C,,C. 仮想ネットワークゲートウェイ,C,3,,,False
-q393_d,q393,choice,D,,D. 仮想ネットワークルール,D,4,,,True
+q393_a,q393,choice,A,,A. Azure Application Gateway,A,1,,,False
+q393_b,q393,choice,B,,B. IP ルール,B,2,,,False
+q393_c,q393,choice,C,,C. 仮想ネットワーク ゲートウェイ,C,3,,,False
+q393_d,q393,choice,D,,D. 仮想ネットワーク ルール,D,4,,,True
 q394_s1,q394,statement,S1,,解決策: FindContact インテント内に新しいパターンを作成します。,,1,,,False
 q395_1,q395,drag_item,1,,質問と回答のペアを更新します。,1,1,,,
 q395_2,q395,drag_item,2,,代替フレーズを確認して承認します。,2,2,,2,
