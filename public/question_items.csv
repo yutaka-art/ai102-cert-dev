@@ -1,18 +1,18 @@
 ﻿id,question_id,item_type,item_key,parent_key,label,value,sort_order,correct_value,correct_order,is_correct
-q001_a,q001,choice,A,,A. オートコンプリート エンドポイントに API クエリを実行し、本文に suggesterName を含めます。,A,1,,,true
-q001_b,q001,choice,B,,B. 3 つの製品名フィールドをソース フィールドとして持つサジェスターを追加します。,B,2,,,true
-q001_c,q001,choice,C,,C. 検索エンドポイントに API クエリを実行し、searchFields クエリ パラメータに製品名フィールドを含めます。,C,3,,,false
-q001_d,q001,choice,D,,D. 3 つの製品名フィールドごとにサジェスターを追加します。,D,4,,,false
-q001_e,q001,choice,E,,E. 3 つの製品名のバリエーションに対して searchAnalyzer プロパティを設定します。,E,5,,,false
-q001_f,q001,choice,F,,F. 3 つの製品名バリアントのアナライザー プロパティを設定します。,F,6,,,true
-q002_1,q002,drag_item,1,,Video Indexer API を使用してビデオのインデックスを作成します。,1,1,,2,
-q002_2,q002,drag_item,2,,ビデオを BLOB ストレージにアップロードします。,2,2,,1,
-q002_3,q002,drag_item,3,,Azure AI Vision（旧 Computer Vision） API を使用してビデオを分析します。,3,3,,,
-q002_4,q002,drag_item,4,,Microsoft Stream からトランスクリプトを抽出します。,4,4,,,
-q002_5,q002,drag_item,5,,トランスクリプトを発話として Language Understanding API に送信します。,5,5,,,
-q002_6,q002,drag_item,6,,Video Indexer API からトランスクリプトを抽出します。,6,6,,3,
-q002_7,q002,drag_item,7,,Translator API を使用してトランスクリプトを翻訳します。,7,7,,4,
-q002_8,q002,drag_item,8,,ビデオをファイル ストレージにアップロードします。,8,8,,,
+q001_a,q001,choice,A,,A. オートコンプリート エンドポイントに API クエリを実行し、本文に suggesterName を含める,A,1,,,true
+q001_b,q001,choice,B,,B. 3 つの製品名フィールドをソース フィールドとして持つサジェスターを追加する,B,2,,,true
+q001_c,q001,choice,C,,C. 検索エンドポイントに API クエリを実行し、searchFields クエリ パラメータに製品名フィールドを含める,C,3,,,false
+q001_d,q001,choice,D,,D. 3 つの製品名フィールドごとにサジェスターを追加する,D,4,,,false
+q001_e,q001,choice,E,,E. 3 つの製品名のバリエーションに対して searchAnalyzer プロパティを設定する,E,5,,,false
+q001_f,q001,choice,F,,F. 3 つの製品名バリアントのアナライザー プロパティを設定する,F,6,,,true
+q002_1,q002,drag_item,1,,Video Indexer API を使用してビデオのインデックスを作成する,1,1,,2,
+q002_2,q002,drag_item,2,,ビデオを BLOB ストレージにアップロードする,2,2,,1,
+q002_3,q002,drag_item,3,,Azure AI Vision（旧 Computer Vision） API を使用してビデオを分析する,3,3,,,
+q002_4,q002,drag_item,4,,Microsoft Stream からトランスクリプトを抽出する,4,4,,,
+q002_5,q002,drag_item,5,,トランスクリプトを発話として Language Understanding API に送信する,5,5,,,
+q002_6,q002,drag_item,6,,Video Indexer API からトランスクリプトを抽出する,6,6,,3,
+q002_7,q002,drag_item,7,,Translator API を使用してトランスクリプトを翻訳する,7,7,,4,
+q002_8,q002,drag_item,8,,ビデオをファイル ストレージにアップロードする,8,8,,,
 q003_blank_1,q003,dropdown_blank,select01,,Source:<select01>,,1,Azure Blob storage,,
 q003_blank_2,q003,dropdown_blank,select02,,Cracking:<select02>,,2,Azure AI Vision（旧 Computer Vision） API,,
 q003_blank_3,q003,dropdown_blank,select03,,Preparation:<select03>,,3,Translator API,,
@@ -142,47 +142,47 @@ q013_opt_6,q013,dropdown_option,opt6,select02,role,role,1,,,
 q013_opt_7,q013,dropdown_option,opt7,select02,style,style,2,,,
 q013_opt_8,q013,dropdown_option,opt8,select02,styledegree,styledegree,3,,,
 q013_opt_9,q013,dropdown_option,opt9,select02,type,type,4,,,
-q014_s1,q014,statement,S1,,user.name はエンティティです。,,1,,,false
-q014_s2,q014,statement,S2,,ダイアログはユーザー名と年齢を尋ね、user.name プロパティと user.age プロパティに適切な値を割り当てます。,,2,,,true
-q014_s3,q014,statement,S3,,チャットボットは、userName または personName の最初の null 以外のエンティティ値を取得し、その値を user.name に割り当てます。,,3,,,true
-q015_a,q015,choice,A,,A. Application Insights リソースをプロビジョニングします。,A,1,,,false
-q015_b,q015,choice,B,,B. Microsoft Foundry プロジェクトを作成します。,B,2,,,true
-q015_c,q015,choice,C,,C. Agent1 を Microsoft Foundry プロジェクトに追加します。,C,3,,,false
-q015_d,q015,choice,D,,D. Agent1 を Microsoft Foundry プレイグラウンドに追加します。,D,4,,,false
-q016_1,q016,drag_item,1,,新しいクエリキーを追加します。,1,1,,1,
-q016_2,q016,drag_item,2,,セカンダリ管理者キーを再生成します。,2,2,,,
-q016_3,q016,drag_item,3,,セカンダリ管理者キーを使用するようにアプリを変更します。,3,3,,,
-q016_4,q016,drag_item,4,,新しいキーを使用するようにアプリを変更します。,4,4,,2,
-q016_5,q016,drag_item,5,,プライマリ管理者キーを再生成します。,5,5,,,
-q016_6,q016,drag_item,6,,侵害されたキーを削除します。,6,6,,3,
-q017_1,q017,drag_item,1,,Completionsプレイグラウンドを開き、デプロイ済みのモデルを選択します。,1,1,,,
-q017_2,q017,drag_item,2,,新しいデプロイメントを作成し、DALL-Eモデルを選択します。,2,2,,,
-q017_3,q017,drag_item,3,,Chatプレイグラウンドを開き、デプロイ済みのモデルを選択します。,3,3,,2,
-q017_4,q017,drag_item,4,,システムメッセージフィールドに「You are an AI assistant that describes images.（画像を説明するAIアシスタントです）」と入力します。,4,4,,3,
-q017_5,q017,drag_item,5,,新しいデプロイメントを作成し、GPT-4モデルを選択し、モデルバージョンをvision-previewに設定します。,5,5,,1,
-q017_6,q017,drag_item,6,,新しいデプロイメントを作成し、text-embedding-ada-002モデルを選択し、モデルバージョンを2.0に設定します。,6,6,,,
-q017_7,q017,drag_item,7,,Chatセッションペインで、「Describe this image（この画像を説明してください）」というテキストプロンプトを入力し、添付ボタンを使用して画像をアップロードします。,7,7,,4,
-q018_1,q018,drag_item,1,,Server1 から docker push コマンドを実行します。,1,1,,,
-q018_2,q018,drag_item,2,,Azure 上の Azure AI Anomaly Detector の予測エンドポイントをクエリします。,2,2,,,
-q018_3,q018,drag_item,3,,Server1 に Docker エンジンをインストールします。,3,3,,1,
-q018_4,q018,drag_item,4,,Server1 から docker pull コマンドを実行します。,4,4,,2,
-q018_5,q018,drag_item,5,,Server1 から docker run コマンドを実行します。,5,5,,3,
-q018_6,q018,drag_item,6,,Server1 の予測エンドポイントをクエリします。,6,6,,4,
+q014_s1,q014,statement,S1,,user.name はエンティティである,,1,,,false
+q014_s2,q014,statement,S2,,ダイアログはユーザー名と年齢を尋ね、user.name プロパティと user.age プロパティに適切な値を割り当てる,,2,,,true
+q014_s3,q014,statement,S3,,チャットボットは、userName または personName の最初の null 以外のエンティティ値を取得し、その値を user.name に割り当てる,,3,,,true
+q015_a,q015,choice,A,,A. Application Insights リソースをプロビジョニングする,A,1,,,false
+q015_b,q015,choice,B,,B. Microsoft Foundry プロジェクトを作成する,B,2,,,true
+q015_c,q015,choice,C,,C. Agent1 を Microsoft Foundry プロジェクトに追加する,C,3,,,false
+q015_d,q015,choice,D,,D. Agent1 を Microsoft Foundry プレイグラウンドに追加する,D,4,,,false
+q016_1,q016,drag_item,1,,新しいクエリキーを追加する,1,1,,1,
+q016_2,q016,drag_item,2,,セカンダリ管理者キーを再生成する,2,2,,,
+q016_3,q016,drag_item,3,,セカンダリ管理者キーを使用するようにアプリを変更する,3,3,,,
+q016_4,q016,drag_item,4,,新しいキーを使用するようにアプリを変更する,4,4,,2,
+q016_5,q016,drag_item,5,,プライマリ管理者キーを再生成する,5,5,,,
+q016_6,q016,drag_item,6,,侵害されたキーを削除する,6,6,,3,
+q017_1,q017,drag_item,1,,Completionsプレイグラウンドを開き、デプロイ済みのモデルを選択する,1,1,,,
+q017_2,q017,drag_item,2,,新しいデプロイメントを作成し、DALL-Eモデルを選択する,2,2,,,
+q017_3,q017,drag_item,3,,Chatプレイグラウンドを開き、デプロイ済みのモデルを選択する,3,3,,2,
+q017_4,q017,drag_item,4,,システムメッセージフィールドに「You are an AI assistant that describes images.（画像を説明するAIアシスタントです）」と入力する,4,4,,3,
+q017_5,q017,drag_item,5,,新しいデプロイメントを作成し、GPT-4モデルを選択し、モデルバージョンをvision-previewに設定する,5,5,,1,
+q017_6,q017,drag_item,6,,新しいデプロイメントを作成し、text-embedding-ada-002モデルを選択し、モデルバージョンを2.0に設定する,6,6,,,
+q017_7,q017,drag_item,7,,Chatセッションペインで、「Describe this image（この画像を説明してください）」というテキストプロンプトを入力し、添付ボタンを使用して画像をアップロードする,7,7,,4,
+q018_1,q018,drag_item,1,,Server1 から docker push コマンドを実行する,1,1,,,
+q018_2,q018,drag_item,2,,Azure 上の Azure AI Anomaly Detector の予測エンドポイントをクエリする,2,2,,,
+q018_3,q018,drag_item,3,,Server1 に Docker エンジンをインストールする,3,3,,1,
+q018_4,q018,drag_item,4,,Server1 から docker pull コマンドを実行する,4,4,,2,
+q018_5,q018,drag_item,5,,Server1 から docker run コマンドを実行する,5,5,,3,
+q018_6,q018,drag_item,6,,Server1 の予測エンドポイントをクエリする,6,6,,4,
 q019_a,q019,choice,A,,A. toScript=Cyrl,A,1,,,false
 q019_b,q019,choice,B,,B. from=el,B,2,,,false
 q019_c,q019,choice,C,,C. textType=html,C,3,,,true
 q019_d,q019,choice,D,,D. to=el,D,4,,,true
 q019_e,q019,choice,E,,E. textType=plain,E,5,,,false
 q019_f,q019,choice,F,,F. toScript=Latn,F,6,,,true
-q020_1,q020,drag_item,1,,アプリケーションをトレーニングします。,1,1,,3,
-q020_2,q020,drag_item,2,,アプリケーションを公開します。,2,2,,4,
-q020_3,q020,drag_item,3,,新しいアプリケーションを追加します。,3,3,,1,
-q020_4,q020,drag_item,4,,発話例を追加します。,4,4,,,
-q020_5,q020,drag_item,5,,事前に構築されたドメインのToDoを追加します。,5,5,,2,
-q021_a,q021,choice,A,,A. 言語オーサリング REST エンドポイントから、モデル評価の概要を取得します。,A,1,,,true
-q021_b,q021,choice,B,,B. Language Studio から、アクティブ ラーニングを有効にし、レビュー用に記録された発話を検証します。,B,2,,,false
-q021_c,q021,choice,C,,C. Language Studio から、モデルのパフォーマンスを選択します。,C,3,,,true
-q021_d,q021,choice,D,,D. Azure ポータルから、Log Analytics でログ収集を有効にし、ログを分析します。,D,4,,,false
+q020_1,q020,drag_item,1,,アプリケーションをトレーニングする,1,1,,3,
+q020_2,q020,drag_item,2,,アプリケーションを公開する,2,2,,4,
+q020_3,q020,drag_item,3,,新しいアプリケーションを追加する,3,3,,1,
+q020_4,q020,drag_item,4,,発話例を追加する,4,4,,,
+q020_5,q020,drag_item,5,,事前に構築されたドメインのToDoを追加する,5,5,,2,
+q021_a,q021,choice,A,,A. 言語オーサリング REST エンドポイントから、モデル評価の概要を取得する,A,1,,,true
+q021_b,q021,choice,B,,B. Language Studio から、アクティブ ラーニングを有効にし、レビュー用に記録された発話を検証する,B,2,,,false
+q021_c,q021,choice,C,,C. Language Studio から、モデルのパフォーマンスを選択する,C,3,,,true
+q021_d,q021,choice,D,,D. Azure ポータルから、Log Analytics でログ収集を有効にし、ログを分析する,D,4,,,false
 q022_s1,q022,statement,S1,,3つの文を異なる声で聞きます。,,1,,,true
 q022_s2,q022,statement,S2,,3つの文を異なるアクセントで聞きます。,,2,,,false
 q022_s3,q022,statement,S3,,3つの文をニュートラルなトーンで表現して聞きます。,,3,,,false
