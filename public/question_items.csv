@@ -533,7 +533,7 @@ q085_b,q085,choice,B,,B. Qna MakerOptions-ScoreThreshold,B,2,,,False
 q085_c,q085,choice,C,,C. Qna Maker オプション ストリックフィルター,C,3,,,False
 q085_d,q085,choice,D,,D. QnaMakerOptions.RankerType,D,4,,,True
 q086_a,q086,choice,A,,A. Language Studio,A,1,,,False
-q086_b,q086,choice,B,,B. Azure AI Foundry,B,2,,,True
+q086_b,q086,choice,B,,B. Microsoft Foundry,B,2,,,True
 q086_c,q086,choice,C,,C. Speech Studio,C,3,,,False
 q086_d,q086,choice,D,,D. Azure Portal,D,4,,,False
 q087_blank_1,q087,dropdown_blank,select01,,顧客からの電話をテキストクエリに変換します:<select01>。,,1,SpeechRecognizer,,
@@ -626,7 +626,7 @@ q101_d,q101,choice,D,,D. ネットワーキング,D,4,,,False
 q102_s1,q102,statement,S1,,解決策: Content Safety Studio から、テキスト コンテンツのモデレート機能を使用してテストを実行します。,,1,,,True
 q103_a,q103,choice,A,,A. Azure AI Language,A,1,,,False
 q103_b,q103,choice,B,,B. Azure AI Speech,B,2,,,False
-q103_c,q103,choice,C,,C. Azure AI Services のマルチサービス リソース,C,3,,,True
+q103_c,q103,choice,C,,C. Microsoft Foundry Tools リソース,C,3,,,True
 q103_d,q103,choice,D,,D. Azure AI Content Safety,D,4,,,False
 q104_drag_1,q104,drag_item,1,,カテゴリー別に画像をアップロードします。,1,1,,,
 q104_drag_2,q104,drag_item,2,,タグの提案を取得します。,2,2,,2,
@@ -2064,7 +2064,7 @@ q373_b,q373,choice,B,,B. Cognitive Services Contributor,B,2,,,False
 q373_c,q373,choice,C,,C. Contributor,C,3,,,False
 q373_d,q373,choice,D,,D. Cognitive Services OpenAI Contributor,D,4,,,False
 q374_a,q374,choice,A,,A. Azure AI Content Safety,A,1,,,False
-q374_b,q374,choice,B,,B. Azure AI Services,B,2,,,True
+q374_b,q374,choice,B,,B. Microsoft Foundry Tools,B,2,,,True
 q374_c,q374,choice,C,,C. Azure AI Speech,C,3,,,False
 q374_d,q374,choice,D,,D. Azure Al Language,D,4,,,False
 q375_a,q375,choice,A,,A. PDF,A,1,,,False
