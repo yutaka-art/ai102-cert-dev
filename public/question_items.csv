@@ -585,7 +585,7 @@ q093_d,q093,choice,D,,D. ストリーム処理,D,4,,,False
 q094_s1,q094,statement,S1,,解決策: Language Studio から、chitchat ソースを qna_chitchit_friindly.tsv に変更し、モデルを再トレーニングして再公開する,,1,,,False
 q095_1,q095,drag_item,1,,Custom Vision ポータルからプロジェクトを開く,1,1,,1.0,
 q095_2,q095,drag_item,2,,Azure Machine Learning Studio からワークスペースを開く,2,2,,,
-q095_3,q095,drag_item,3,,Vison Studio からプロジェクトを開く,3,3,,,
+q095_3,q095,drag_item,3,,Vision Studio からプロジェクトを開く,3,3,,,
 q095_4,q095,drag_item,4,,新製品のサンプル画像をアップロードする,4,4,,2.0,
 q095_5,q095,drag_item,5,,サンプル画像にラベルを付ける,5,5,,3.0,
 q095_6,q095,drag_item,6,,モデルを再トレーニングする,6,6,,4.0,
