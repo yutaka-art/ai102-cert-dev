@@ -2,7 +2,7 @@
   <div class="opening-container">
     <img :src="viteLogo" alt="Vite Logo" class="opening-logo" />
     <h1 class="opening-title">AI-102 試験対策</h1>
-    <h2 class="opening-sub">v1.0.78</h2>
+    <h2 class="opening-sub">v1.0.79</h2>
     <div class="opening-date">Release:2026/3/8</div>
 
     <div class="mode-cards">
@@ -20,7 +20,7 @@
               placeholder="開始"
               class="range-input"
             />
-            <span class="range-separator">〜</span>
+            <span class="range-separator">～</span>
             <span class="range-prefix">Q</span>
             <input
               v-model.number="rangeTo"
@@ -30,7 +30,7 @@
               class="range-input"
             />
           </div>
-          <div class="range-hint">例: Q61〜Q120 → 61 と 120 を入力</div>
+          <div class="range-hint">例: Q61～Q120 → 61 と 120 を入力</div>
         </div>
         <router-link :to="sequentialLink" class="start-btn mode-btn">スタート</router-link>
       </div>
