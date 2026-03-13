@@ -2,7 +2,7 @@
   <div class="opening-container">
     <img :src="viteLogo" alt="Vite Logo" class="opening-logo" />
     <h1 class="opening-title">AI-102 試験対策</h1>
-    <h2 class="opening-sub">―</h2>
+    <h2 class="opening-sub">v1.0.71</h2>
     <div class="opening-date">2026/3/8</div>
 
     <div class="mode-cards">
