@@ -943,7 +943,7 @@ Weather.Historic エンティティは発話の中で何に対応しています
 }",1つ選択してください,1,提示された回答に合わせています。,True,{}
 q145,#145,dropdown,SpeechTranslationConfig の設定,"O で、音声翻訳を実行する App1 というアプリを開発します。
 英語をドイツ語に翻訳するには、App1 を設定する必要があります。
-speechTransiationConf ig オブジェクトはどのように設定すればよいですか？ 適切な値を正しいターゲットにドラッグしてください。各値は1回、複数回、または全く使用されない場合があります。コンテンツを表示するには、ペイン間の分割バーをドラッグするか、スクロールする必要がある場合があります。
+speechTransiationConfig オブジェクトはどのように設定すればよいですか？ 適切な値を正しいターゲットにドラッグしてください。各値は1回、複数回、または全く使用されない場合があります。コンテンツを表示するには、ペイン間の分割バーをドラッグするか、スクロールする必要がある場合があります。
 注意: 正しい選択ごとに 1 ポイントが付与されます。","var translationConfig = SpeechTranslationConfig.FromSubscription(SPEECH__SUBSCRIPTION__KEY, SPEECH_SERVICE__REGION);
 translationConfig.<select01> = ""en-US"";
 translationConfig.<select02>(""de"")",各ドロップダウンを選択してください,2,認識言語は speechRecognitionLanguage、翻訳先追加は addTargetLanguage を使います。,False,{}
